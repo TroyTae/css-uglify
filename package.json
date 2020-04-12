@@ -1,0 +1,40 @@
+{
+  "name": "hellper",
+  "version": "1.0.0",
+  "description": "Library from hell for handling DOM 😈",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "lib": "dist",
+    "test": "__tests__",
+    "doc": "README.md"
+  },
+  "scripts": {
+    "build": "rollup --c rollup.config.js",
+    "test": "npm run test:lint & npm run test:unit",
+    "test:lint": "eslint --ext .ts src/",
+    "fix:lint": "eslint --fix --ext .ts src/",
+    "test:unit": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TroyTae/hellper.git"
+  },
+  "keywords": [
+    "DOM"
+  ],
+  "author": "TroyTae",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TroyTae/hellper/issues"
+  },
+  "homepage": "https://github.com/TroyTae/hellper#readme",
+  "devDependencies": {
+    "eslint-config-troy-recommended": "git+https://github.com/TroyTae/eslint-config-troy-recommended.git",
+    "troyjs": "git+https://github.com/TroyTae/troyjs.git"
+  },
+  "eslintConfig": {
+    "extends": "troy-recommended"
+  }
+}
