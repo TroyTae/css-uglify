@@ -1,2 +1,2 @@
-declare function index(): string;
-export { index, };
+import _ from './document';
+export { _, };

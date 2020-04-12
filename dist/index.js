@@ -7,8 +7,6 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-function index() {
-    return 'index';
-}
 
-exports.index = index;
+
+exports._ = document;

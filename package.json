@@ -1,7 +1,7 @@
 {
   "name": "hellper",
   "version": "1.0.0",
-  "description": "Library from hell for handling DOM 😈",
+  "description": "A helper library from hell for handling DOM 😈",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",

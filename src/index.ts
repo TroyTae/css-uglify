@@ -1,7 +1,5 @@
-function index(): string {
-  return 'index';
-}
+import _ from './document';
 
 export {
-  index,
+  _,
 };

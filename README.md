@@ -4,4 +4,4 @@
 [![license](https://img.shields.io/github/license/TroyTae/hellper?style=flat-square)](https://github.com/TroyTae/hellper/blob/master/LICENSE)
 
 # One Spaces
-Library from hell for handling DOM 😈
+A helper library from hell for handling DOM 😈
