@@ -1,1 +1,1 @@
-var Hellper=function(e){return e._=document,e}({});
+var Hellper=function(t){var r=document;return t._=r,t.setAttributes=function(t,r){var e;for(e in r)t.setAttribute(e,r[e]);return t},t}({});

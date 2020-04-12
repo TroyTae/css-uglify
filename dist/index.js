@@ -7,6 +7,14 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
+var _ = document;
+function setAttributes(element, attributeMap) {
+    var key;
+    for (key in attributeMap) {
+        element.setAttribute(key, attributeMap[key]);
+    }
+    return element;
+}
 
-
-exports._ = document;
+exports._ = _;
+exports.setAttributes = setAttributes;
