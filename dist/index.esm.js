@@ -11,5 +11,12 @@ function setAttributes(element, attributeMap) {
     }
     return element;
 }
+function setProperties(element, propertyMap) {
+    var key;
+    for (key in propertyMap) {
+        element[key] = propertyMap[key];
+    }
+    return element;
+}
 
-export { _, setAttributes };
+export { _, setAttributes, setProperties };
