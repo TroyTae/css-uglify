@@ -4,6 +4,4 @@ function createElement(tagName: string): HTMLElement {
   return _.createElement(tagName);
 }
 
-export {
-  createElement,
-};
+export {createElement};

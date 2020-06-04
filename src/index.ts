@@ -1,19 +1,5 @@
-import {
-  createElement,
-} from './element';
-
-type AttributeMap = {
-  [key: string]: string;
-};
-
-function setAttributes(element: HTMLElement, attributeMap: AttributeMap): HTMLElement {
-  let key;
-  for (key in attributeMap) {
-    element.setAttribute(key, attributeMap[key]);
-  }
-  return element;
-}
-
+import {createElement} from './element';
+import {setAttributes} from './attribute';
 
 type PropertyMap = {
   [key: string]: boolean | number | string;
