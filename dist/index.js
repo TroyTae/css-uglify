@@ -19,6 +19,7 @@ function setAttributes(element, attributeMap) {
     }
     return element;
 }
+
 function setProperties(element, propertyMap) {
     var key;
     for (key in propertyMap) {
@@ -27,6 +28,11 @@ function setProperties(element, propertyMap) {
     return element;
 }
 
+function createDivElement() {
+    return createElement('DIV');
+}
+
+exports.createDivElement = createDivElement;
 exports.createElement = createElement;
 exports.setAttributes = setAttributes;
 exports.setProperties = setProperties;

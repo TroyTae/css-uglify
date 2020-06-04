@@ -2,13 +2,14 @@ const {
   createElement,
   setAttributes,
   setProperties,
+  createDivElement,
 } = require('../dist/index');
 
 test('setAttributes', () => {
   const element = setAttributes(
-    createElement('div'),
+    createDivElement(),
     {
-      'class': 'test',
+      class: 'test',
       'data-animation': 'fade',
     },
   );

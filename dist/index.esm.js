@@ -15,6 +15,7 @@ function setAttributes(element, attributeMap) {
     }
     return element;
 }
+
 function setProperties(element, propertyMap) {
     var key;
     for (key in propertyMap) {
@@ -23,4 +24,8 @@ function setProperties(element, propertyMap) {
     return element;
 }
 
-export { createElement, setAttributes, setProperties };
+function createDivElement() {
+    return createElement('DIV');
+}
+
+export { createDivElement, createElement, setAttributes, setProperties };
