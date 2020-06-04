@@ -1,4 +1,4 @@
-declare const _: Document;
+declare const doc: Document;
 declare type AttributeMap = {
     [key: string]: string;
 };
@@ -7,4 +7,4 @@ declare type PropertyMap = {
     [key: string]: boolean | number | string;
 };
 declare function setProperties(element: HTMLElement, propertyMap: PropertyMap): HTMLElement;
-export { _, setAttributes, setProperties, };
+export { doc, setAttributes, setProperties, };

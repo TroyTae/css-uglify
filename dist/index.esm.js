@@ -3,7 +3,7 @@
  * @version 1.0.0
  * @name hellper
  */
-var _ = document;
+var doc = document;
 function setAttributes(element, attributeMap) {
     var key;
     for (key in attributeMap) {
@@ -19,4 +19,4 @@ function setProperties(element, propertyMap) {
     return element;
 }
 
-export { _, setAttributes, setProperties };
+export { doc, setAttributes, setProperties };
