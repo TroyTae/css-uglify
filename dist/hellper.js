@@ -1,1 +1,1 @@
-var Hellper=function(r){var t=document;return r.doc=t,r.setAttributes=function(r,t){var e;for(e in t)r.setAttribute(e,t[e]);return r},r.setProperties=function(r,t){var e;for(e in t)r[e]=t[e];return r},r}({});
+var Hellper=function(t){var e=document;return t.createElement=function(t){return e.createElement(t)},t.setAttributes=function(t,e){var r;for(r in e)t.setAttribute(r,e[r]);return t},t.setProperties=function(t,e){var r;for(r in e)t[r]=e[r];return t},t}({});

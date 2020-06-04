@@ -3,7 +3,11 @@
  * @version 1.0.0
  * @name hellper
  */
-var doc = document;
+var _ = document;
+function createElement(tagName) {
+    return _.createElement(tagName);
+}
+
 function setAttributes(element, attributeMap) {
     var key;
     for (key in attributeMap) {
@@ -19,4 +23,4 @@ function setProperties(element, propertyMap) {
     return element;
 }
 
-export { doc, setAttributes, setProperties };
+export { createElement, setAttributes, setProperties };

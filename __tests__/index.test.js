@@ -1,12 +1,12 @@
 const {
-  doc,
+  createElement,
   setAttributes,
   setProperties,
 } = require('../dist/index');
 
 test('setAttributes', () => {
   const element = setAttributes(
-    doc.createElement('div'),
+    createElement('div'),
     {
       'class': 'test',
       'data-animation': 'fade',
@@ -21,7 +21,7 @@ test('setAttributes', () => {
 test('setProperties', () => {
   const element = setProperties(
     setAttributes(
-      doc.createElement('input'),
+      createElement('input'),
       {
         type: 'checkbox',
         class: 'fake-class',

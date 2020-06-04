@@ -1,4 +1,6 @@
-const doc = document;
+import {
+  createElement,
+} from './element';
 
 type AttributeMap = {
   [key: string]: string;
@@ -27,7 +29,7 @@ function setProperties(element: HTMLElement, propertyMap: PropertyMap): HTMLElem
 }
 
 export {
-  doc,
+  createElement,
   setAttributes,
   setProperties,
 };
