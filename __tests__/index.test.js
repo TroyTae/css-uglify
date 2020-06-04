@@ -1,8 +1,8 @@
 const {
-  createElement,
   setAttributes,
   setProperties,
   createDivElement,
+  createInputElement,
 } = require('../dist/index');
 
 test('setAttributes', () => {
@@ -22,7 +22,7 @@ test('setAttributes', () => {
 test('setProperties', () => {
   const element = setProperties(
     setAttributes(
-      createElement('input'),
+      createInputElement(),
       {
         type: 'checkbox',
         class: 'fake-class',

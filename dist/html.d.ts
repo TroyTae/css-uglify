@@ -1,2 +1,3 @@
 declare function createDivElement(): HTMLDivElement;
-export { createDivElement };
+declare function createInputElement(): HTMLInputElement;
+export { createDivElement, createInputElement, };

@@ -4,4 +4,11 @@ function createDivElement(): HTMLDivElement {
   return createElement('DIV') as HTMLDivElement;
 }
 
-export {createDivElement};
+function createInputElement(): HTMLInputElement {
+  return createElement('INPUT') as HTMLInputElement;
+}
+
+export {
+  createDivElement,
+  createInputElement,
+};

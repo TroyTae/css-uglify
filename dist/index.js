@@ -31,8 +31,12 @@ function setProperties(element, propertyMap) {
 function createDivElement() {
     return createElement('DIV');
 }
+function createInputElement() {
+    return createElement('INPUT');
+}
 
 exports.createDivElement = createDivElement;
 exports.createElement = createElement;
+exports.createInputElement = createInputElement;
 exports.setAttributes = setAttributes;
 exports.setProperties = setProperties;
