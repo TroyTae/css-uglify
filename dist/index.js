@@ -40,11 +40,15 @@ function createParagraphElement() {
 function createInputElement() {
     return createElement('input');
 }
+function createSelectElement() {
+    return createElement('select');
+}
 
 exports.createDivElement = createDivElement;
 exports.createElement = createElement;
 exports.createInputElement = createInputElement;
 exports.createParagraphElement = createParagraphElement;
+exports.createSelectElement = createSelectElement;
 exports.createSpanElement = createSpanElement;
 exports.setAttributes = setAttributes;
 exports.setProperties = setProperties;

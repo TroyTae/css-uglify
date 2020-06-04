@@ -16,9 +16,14 @@ function createInputElement(): HTMLInputElement {
   return createElement('input');
 }
 
+function createSelectElement(): HTMLSelectElement {
+  return createElement('select');
+}
+
 export {
   createDivElement,
   createSpanElement,
   createParagraphElement,
   createInputElement,
+  createSelectElement,
 };

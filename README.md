@@ -3,5 +3,5 @@
 [![npm](https://img.shields.io/npm/v/hellper?color=%23fb3e44&style=flat-square)](https://www.npmjs.com/package/hellper)
 [![license](https://img.shields.io/github/license/TroyTae/hellper?style=flat-square)](https://github.com/TroyTae/hellper/blob/master/LICENSE)
 
-# One Spaces
+# Helper
 A helper library from hell for handling DOM 😈

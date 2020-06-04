@@ -36,5 +36,8 @@ function createParagraphElement() {
 function createInputElement() {
     return createElement('input');
 }
+function createSelectElement() {
+    return createElement('select');
+}
 
-export { createDivElement, createElement, createInputElement, createParagraphElement, createSpanElement, setAttributes, setProperties };
+export { createDivElement, createElement, createInputElement, createParagraphElement, createSelectElement, createSpanElement, setAttributes, setProperties };

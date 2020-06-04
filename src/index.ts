@@ -6,6 +6,7 @@ import {
   createSpanElement,
   createParagraphElement,
   createInputElement,
+  createSelectElement,
 } from './html';
 
 export {
@@ -16,4 +17,5 @@ export {
   createSpanElement,
   createParagraphElement,
   createInputElement,
+  createSelectElement,
 };
