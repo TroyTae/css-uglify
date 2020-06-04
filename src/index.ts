@@ -4,6 +4,7 @@ import {setProperties} from './property';
 import {
   createDivElement,
   createSpanElement,
+  createParagraphElement,
   createInputElement,
 } from './html';
 
@@ -13,5 +14,6 @@ export {
   setProperties,
   createDivElement,
   createSpanElement,
+  createParagraphElement,
   createInputElement,
 };

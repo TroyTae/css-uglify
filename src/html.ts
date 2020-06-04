@@ -8,6 +8,10 @@ function createSpanElement(): HTMLSpanElement {
   return createElement('SPAN') as HTMLSpanElement;
 }
 
+function createParagraphElement(): HTMLParagraphElement {
+  return createElement('P') as HTMLParagraphElement;
+}
+
 function createInputElement(): HTMLInputElement {
   return createElement('INPUT') as HTMLInputElement;
 }
@@ -15,5 +19,6 @@ function createInputElement(): HTMLInputElement {
 export {
   createDivElement,
   createSpanElement,
+  createParagraphElement,
   createInputElement,
 };
