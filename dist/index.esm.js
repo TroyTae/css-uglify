@@ -25,10 +25,16 @@ function setProperties(element, propertyMap) {
 }
 
 function createDivElement() {
-    return createElement('DIV');
+    return createElement('div');
+}
+function createSpanElement() {
+    return createElement('span');
+}
+function createParagraphElement() {
+    return createElement('p');
 }
 function createInputElement() {
-    return createElement('INPUT');
+    return createElement('input');
 }
 
-export { createDivElement, createElement, createInputElement, setAttributes, setProperties };
+export { createDivElement, createElement, createInputElement, createParagraphElement, createSpanElement, setAttributes, setProperties };

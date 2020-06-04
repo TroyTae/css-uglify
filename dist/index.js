@@ -29,14 +29,22 @@ function setProperties(element, propertyMap) {
 }
 
 function createDivElement() {
-    return createElement('DIV');
+    return createElement('div');
+}
+function createSpanElement() {
+    return createElement('span');
+}
+function createParagraphElement() {
+    return createElement('p');
 }
 function createInputElement() {
-    return createElement('INPUT');
+    return createElement('input');
 }
 
 exports.createDivElement = createDivElement;
 exports.createElement = createElement;
 exports.createInputElement = createInputElement;
+exports.createParagraphElement = createParagraphElement;
+exports.createSpanElement = createSpanElement;
 exports.setAttributes = setAttributes;
 exports.setProperties = setProperties;

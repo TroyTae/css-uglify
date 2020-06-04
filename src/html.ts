@@ -1,19 +1,19 @@
 import {createElement} from './element';
 
 function createDivElement(): HTMLDivElement {
-  return createElement('DIV') as HTMLDivElement;
+  return createElement('div');
 }
 
 function createSpanElement(): HTMLSpanElement {
-  return createElement('SPAN') as HTMLSpanElement;
+  return createElement('span');
 }
 
 function createParagraphElement(): HTMLParagraphElement {
-  return createElement('P') as HTMLParagraphElement;
+  return createElement('p');
 }
 
 function createInputElement(): HTMLInputElement {
-  return createElement('INPUT') as HTMLInputElement;
+  return createElement('input');
 }
 
 export {
