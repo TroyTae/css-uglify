@@ -7,6 +7,7 @@ function createAppletElement(): HTMLAppletElement { return createElement('applet
 function createAreaElement(): HTMLAreaElement { return createElement('area'); }
 function createArticleElement(): HTMLElement { return createElement('article'); }
 function createAsideElement(): HTMLElement { return createElement('aside'); }
+function createAudioElement(): HTMLAudioElement { return createElement('audio'); }
 
 export {
   createAnchorElement,
@@ -16,4 +17,5 @@ export {
   createAreaElement,
   createArticleElement,
   createAsideElement,
+  createAudioElement,
 };

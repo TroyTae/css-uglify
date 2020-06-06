@@ -9,6 +9,7 @@ import {
   createAreaElement,
   createArticleElement,
   createAsideElement,
+  createAudioElement,
 } from './html';
 
 export {
@@ -22,4 +23,5 @@ export {
   createAreaElement,
   createArticleElement,
   createAsideElement,
+  createAudioElement,
 };

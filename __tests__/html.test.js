@@ -6,6 +6,7 @@ const {
   createAreaElement,
   createArticleElement,
   createAsideElement,
+  createAudioElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -16,4 +17,5 @@ test('HTMLElement creation test', () => {
   expect(createAreaElement().tagName).toBe('AREA');
   expect(createArticleElement().tagName).toBe('ARTICLE');
   expect(createAsideElement().tagName).toBe('ASIDE');
+  expect(createAudioElement().tagName).toBe('AUDIO');
 });

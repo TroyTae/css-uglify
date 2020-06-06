@@ -32,11 +32,19 @@ function createAnchorElement() { return createElement('a'); }
 function createAbbrElement() { return createElement('abbr'); }
 function createAddressElement() { return createElement('address'); }
 function createAppletElement() { return createElement('applet'); }
+function createAreaElement() { return createElement('area'); }
+function createArticleElement() { return createElement('article'); }
+function createAsideElement() { return createElement('aside'); }
+function createAudioElement() { return createElement('audio'); }
 
 exports.createAbbrElement = createAbbrElement;
 exports.createAddressElement = createAddressElement;
 exports.createAnchorElement = createAnchorElement;
 exports.createAppletElement = createAppletElement;
+exports.createAreaElement = createAreaElement;
+exports.createArticleElement = createArticleElement;
+exports.createAsideElement = createAsideElement;
+exports.createAudioElement = createAudioElement;
 exports.createElement = createElement;
 exports.setAttributes = setAttributes;
 exports.setProperties = setProperties;

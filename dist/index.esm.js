@@ -28,5 +28,9 @@ function createAnchorElement() { return createElement('a'); }
 function createAbbrElement() { return createElement('abbr'); }
 function createAddressElement() { return createElement('address'); }
 function createAppletElement() { return createElement('applet'); }
+function createAreaElement() { return createElement('area'); }
+function createArticleElement() { return createElement('article'); }
+function createAsideElement() { return createElement('aside'); }
+function createAudioElement() { return createElement('audio'); }
 
-export { createAbbrElement, createAddressElement, createAnchorElement, createAppletElement, createElement, setAttributes, setProperties };
+export { createAbbrElement, createAddressElement, createAnchorElement, createAppletElement, createAreaElement, createArticleElement, createAsideElement, createAudioElement, createElement, setAttributes, setProperties };
