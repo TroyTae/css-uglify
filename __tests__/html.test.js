@@ -14,6 +14,7 @@ const {
   createBDOElement,
   createBlockQuoteElement,
   createBodyElement,
+  createBRElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -32,4 +33,5 @@ test('HTMLElement creation test', () => {
   expect(createBDOElement().tagName).toBe('BDO');
   expect(createBlockQuoteElement().tagName).toBe('BLOCKQUOTE');
   expect(createBodyElement().tagName).toBe('BODY');
+  expect(createBRElement().tagName).toBe('BR');
 });
