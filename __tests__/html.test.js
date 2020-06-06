@@ -1,5 +1,5 @@
 const {
-  createAnchorElement,
+  createAElement,
   createAbbrElement,
   createAddressElement,
   createAppletElement,
@@ -7,13 +7,15 @@ const {
   createArticleElement,
   createAsideElement,
   createAudioElement,
-  createBoldElement,
+  createBElement,
   createBaseElement,
   createBaseFontElement,
+  createBDIElement,
+  createBDOElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
-  expect(createAnchorElement().tagName).toBe('A');
+  expect(createAElement().tagName).toBe('A');
   expect(createAbbrElement().tagName).toBe('ABBR');
   expect(createAddressElement().tagName).toBe('ADDRESS');
   expect(createAppletElement().tagName).toBe('APPLET');
@@ -21,7 +23,9 @@ test('HTMLElement creation test', () => {
   expect(createArticleElement().tagName).toBe('ARTICLE');
   expect(createAsideElement().tagName).toBe('ASIDE');
   expect(createAudioElement().tagName).toBe('AUDIO');
-  expect(createBoldElement().tagName).toBe('B');
+  expect(createBElement().tagName).toBe('B');
   expect(createBaseElement().tagName).toBe('BASE');
   expect(createBaseFontElement().tagName).toBe('BASEFONT');
+  expect(createBDIElement().tagName).toBe('BDI');
+  expect(createBDOElement().tagName).toBe('BDO');
 });

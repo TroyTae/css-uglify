@@ -1,6 +1,6 @@
 import {createElement} from './element';
 
-function createAnchorElement(): HTMLAnchorElement { return createElement('a'); }
+function createAElement(): HTMLAnchorElement { return createElement('a'); }
 function createAbbrElement(): HTMLElement { return createElement('abbr'); }
 function createAddressElement(): HTMLElement { return createElement('address'); }
 function createAppletElement(): HTMLAppletElement { return createElement('applet'); }
@@ -8,12 +8,14 @@ function createAreaElement(): HTMLAreaElement { return createElement('area'); }
 function createArticleElement(): HTMLElement { return createElement('article'); }
 function createAsideElement(): HTMLElement { return createElement('aside'); }
 function createAudioElement(): HTMLAudioElement { return createElement('audio'); }
-function createBoldElement(): HTMLElement { return createElement('b'); }
+function createBElement(): HTMLElement { return createElement('b'); }
 function createBaseElement(): HTMLBaseElement { return createElement('base'); }
 function createBaseFontElement(): HTMLBaseFontElement { return createElement('basefont'); }
+function createBDIElement(): HTMLElement { return createElement('bdi'); }
+function createBDOElement(): HTMLElement { return createElement('bdo'); }
 
 export {
-  createAnchorElement,
+  createAElement,
   createAbbrElement,
   createAddressElement,
   createAppletElement,
@@ -21,7 +23,9 @@ export {
   createArticleElement,
   createAsideElement,
   createAudioElement,
-  createBoldElement,
+  createBElement,
   createBaseElement,
   createBaseFontElement,
+  createBDIElement,
+  createBDOElement,
 };

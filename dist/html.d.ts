@@ -1,4 +1,4 @@
-declare function createAnchorElement(): HTMLAnchorElement;
+declare function createAElement(): HTMLAnchorElement;
 declare function createAbbrElement(): HTMLElement;
 declare function createAddressElement(): HTMLElement;
 declare function createAppletElement(): HTMLAppletElement;
@@ -6,7 +6,9 @@ declare function createAreaElement(): HTMLAreaElement;
 declare function createArticleElement(): HTMLElement;
 declare function createAsideElement(): HTMLElement;
 declare function createAudioElement(): HTMLAudioElement;
-declare function createBoldElement(): HTMLElement;
+declare function createBElement(): HTMLElement;
 declare function createBaseElement(): HTMLBaseElement;
 declare function createBaseFontElement(): HTMLBaseFontElement;
-export { createAnchorElement, createAbbrElement, createAddressElement, createAppletElement, createAreaElement, createArticleElement, createAsideElement, createAudioElement, createBoldElement, createBaseElement, createBaseFontElement, };
+declare function createBDIElement(): HTMLElement;
+declare function createBDOElement(): HTMLElement;
+export { createAElement, createAbbrElement, createAddressElement, createAppletElement, createAreaElement, createArticleElement, createAsideElement, createAudioElement, createBElement, createBaseElement, createBaseFontElement, createBDIElement, createBDOElement, };
