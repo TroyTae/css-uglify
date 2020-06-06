@@ -1,5 +1,9 @@
 import {createElement} from './element';
 
+function createAnchorElement(): HTMLAnchorElement {
+  return createElement('a');
+}
+
 function createDivElement(): HTMLDivElement {
   return createElement('div');
 }
@@ -21,6 +25,7 @@ function createSelectElement(): HTMLSelectElement {
 }
 
 export {
+  createAnchorElement,
   createDivElement,
   createSpanElement,
   createParagraphElement,
