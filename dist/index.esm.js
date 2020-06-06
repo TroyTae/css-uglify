@@ -24,20 +24,9 @@ function setProperties(element, propertyMap) {
     return element;
 }
 
-function createDivElement() {
-    return createElement('div');
-}
-function createSpanElement() {
-    return createElement('span');
-}
-function createParagraphElement() {
-    return createElement('p');
-}
-function createInputElement() {
-    return createElement('input');
-}
-function createSelectElement() {
-    return createElement('select');
-}
+function createAnchorElement() { return createElement('a'); }
+function createAbbrElement() { return createElement('abbr'); }
+function createAddressElement() { return createElement('address'); }
+function createAppletElement() { return createElement('applet'); }
 
-export { createDivElement, createElement, createInputElement, createParagraphElement, createSelectElement, createSpanElement, setAttributes, setProperties };
+export { createAbbrElement, createAddressElement, createAnchorElement, createAppletElement, createElement, setAttributes, setProperties };

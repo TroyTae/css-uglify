@@ -3,6 +3,8 @@ import {setAttributes} from './attribute';
 import {setProperties} from './property';
 import {
   createAnchorElement,
+  createAbbrElement,
+  createAddressElement,
   createAppletElement,
 } from './html';
 
@@ -11,5 +13,7 @@ export {
   setAttributes,
   setProperties,
   createAnchorElement,
+  createAbbrElement,
+  createAddressElement,
   createAppletElement,
 };

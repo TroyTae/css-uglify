@@ -1,6 +1,5 @@
-declare function createDivElement(): HTMLDivElement;
-declare function createSpanElement(): HTMLSpanElement;
-declare function createParagraphElement(): HTMLParagraphElement;
-declare function createInputElement(): HTMLInputElement;
-declare function createSelectElement(): HTMLSelectElement;
-export { createDivElement, createSpanElement, createParagraphElement, createInputElement, createSelectElement, };
+declare function createAnchorElement(): HTMLAnchorElement;
+declare function createAbbrElement(): HTMLElement;
+declare function createAddressElement(): HTMLElement;
+declare function createAppletElement(): HTMLAppletElement;
+export { createAnchorElement, createAbbrElement, createAddressElement, createAppletElement, };
