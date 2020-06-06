@@ -8,6 +8,7 @@ import {
   createAppletElement,
   createAreaElement,
   createArticleElement,
+  createAsideElement,
 } from './html';
 
 export {
@@ -20,4 +21,5 @@ export {
   createAppletElement,
   createAreaElement,
   createArticleElement,
+  createAsideElement,
 };

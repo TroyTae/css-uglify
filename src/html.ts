@@ -6,6 +6,7 @@ function createAddressElement(): HTMLElement { return createElement('address'); 
 function createAppletElement(): HTMLAppletElement { return createElement('applet'); }
 function createAreaElement(): HTMLAreaElement { return createElement('area'); }
 function createArticleElement(): HTMLElement { return createElement('article'); }
+function createAsideElement(): HTMLElement { return createElement('aside'); }
 
 export {
   createAnchorElement,
@@ -14,4 +15,5 @@ export {
   createAppletElement,
   createAreaElement,
   createArticleElement,
+  createAsideElement,
 };

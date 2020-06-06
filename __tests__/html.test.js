@@ -5,6 +5,7 @@ const {
   createAppletElement,
   createAreaElement,
   createArticleElement,
+  createAsideElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -14,4 +15,5 @@ test('HTMLElement creation test', () => {
   expect(createAppletElement().tagName).toBe('APPLET');
   expect(createAreaElement().tagName).toBe('AREA');
   expect(createArticleElement().tagName).toBe('ARTICLE');
+  expect(createAsideElement().tagName).toBe('ASIDE');
 });
