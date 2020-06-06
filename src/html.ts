@@ -8,6 +8,9 @@ function createAreaElement(): HTMLAreaElement { return createElement('area'); }
 function createArticleElement(): HTMLElement { return createElement('article'); }
 function createAsideElement(): HTMLElement { return createElement('aside'); }
 function createAudioElement(): HTMLAudioElement { return createElement('audio'); }
+function createBoldElement(): HTMLElement { return createElement('b'); }
+function createBaseElement(): HTMLBaseElement { return createElement('base'); }
+function createBaseFontElement(): HTMLBaseFontElement { return createElement('basefont'); }
 
 export {
   createAnchorElement,
@@ -18,4 +21,7 @@ export {
   createArticleElement,
   createAsideElement,
   createAudioElement,
+  createBoldElement,
+  createBaseElement,
+  createBaseFontElement,
 };

@@ -7,6 +7,9 @@ const {
   createArticleElement,
   createAsideElement,
   createAudioElement,
+  createBoldElement,
+  createBaseElement,
+  createBaseFontElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -18,4 +21,7 @@ test('HTMLElement creation test', () => {
   expect(createArticleElement().tagName).toBe('ARTICLE');
   expect(createAsideElement().tagName).toBe('ASIDE');
   expect(createAudioElement().tagName).toBe('AUDIO');
+  expect(createBoldElement().tagName).toBe('B');
+  expect(createBaseElement().tagName).toBe('BASE');
+  expect(createBaseFontElement().tagName).toBe('BASEFONT');
 });

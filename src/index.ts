@@ -10,6 +10,9 @@ import {
   createArticleElement,
   createAsideElement,
   createAudioElement,
+  createBoldElement,
+  createBaseElement,
+  createBaseFontElement,
 } from './html';
 
 export {
@@ -24,4 +27,7 @@ export {
   createArticleElement,
   createAsideElement,
   createAudioElement,
+  createBoldElement,
+  createBaseElement,
+  createBaseFontElement,
 };
