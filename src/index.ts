@@ -18,6 +18,7 @@ import {
   createBlockQuoteElement,
   createBodyElement,
   createBRElement,
+  createButtonElement,
 } from './html';
 
 export {
@@ -40,4 +41,5 @@ export {
   createBlockQuoteElement,
   createBodyElement,
   createBRElement,
+  createButtonElement,
 };

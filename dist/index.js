@@ -42,6 +42,9 @@ function createBaseFontElement() { return createElement('basefont'); }
 function createBDIElement() { return createElement('bdi'); }
 function createBDOElement() { return createElement('bdo'); }
 function createBlockQuoteElement() { return createElement('blockquote'); }
+function createBodyElement() { return createElement('body'); }
+function createBRElement() { return createElement('br'); }
+function createButtonElement() { return createElement('button'); }
 
 exports.createAElement = createAElement;
 exports.createAbbrElement = createAbbrElement;
@@ -54,9 +57,12 @@ exports.createAudioElement = createAudioElement;
 exports.createBDIElement = createBDIElement;
 exports.createBDOElement = createBDOElement;
 exports.createBElement = createBElement;
+exports.createBRElement = createBRElement;
 exports.createBaseElement = createBaseElement;
 exports.createBaseFontElement = createBaseFontElement;
 exports.createBlockQuoteElement = createBlockQuoteElement;
+exports.createBodyElement = createBodyElement;
+exports.createButtonElement = createButtonElement;
 exports.createElement = createElement;
 exports.setAttributes = setAttributes;
 exports.setProperties = setProperties;

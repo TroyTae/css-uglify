@@ -38,5 +38,8 @@ function createBaseFontElement() { return createElement('basefont'); }
 function createBDIElement() { return createElement('bdi'); }
 function createBDOElement() { return createElement('bdo'); }
 function createBlockQuoteElement() { return createElement('blockquote'); }
+function createBodyElement() { return createElement('body'); }
+function createBRElement() { return createElement('br'); }
+function createButtonElement() { return createElement('button'); }
 
-export { createAElement, createAbbrElement, createAddressElement, createAppletElement, createAreaElement, createArticleElement, createAsideElement, createAudioElement, createBDIElement, createBDOElement, createBElement, createBaseElement, createBaseFontElement, createBlockQuoteElement, createElement, setAttributes, setProperties };
+export { createAElement, createAbbrElement, createAddressElement, createAppletElement, createAreaElement, createArticleElement, createAsideElement, createAudioElement, createBDIElement, createBDOElement, createBElement, createBRElement, createBaseElement, createBaseFontElement, createBlockQuoteElement, createBodyElement, createButtonElement, createElement, setAttributes, setProperties };

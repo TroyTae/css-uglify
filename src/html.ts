@@ -15,6 +15,8 @@ function createBDIElement(): HTMLElement { return createElement('bdi'); }
 function createBDOElement(): HTMLElement { return createElement('bdo'); }
 function createBlockQuoteElement(): HTMLQuoteElement { return createElement('blockquote'); }
 function createBodyElement(): HTMLBodyElement { return createElement('body'); }
+function createBRElement(): HTMLBRElement { return createElement('br'); }
+function createButtonElement(): HTMLButtonElement { return createElement('button'); }
 
 export {
   createAElement,
@@ -32,4 +34,6 @@ export {
   createBDOElement,
   createBlockQuoteElement,
   createBodyElement,
+  createBRElement,
+  createButtonElement,
 };
