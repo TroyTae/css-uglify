@@ -11,4 +11,5 @@ declare function createBaseElement(): HTMLBaseElement;
 declare function createBaseFontElement(): HTMLBaseFontElement;
 declare function createBDIElement(): HTMLElement;
 declare function createBDOElement(): HTMLElement;
-export { createAElement, createAbbrElement, createAddressElement, createAppletElement, createAreaElement, createArticleElement, createAsideElement, createAudioElement, createBElement, createBaseElement, createBaseFontElement, createBDIElement, createBDOElement, };
+declare function createBlockQuoteElement(): HTMLQuoteElement;
+export { createAElement, createAbbrElement, createAddressElement, createAppletElement, createAreaElement, createArticleElement, createAsideElement, createAudioElement, createBElement, createBaseElement, createBaseFontElement, createBDIElement, createBDOElement, createBlockQuoteElement, };

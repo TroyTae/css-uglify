@@ -13,6 +13,7 @@ function createBaseElement(): HTMLBaseElement { return createElement('base'); }
 function createBaseFontElement(): HTMLBaseFontElement { return createElement('basefont'); }
 function createBDIElement(): HTMLElement { return createElement('bdi'); }
 function createBDOElement(): HTMLElement { return createElement('bdo'); }
+function createBlockQuoteElement(): HTMLQuoteElement { return createElement('blockquote'); }
 
 export {
   createAElement,
@@ -28,4 +29,5 @@ export {
   createBaseFontElement,
   createBDIElement,
   createBDOElement,
+  createBlockQuoteElement,
 };

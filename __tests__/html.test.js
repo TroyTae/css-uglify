@@ -12,6 +12,7 @@ const {
   createBaseFontElement,
   createBDIElement,
   createBDOElement,
+  createBlockQuoteElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -28,4 +29,5 @@ test('HTMLElement creation test', () => {
   expect(createBaseFontElement().tagName).toBe('BASEFONT');
   expect(createBDIElement().tagName).toBe('BDI');
   expect(createBDOElement().tagName).toBe('BDO');
+  expect(createBlockQuoteElement().tagName).toBe('BLOCKQUOTE');
 });

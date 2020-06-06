@@ -15,6 +15,7 @@ import {
   createBaseFontElement,
   createBDIElement,
   createBDOElement,
+  createBlockQuoteElement,
 } from './html';
 
 export {
@@ -34,4 +35,5 @@ export {
   createBaseFontElement,
   createBDIElement,
   createBDOElement,
+  createBlockQuoteElement,
 };
