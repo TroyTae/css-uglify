@@ -6,6 +6,7 @@ import {
   createAbbrElement,
   createAddressElement,
   createAppletElement,
+  createAreaElement,
 } from './html';
 
 export {
@@ -16,4 +17,5 @@ export {
   createAbbrElement,
   createAddressElement,
   createAppletElement,
+  createAreaElement,
 };
