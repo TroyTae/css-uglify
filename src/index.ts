@@ -7,6 +7,7 @@ import {
   createAddressElement,
   createAppletElement,
   createAreaElement,
+  createArticleElement,
 } from './html';
 
 export {
@@ -18,4 +19,5 @@ export {
   createAddressElement,
   createAppletElement,
   createAreaElement,
+  createArticleElement,
 };
