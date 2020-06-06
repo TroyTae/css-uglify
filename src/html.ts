@@ -14,6 +14,7 @@ function createBaseFontElement(): HTMLBaseFontElement { return createElement('ba
 function createBDIElement(): HTMLElement { return createElement('bdi'); }
 function createBDOElement(): HTMLElement { return createElement('bdo'); }
 function createBlockQuoteElement(): HTMLQuoteElement { return createElement('blockquote'); }
+function createBodyElement(): HTMLBodyElement { return createElement('body'); }
 
 export {
   createAElement,
@@ -30,4 +31,5 @@ export {
   createBDIElement,
   createBDOElement,
   createBlockQuoteElement,
+  createBodyElement,
 };

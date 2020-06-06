@@ -16,6 +16,7 @@ import {
   createBDIElement,
   createBDOElement,
   createBlockQuoteElement,
+  createBodyElement,
 } from './html';
 
 export {
@@ -36,4 +37,5 @@ export {
   createBDIElement,
   createBDOElement,
   createBlockQuoteElement,
+  createBodyElement,
 };
