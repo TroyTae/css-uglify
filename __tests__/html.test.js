@@ -18,6 +18,8 @@ const {
   createButtonElement,
   createCanvasElement,
   createCaptionElement,
+  createCiteElement,
+  createCodeElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -40,4 +42,6 @@ test('HTMLElement creation test', () => {
   expect(createButtonElement().tagName).toBe('BUTTON');
   expect(createCanvasElement().tagName).toBe('CANVAS');
   expect(createCaptionElement().tagName).toBe('CAPTION');
+  expect(createCiteElement().tagName).toBe('CITE');
+  expect(createCodeElement().tagName).toBe('CODE');
 });
