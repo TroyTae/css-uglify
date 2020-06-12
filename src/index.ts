@@ -19,6 +19,7 @@ import {
   createBodyElement,
   createBRElement,
   createButtonElement,
+  createCanvasElement,
 } from './html';
 
 export {
@@ -42,4 +43,5 @@ export {
   createBodyElement,
   createBRElement,
   createButtonElement,
+  createCanvasElement,
 };

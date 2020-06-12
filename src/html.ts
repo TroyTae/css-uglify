@@ -17,6 +17,7 @@ function createBlockQuoteElement(): HTMLQuoteElement { return createElement('blo
 function createBodyElement(): HTMLBodyElement { return createElement('body'); }
 function createBRElement(): HTMLBRElement { return createElement('br'); }
 function createButtonElement(): HTMLButtonElement { return createElement('button'); }
+function createCanvasElement(): HTMLCanvasElement { return createElement('canvas'); }
 
 export {
   createAElement,
@@ -36,4 +37,5 @@ export {
   createBodyElement,
   createBRElement,
   createButtonElement,
+  createCanvasElement,
 };
