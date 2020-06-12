@@ -23,6 +23,7 @@ import {
   createCaptionElement,
   createCiteElement,
   createCodeElement,
+  createColElement,
 } from './html';
 
 export {
@@ -50,4 +51,5 @@ export {
   createCaptionElement,
   createCiteElement,
   createCodeElement,
+  createColElement,
 };

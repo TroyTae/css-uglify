@@ -21,6 +21,7 @@ function createCanvasElement(): HTMLCanvasElement { return createElement('canvas
 function createCaptionElement(): HTMLTableCaptionElement { return createElement('caption'); }
 function createCiteElement(): HTMLElement { return createElement('cite'); }
 function createCodeElement(): HTMLElement { return createElement('code'); }
+function createColElement(): HTMLTableColElement { return createElement('col'); }
 
 export {
   createAElement,
@@ -44,4 +45,5 @@ export {
   createCaptionElement,
   createCiteElement,
   createCodeElement,
+  createColElement,
 };
