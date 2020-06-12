@@ -24,6 +24,7 @@ import {
   createCiteElement,
   createCodeElement,
   createColElement,
+  createColGroupElement,
 } from './html';
 
 export {
@@ -52,4 +53,5 @@ export {
   createCiteElement,
   createCodeElement,
   createColElement,
+  createColGroupElement,
 };

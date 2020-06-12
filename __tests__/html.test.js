@@ -21,6 +21,7 @@ const {
   createCiteElement,
   createCodeElement,
   createColElement,
+  createColGroupElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -46,4 +47,5 @@ test('HTMLElement creation test', () => {
   expect(createCiteElement().tagName).toBe('CITE');
   expect(createCodeElement().tagName).toBe('CODE');
   expect(createColElement().tagName).toBe('COL');
+  expect(createColGroupElement().tagName).toBe('COLGROUP');
 });

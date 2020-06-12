@@ -22,6 +22,7 @@ function createCaptionElement(): HTMLTableCaptionElement { return createElement(
 function createCiteElement(): HTMLElement { return createElement('cite'); }
 function createCodeElement(): HTMLElement { return createElement('code'); }
 function createColElement(): HTMLTableColElement { return createElement('col'); }
+function createColGroupElement(): HTMLTableColElement { return createElement('colgroup'); }
 
 export {
   createAElement,
@@ -46,4 +47,5 @@ export {
   createCiteElement,
   createCodeElement,
   createColElement,
+  createColGroupElement,
 };
