@@ -20,6 +20,7 @@ import {
   createBRElement,
   createButtonElement,
   createCanvasElement,
+  createCaptionElement,
 } from './html';
 
 export {
@@ -44,4 +45,5 @@ export {
   createBRElement,
   createButtonElement,
   createCanvasElement,
+  createCaptionElement,
 };

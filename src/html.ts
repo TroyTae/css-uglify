@@ -18,6 +18,7 @@ function createBodyElement(): HTMLBodyElement { return createElement('body'); }
 function createBRElement(): HTMLBRElement { return createElement('br'); }
 function createButtonElement(): HTMLButtonElement { return createElement('button'); }
 function createCanvasElement(): HTMLCanvasElement { return createElement('canvas'); }
+function createCaptionElement(): HTMLTableCaptionElement { return createElement('caption'); }
 
 export {
   createAElement,
@@ -38,4 +39,5 @@ export {
   createBRElement,
   createButtonElement,
   createCanvasElement,
+  createCaptionElement,
 };
