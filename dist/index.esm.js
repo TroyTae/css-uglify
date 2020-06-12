@@ -41,5 +41,11 @@ function createBlockQuoteElement() { return createElement('blockquote'); }
 function createBodyElement() { return createElement('body'); }
 function createBRElement() { return createElement('br'); }
 function createButtonElement() { return createElement('button'); }
+function createCanvasElement() { return createElement('canvas'); }
+function createCaptionElement() { return createElement('caption'); }
+function createCiteElement() { return createElement('cite'); }
+function createCodeElement() { return createElement('code'); }
+function createColElement() { return createElement('col'); }
+function createColGroupElement() { return createElement('colgroup'); }
 
-export { createAElement, createAbbrElement, createAddressElement, createAppletElement, createAreaElement, createArticleElement, createAsideElement, createAudioElement, createBDIElement, createBDOElement, createBElement, createBRElement, createBaseElement, createBaseFontElement, createBlockQuoteElement, createBodyElement, createButtonElement, createElement, setAttributes, setProperties };
+export { createAElement, createAbbrElement, createAddressElement, createAppletElement, createAreaElement, createArticleElement, createAsideElement, createAudioElement, createBDIElement, createBDOElement, createBElement, createBRElement, createBaseElement, createBaseFontElement, createBlockQuoteElement, createBodyElement, createButtonElement, createCanvasElement, createCaptionElement, createCiteElement, createCodeElement, createColElement, createColGroupElement, createElement, setAttributes, setProperties };

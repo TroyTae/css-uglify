@@ -45,6 +45,12 @@ function createBlockQuoteElement() { return createElement('blockquote'); }
 function createBodyElement() { return createElement('body'); }
 function createBRElement() { return createElement('br'); }
 function createButtonElement() { return createElement('button'); }
+function createCanvasElement() { return createElement('canvas'); }
+function createCaptionElement() { return createElement('caption'); }
+function createCiteElement() { return createElement('cite'); }
+function createCodeElement() { return createElement('code'); }
+function createColElement() { return createElement('col'); }
+function createColGroupElement() { return createElement('colgroup'); }
 
 exports.createAElement = createAElement;
 exports.createAbbrElement = createAbbrElement;
@@ -63,6 +69,12 @@ exports.createBaseFontElement = createBaseFontElement;
 exports.createBlockQuoteElement = createBlockQuoteElement;
 exports.createBodyElement = createBodyElement;
 exports.createButtonElement = createButtonElement;
+exports.createCanvasElement = createCanvasElement;
+exports.createCaptionElement = createCaptionElement;
+exports.createCiteElement = createCiteElement;
+exports.createCodeElement = createCodeElement;
+exports.createColElement = createColElement;
+exports.createColGroupElement = createColGroupElement;
 exports.createElement = createElement;
 exports.setAttributes = setAttributes;
 exports.setProperties = setProperties;
