@@ -34,6 +34,7 @@ import {
   createDialogElement,
   createDirElement,
   createDivElement,
+  createDlElement,
 } from './html';
 
 export {
@@ -72,4 +73,5 @@ export {
   createDialogElement,
   createDirElement,
   createDivElement,
+  createDlElement,
 };

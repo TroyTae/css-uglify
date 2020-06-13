@@ -31,6 +31,7 @@ const {
   createDialogElement,
   createDirElement,
   createDivElement,
+  createDlElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -66,4 +67,5 @@ test('HTMLElement creation test', () => {
   expect(createDialogElement().tagName).toBe('DIALOG');
   expect(createDirElement().tagName).toBe('DIR');
   expect(createDivElement().tagName).toBe('DIV');
+  expect(createDlElement().tagName).toBe('DL');
 });
