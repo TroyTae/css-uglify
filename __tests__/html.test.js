@@ -25,6 +25,8 @@ const {
   createDataElement,
   createDataListElement,
   createDdElement,
+  createDelElement,
+  createDetailsElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -54,4 +56,6 @@ test('HTMLElement creation test', () => {
   expect(createDataElement().tagName).toBe('DATA');
   expect(createDataListElement().tagName).toBe('DATALIST');
   expect(createDdElement().tagName).toBe('DD');
+  expect(createDelElement().tagName).toBe('DEL');
+  expect(createDetailsElement().tagName).toBe('DETAILS');
 });

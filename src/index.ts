@@ -28,6 +28,8 @@ import {
   createDataElement,
   createDataListElement,
   createDdElement,
+  createDelElement,
+  createDetailsElement,
 } from './html';
 
 export {
@@ -60,4 +62,6 @@ export {
   createDataElement,
   createDataListElement,
   createDdElement,
+  createDelElement,
+  createDetailsElement,
 };
