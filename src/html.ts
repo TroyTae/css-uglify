@@ -11,11 +11,11 @@ function createAudioElement(): HTMLAudioElement { return createElement('audio');
 function createBElement(): HTMLElement { return createElement('b'); }
 function createBaseElement(): HTMLBaseElement { return createElement('base'); }
 function createBaseFontElement(): HTMLBaseFontElement { return createElement('basefont'); }
-function createBDIElement(): HTMLElement { return createElement('bdi'); }
-function createBDOElement(): HTMLElement { return createElement('bdo'); }
+function createBdiElement(): HTMLElement { return createElement('bdi'); }
+function createBdoElement(): HTMLElement { return createElement('bdo'); }
 function createBlockQuoteElement(): HTMLQuoteElement { return createElement('blockquote'); }
 function createBodyElement(): HTMLBodyElement { return createElement('body'); }
-function createBRElement(): HTMLBRElement { return createElement('br'); }
+function createBrElement(): HTMLBRElement { return createElement('br'); }
 function createButtonElement(): HTMLButtonElement { return createElement('button'); }
 function createCanvasElement(): HTMLCanvasElement { return createElement('canvas'); }
 function createCaptionElement(): HTMLTableCaptionElement { return createElement('caption'); }
@@ -25,6 +25,7 @@ function createColElement(): HTMLTableColElement { return createElement('col'); 
 function createColGroupElement(): HTMLTableColElement { return createElement('colgroup'); }
 function createDataElement(): HTMLDataElement { return createElement('data'); }
 function createDataListElement(): HTMLDataListElement { return createElement('datalist'); }
+function createDdElement(): HTMLElement { return createElement('dd'); }
 
 export {
   createAElement,
@@ -38,11 +39,11 @@ export {
   createBElement,
   createBaseElement,
   createBaseFontElement,
-  createBDIElement,
-  createBDOElement,
+  createBdiElement,
+  createBdoElement,
   createBlockQuoteElement,
   createBodyElement,
-  createBRElement,
+  createBrElement,
   createButtonElement,
   createCanvasElement,
   createCaptionElement,
@@ -52,4 +53,5 @@ export {
   createColGroupElement,
   createDataElement,
   createDataListElement,
+  createDdElement,
 };

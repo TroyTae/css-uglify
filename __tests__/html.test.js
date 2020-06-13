@@ -10,11 +10,11 @@ const {
   createBElement,
   createBaseElement,
   createBaseFontElement,
-  createBDIElement,
-  createBDOElement,
+  createBdiElement,
+  createBdoElement,
   createBlockQuoteElement,
   createBodyElement,
-  createBRElement,
+  createBrElement,
   createButtonElement,
   createCanvasElement,
   createCaptionElement,
@@ -24,6 +24,7 @@ const {
   createColGroupElement,
   createDataElement,
   createDataListElement,
+  createDdElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -38,11 +39,11 @@ test('HTMLElement creation test', () => {
   expect(createBElement().tagName).toBe('B');
   expect(createBaseElement().tagName).toBe('BASE');
   expect(createBaseFontElement().tagName).toBe('BASEFONT');
-  expect(createBDIElement().tagName).toBe('BDI');
-  expect(createBDOElement().tagName).toBe('BDO');
+  expect(createBdiElement().tagName).toBe('BDI');
+  expect(createBdoElement().tagName).toBe('BDO');
   expect(createBlockQuoteElement().tagName).toBe('BLOCKQUOTE');
   expect(createBodyElement().tagName).toBe('BODY');
-  expect(createBRElement().tagName).toBe('BR');
+  expect(createBrElement().tagName).toBe('BR');
   expect(createButtonElement().tagName).toBe('BUTTON');
   expect(createCanvasElement().tagName).toBe('CANVAS');
   expect(createCaptionElement().tagName).toBe('CAPTION');
@@ -52,4 +53,5 @@ test('HTMLElement creation test', () => {
   expect(createColGroupElement().tagName).toBe('COLGROUP');
   expect(createDataElement().tagName).toBe('DATA');
   expect(createDataListElement().tagName).toBe('DATALIST');
+  expect(createDdElement().tagName).toBe('DD');
 });

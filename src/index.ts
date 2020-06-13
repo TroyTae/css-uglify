@@ -13,11 +13,11 @@ import {
   createBElement,
   createBaseElement,
   createBaseFontElement,
-  createBDIElement,
-  createBDOElement,
+  createBdiElement,
+  createBdoElement,
   createBlockQuoteElement,
   createBodyElement,
-  createBRElement,
+  createBrElement,
   createButtonElement,
   createCanvasElement,
   createCaptionElement,
@@ -27,6 +27,7 @@ import {
   createColGroupElement,
   createDataElement,
   createDataListElement,
+  createDdElement,
 } from './html';
 
 export {
@@ -44,11 +45,11 @@ export {
   createBElement,
   createBaseElement,
   createBaseFontElement,
-  createBDIElement,
-  createBDOElement,
+  createBdiElement,
+  createBdoElement,
   createBlockQuoteElement,
   createBodyElement,
-  createBRElement,
+  createBrElement,
   createButtonElement,
   createCanvasElement,
   createCaptionElement,
@@ -58,4 +59,5 @@ export {
   createColGroupElement,
   createDataElement,
   createDataListElement,
+  createDdElement,
 };

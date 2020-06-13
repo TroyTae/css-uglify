@@ -39,11 +39,11 @@ function createAudioElement() { return createElement('audio'); }
 function createBElement() { return createElement('b'); }
 function createBaseElement() { return createElement('base'); }
 function createBaseFontElement() { return createElement('basefont'); }
-function createBDIElement() { return createElement('bdi'); }
-function createBDOElement() { return createElement('bdo'); }
+function createBdiElement() { return createElement('bdi'); }
+function createBdoElement() { return createElement('bdo'); }
 function createBlockQuoteElement() { return createElement('blockquote'); }
 function createBodyElement() { return createElement('body'); }
-function createBRElement() { return createElement('br'); }
+function createBrElement() { return createElement('br'); }
 function createButtonElement() { return createElement('button'); }
 function createCanvasElement() { return createElement('canvas'); }
 function createCaptionElement() { return createElement('caption'); }
@@ -51,6 +51,9 @@ function createCiteElement() { return createElement('cite'); }
 function createCodeElement() { return createElement('code'); }
 function createColElement() { return createElement('col'); }
 function createColGroupElement() { return createElement('colgroup'); }
+function createDataElement() { return createElement('data'); }
+function createDataListElement() { return createElement('datalist'); }
+function createDdElement() { return createElement('dd'); }
 
 exports.createAElement = createAElement;
 exports.createAbbrElement = createAbbrElement;
@@ -60,14 +63,14 @@ exports.createAreaElement = createAreaElement;
 exports.createArticleElement = createArticleElement;
 exports.createAsideElement = createAsideElement;
 exports.createAudioElement = createAudioElement;
-exports.createBDIElement = createBDIElement;
-exports.createBDOElement = createBDOElement;
 exports.createBElement = createBElement;
-exports.createBRElement = createBRElement;
 exports.createBaseElement = createBaseElement;
 exports.createBaseFontElement = createBaseFontElement;
+exports.createBdiElement = createBdiElement;
+exports.createBdoElement = createBdoElement;
 exports.createBlockQuoteElement = createBlockQuoteElement;
 exports.createBodyElement = createBodyElement;
+exports.createBrElement = createBrElement;
 exports.createButtonElement = createButtonElement;
 exports.createCanvasElement = createCanvasElement;
 exports.createCaptionElement = createCaptionElement;
@@ -75,6 +78,9 @@ exports.createCiteElement = createCiteElement;
 exports.createCodeElement = createCodeElement;
 exports.createColElement = createColElement;
 exports.createColGroupElement = createColGroupElement;
+exports.createDataElement = createDataElement;
+exports.createDataListElement = createDataListElement;
+exports.createDdElement = createDdElement;
 exports.createElement = createElement;
 exports.setAttributes = setAttributes;
 exports.setProperties = setProperties;
