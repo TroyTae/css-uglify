@@ -35,6 +35,7 @@ import {
   createDirElement,
   createDivElement,
   createDlElement,
+  createDtElement,
 } from './html';
 
 export {
@@ -74,4 +75,5 @@ export {
   createDirElement,
   createDivElement,
   createDlElement,
+  createDtElement,
 };
