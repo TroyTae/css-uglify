@@ -30,6 +30,7 @@ function createDelElement(): HTMLModElement { return createElement('del'); }
 function createDetailsElement(): HTMLDetailsElement { return createElement('details'); }
 function createDfnElement(): HTMLElement { return createElement('dfn'); }
 function createDialogElement(): HTMLDialogElement { return createElement('dialog'); }
+function createDirElement(): HTMLDirectoryElement { return createElement('dir'); }
 
 export {
   createAElement,
@@ -62,4 +63,5 @@ export {
   createDetailsElement,
   createDfnElement,
   createDialogElement,
+  createDirElement,
 };
