@@ -50,5 +50,7 @@ function createColGroupElement() { return createElement('colgroup'); }
 function createDataElement() { return createElement('data'); }
 function createDataListElement() { return createElement('datalist'); }
 function createDdElement() { return createElement('dd'); }
+function createDelElement() { return createElement('del'); }
+function createDetailsElement() { return createElement('details'); }
 
-export { createAElement, createAbbrElement, createAddressElement, createAppletElement, createAreaElement, createArticleElement, createAsideElement, createAudioElement, createBElement, createBaseElement, createBaseFontElement, createBdiElement, createBdoElement, createBlockQuoteElement, createBodyElement, createBrElement, createButtonElement, createCanvasElement, createCaptionElement, createCiteElement, createCodeElement, createColElement, createColGroupElement, createDataElement, createDataListElement, createDdElement, createElement, setAttributes, setProperties };
+export { createAElement, createAbbrElement, createAddressElement, createAppletElement, createAreaElement, createArticleElement, createAsideElement, createAudioElement, createBElement, createBaseElement, createBaseFontElement, createBdiElement, createBdoElement, createBlockQuoteElement, createBodyElement, createBrElement, createButtonElement, createCanvasElement, createCaptionElement, createCiteElement, createCodeElement, createColElement, createColGroupElement, createDataElement, createDataListElement, createDdElement, createDelElement, createDetailsElement, createElement, setAttributes, setProperties };

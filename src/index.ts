@@ -30,6 +30,7 @@ import {
   createDdElement,
   createDelElement,
   createDetailsElement,
+  createDfnElement,
 } from './html';
 
 export {
@@ -64,4 +65,5 @@ export {
   createDdElement,
   createDelElement,
   createDetailsElement,
+  createDfnElement,
 };

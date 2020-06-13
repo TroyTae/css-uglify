@@ -54,6 +54,8 @@ function createColGroupElement() { return createElement('colgroup'); }
 function createDataElement() { return createElement('data'); }
 function createDataListElement() { return createElement('datalist'); }
 function createDdElement() { return createElement('dd'); }
+function createDelElement() { return createElement('del'); }
+function createDetailsElement() { return createElement('details'); }
 
 exports.createAElement = createAElement;
 exports.createAbbrElement = createAbbrElement;
@@ -81,6 +83,8 @@ exports.createColGroupElement = createColGroupElement;
 exports.createDataElement = createDataElement;
 exports.createDataListElement = createDataListElement;
 exports.createDdElement = createDdElement;
+exports.createDelElement = createDelElement;
+exports.createDetailsElement = createDetailsElement;
 exports.createElement = createElement;
 exports.setAttributes = setAttributes;
 exports.setProperties = setProperties;

@@ -28,6 +28,7 @@ function createDataListElement(): HTMLDataListElement { return createElement('da
 function createDdElement(): HTMLElement { return createElement('dd'); }
 function createDelElement(): HTMLModElement { return createElement('del'); }
 function createDetailsElement(): HTMLDetailsElement { return createElement('details'); }
+function createDfnElement(): HTMLElement { return createElement('dfn'); }
 
 export {
   createAElement,
@@ -58,4 +59,5 @@ export {
   createDdElement,
   createDelElement,
   createDetailsElement,
+  createDfnElement,
 };

@@ -27,6 +27,7 @@ const {
   createDdElement,
   createDelElement,
   createDetailsElement,
+  createDfnElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -58,4 +59,5 @@ test('HTMLElement creation test', () => {
   expect(createDdElement().tagName).toBe('DD');
   expect(createDelElement().tagName).toBe('DEL');
   expect(createDetailsElement().tagName).toBe('DETAILS');
+  expect(createDfnElement().tagName).toBe('DFN');
 });
