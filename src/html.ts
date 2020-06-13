@@ -24,6 +24,7 @@ function createCodeElement(): HTMLElement { return createElement('code'); }
 function createColElement(): HTMLTableColElement { return createElement('col'); }
 function createColGroupElement(): HTMLTableColElement { return createElement('colgroup'); }
 function createDataElement(): HTMLDataElement { return createElement('data'); }
+function createDataListElement(): HTMLDataListElement { return createElement('datalist'); }
 
 export {
   createAElement,
@@ -50,4 +51,5 @@ export {
   createColElement,
   createColGroupElement,
   createDataElement,
+  createDataListElement,
 };

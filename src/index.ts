@@ -26,6 +26,7 @@ import {
   createColElement,
   createColGroupElement,
   createDataElement,
+  createDataListElement,
 } from './html';
 
 export {
@@ -56,4 +57,5 @@ export {
   createColElement,
   createColGroupElement,
   createDataElement,
+  createDataListElement,
 };
