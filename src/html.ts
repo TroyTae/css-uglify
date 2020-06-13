@@ -31,6 +31,7 @@ function createDetailsElement(): HTMLDetailsElement { return createElement('deta
 function createDfnElement(): HTMLElement { return createElement('dfn'); }
 function createDialogElement(): HTMLDialogElement { return createElement('dialog'); }
 function createDirElement(): HTMLDirectoryElement { return createElement('dir'); }
+function createDivElement(): HTMLDivElement { return createElement('div'); }
 
 export {
   createAElement,
@@ -64,4 +65,5 @@ export {
   createDfnElement,
   createDialogElement,
   createDirElement,
+  createDivElement,
 };

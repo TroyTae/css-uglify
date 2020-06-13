@@ -33,6 +33,7 @@ import {
   createDfnElement,
   createDialogElement,
   createDirElement,
+  createDivElement,
 } from './html';
 
 export {
@@ -70,4 +71,5 @@ export {
   createDfnElement,
   createDialogElement,
   createDirElement,
+  createDivElement,
 };
