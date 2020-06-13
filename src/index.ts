@@ -31,6 +31,7 @@ import {
   createDelElement,
   createDetailsElement,
   createDfnElement,
+  createDialogElement,
 } from './html';
 
 export {
@@ -66,4 +67,5 @@ export {
   createDelElement,
   createDetailsElement,
   createDfnElement,
+  createDialogElement,
 };

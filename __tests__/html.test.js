@@ -28,6 +28,7 @@ const {
   createDelElement,
   createDetailsElement,
   createDfnElement,
+  createDialogElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -60,4 +61,5 @@ test('HTMLElement creation test', () => {
   expect(createDelElement().tagName).toBe('DEL');
   expect(createDetailsElement().tagName).toBe('DETAILS');
   expect(createDfnElement().tagName).toBe('DFN');
+  expect(createDialogElement().tagName).toBe('DIALOG');
 });
