@@ -22,6 +22,7 @@ const {
   createCodeElement,
   createColElement,
   createColGroupElement,
+  createDataElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -48,4 +49,5 @@ test('HTMLElement creation test', () => {
   expect(createCodeElement().tagName).toBe('CODE');
   expect(createColElement().tagName).toBe('COL');
   expect(createColGroupElement().tagName).toBe('COLGROUP');
+  expect(createDataElement().tagName).toBe('DATA');
 });

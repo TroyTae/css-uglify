@@ -23,6 +23,7 @@ function createCiteElement(): HTMLElement { return createElement('cite'); }
 function createCodeElement(): HTMLElement { return createElement('code'); }
 function createColElement(): HTMLTableColElement { return createElement('col'); }
 function createColGroupElement(): HTMLTableColElement { return createElement('colgroup'); }
+function createDataElement(): HTMLDataElement { return createElement('data'); }
 
 export {
   createAElement,
@@ -48,4 +49,5 @@ export {
   createCodeElement,
   createColElement,
   createColGroupElement,
+  createDataElement,
 };
