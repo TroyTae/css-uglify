@@ -33,7 +33,7 @@ function createDialogElement(): HTMLDialogElement { return createElement('dialog
 function createDirElement(): HTMLDirectoryElement { return createElement('dir'); }
 function createDivElement(): HTMLDivElement { return createElement('div'); }
 function createDlElement(): HTMLDListElement { return createElement('dl'); }
-function createDtElement(): HTMLDListElement { return createElement('dt'); }
+function createDtElement(): HTMLElement { return createElement('dt'); }
 
 export {
   createAElement,

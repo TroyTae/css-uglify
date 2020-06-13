@@ -52,5 +52,11 @@ function createDataListElement() { return createElement('datalist'); }
 function createDdElement() { return createElement('dd'); }
 function createDelElement() { return createElement('del'); }
 function createDetailsElement() { return createElement('details'); }
+function createDfnElement() { return createElement('dfn'); }
+function createDialogElement() { return createElement('dialog'); }
+function createDirElement() { return createElement('dir'); }
+function createDivElement() { return createElement('div'); }
+function createDlElement() { return createElement('dl'); }
+function createDtElement() { return createElement('dt'); }
 
-export { createAElement, createAbbrElement, createAddressElement, createAppletElement, createAreaElement, createArticleElement, createAsideElement, createAudioElement, createBElement, createBaseElement, createBaseFontElement, createBdiElement, createBdoElement, createBlockQuoteElement, createBodyElement, createBrElement, createButtonElement, createCanvasElement, createCaptionElement, createCiteElement, createCodeElement, createColElement, createColGroupElement, createDataElement, createDataListElement, createDdElement, createDelElement, createDetailsElement, createElement, setAttributes, setProperties };
+export { createAElement, createAbbrElement, createAddressElement, createAppletElement, createAreaElement, createArticleElement, createAsideElement, createAudioElement, createBElement, createBaseElement, createBaseFontElement, createBdiElement, createBdoElement, createBlockQuoteElement, createBodyElement, createBrElement, createButtonElement, createCanvasElement, createCaptionElement, createCiteElement, createCodeElement, createColElement, createColGroupElement, createDataElement, createDataListElement, createDdElement, createDelElement, createDetailsElement, createDfnElement, createDialogElement, createDirElement, createDivElement, createDlElement, createDtElement, createElement, setAttributes, setProperties };

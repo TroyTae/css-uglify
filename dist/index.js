@@ -56,6 +56,12 @@ function createDataListElement() { return createElement('datalist'); }
 function createDdElement() { return createElement('dd'); }
 function createDelElement() { return createElement('del'); }
 function createDetailsElement() { return createElement('details'); }
+function createDfnElement() { return createElement('dfn'); }
+function createDialogElement() { return createElement('dialog'); }
+function createDirElement() { return createElement('dir'); }
+function createDivElement() { return createElement('div'); }
+function createDlElement() { return createElement('dl'); }
+function createDtElement() { return createElement('dt'); }
 
 exports.createAElement = createAElement;
 exports.createAbbrElement = createAbbrElement;
@@ -85,6 +91,12 @@ exports.createDataListElement = createDataListElement;
 exports.createDdElement = createDdElement;
 exports.createDelElement = createDelElement;
 exports.createDetailsElement = createDetailsElement;
+exports.createDfnElement = createDfnElement;
+exports.createDialogElement = createDialogElement;
+exports.createDirElement = createDirElement;
+exports.createDivElement = createDivElement;
+exports.createDlElement = createDlElement;
+exports.createDtElement = createDtElement;
 exports.createElement = createElement;
 exports.setAttributes = setAttributes;
 exports.setProperties = setProperties;
