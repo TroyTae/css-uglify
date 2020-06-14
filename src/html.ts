@@ -35,6 +35,7 @@ function createDivElement(): HTMLDivElement { return createElement('div'); }
 function createDlElement(): HTMLDListElement { return createElement('dl'); }
 function createDtElement(): HTMLElement { return createElement('dt'); }
 function createEmElement(): HTMLElement { return createElement('em'); }
+function createEmbedElement(): HTMLEmbedElement { return createElement('embed'); }
 
 export {
   createAElement,
@@ -71,4 +72,6 @@ export {
   createDivElement,
   createDlElement,
   createDtElement,
+  createEmElement,
+  createEmbedElement,
 };

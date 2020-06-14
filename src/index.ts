@@ -36,6 +36,8 @@ import {
   createDivElement,
   createDlElement,
   createDtElement,
+  createEmElement,
+  createEmbedElement,
 } from './html';
 
 export {
@@ -76,4 +78,6 @@ export {
   createDivElement,
   createDlElement,
   createDtElement,
+  createEmElement,
+  createEmbedElement,
 };
