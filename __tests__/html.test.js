@@ -42,6 +42,7 @@ const {
   createFooterElement,
   createFormElement,
   createFrameElement,
+  createFrameSetElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -88,4 +89,5 @@ test('HTMLElement creation test', () => {
   expect(createFooterElement().tagName).toBe('FOOTER');
   expect(createFormElement().tagName).toBe('FORM');
   expect(createFrameElement().tagName).toBe('FRAME');
+  expect(createFrameSetElement().tagName).toBe('FRAMESET');
 });

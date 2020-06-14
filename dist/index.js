@@ -64,6 +64,14 @@ function createDlElement() { return createElement('dl'); }
 function createDtElement() { return createElement('dt'); }
 function createEmElement() { return createElement('em'); }
 function createEmbedElement() { return createElement('embed'); }
+function createFieldSetElement() { return createElement('fieldset'); }
+function createFigcaptionElement() { return createElement('figcaption'); }
+function createFigureElement() { return createElement('figure'); }
+function createFontElement() { return createElement('font'); }
+function createFooterElement() { return createElement('footer'); }
+function createFormElement() { return createElement('form'); }
+function createFrameElement() { return createElement('frame'); }
+function createFrameSetElement() { return createElement('frameset'); }
 
 exports.createAbbrElement = createAbbrElement;
 exports.createAddressElement = createAddressElement;
@@ -102,5 +110,13 @@ exports.createDtElement = createDtElement;
 exports.createElement = createElement;
 exports.createEmElement = createEmElement;
 exports.createEmbedElement = createEmbedElement;
+exports.createFieldSetElement = createFieldSetElement;
+exports.createFigcaptionElement = createFigcaptionElement;
+exports.createFigureElement = createFigureElement;
+exports.createFontElement = createFontElement;
+exports.createFooterElement = createFooterElement;
+exports.createFormElement = createFormElement;
+exports.createFrameElement = createFrameElement;
+exports.createFrameSetElement = createFrameSetElement;
 exports.setAttributes = setAttributes;
 exports.setProperties = setProperties;

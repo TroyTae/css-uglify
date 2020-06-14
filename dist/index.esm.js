@@ -60,5 +60,13 @@ function createDlElement() { return createElement('dl'); }
 function createDtElement() { return createElement('dt'); }
 function createEmElement() { return createElement('em'); }
 function createEmbedElement() { return createElement('embed'); }
+function createFieldSetElement() { return createElement('fieldset'); }
+function createFigcaptionElement() { return createElement('figcaption'); }
+function createFigureElement() { return createElement('figure'); }
+function createFontElement() { return createElement('font'); }
+function createFooterElement() { return createElement('footer'); }
+function createFormElement() { return createElement('form'); }
+function createFrameElement() { return createElement('frame'); }
+function createFrameSetElement() { return createElement('frameset'); }
 
-export { createAbbrElement, createAddressElement, createAnchorElement, createAppletElement, createAreaElement, createArticleElement, createAsideElement, createAudioElement, createBaseElement, createBaseFontElement, createBdiElement, createBdoElement, createBlockQuoteElement, createBodyElement, createBoldElement, createBrElement, createButtonElement, createCanvasElement, createCaptionElement, createCiteElement, createCodeElement, createColElement, createColGroupElement, createDataElement, createDataListElement, createDdElement, createDelElement, createDetailsElement, createDfnElement, createDialogElement, createDirElement, createDivElement, createDlElement, createDtElement, createElement, createEmElement, createEmbedElement, setAttributes, setProperties };
+export { createAbbrElement, createAddressElement, createAnchorElement, createAppletElement, createAreaElement, createArticleElement, createAsideElement, createAudioElement, createBaseElement, createBaseFontElement, createBdiElement, createBdoElement, createBlockQuoteElement, createBodyElement, createBoldElement, createBrElement, createButtonElement, createCanvasElement, createCaptionElement, createCiteElement, createCodeElement, createColElement, createColGroupElement, createDataElement, createDataListElement, createDdElement, createDelElement, createDetailsElement, createDfnElement, createDialogElement, createDirElement, createDivElement, createDlElement, createDtElement, createElement, createEmElement, createEmbedElement, createFieldSetElement, createFigcaptionElement, createFigureElement, createFontElement, createFooterElement, createFormElement, createFrameElement, createFrameSetElement, setAttributes, setProperties };
