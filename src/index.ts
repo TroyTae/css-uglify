@@ -2,7 +2,7 @@ import {createElement} from './element';
 import {setAttributes} from './attribute';
 import {setProperties} from './property';
 import {
-  createAElement,
+  createAnchorElement,
   createAbbrElement,
   createAddressElement,
   createAppletElement,
@@ -10,7 +10,7 @@ import {
   createArticleElement,
   createAsideElement,
   createAudioElement,
-  createBElement,
+  createBoldElement,
   createBaseElement,
   createBaseFontElement,
   createBdiElement,
@@ -44,7 +44,7 @@ export {
   createElement,
   setAttributes,
   setProperties,
-  createAElement,
+  createAnchorElement,
   createAbbrElement,
   createAddressElement,
   createAppletElement,
@@ -52,7 +52,7 @@ export {
   createArticleElement,
   createAsideElement,
   createAudioElement,
-  createBElement,
+  createBoldElement,
   createBaseElement,
   createBaseFontElement,
   createBdiElement,

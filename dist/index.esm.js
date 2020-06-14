@@ -24,7 +24,7 @@ function setProperties(element, propertyMap) {
     return element;
 }
 
-function createAElement() { return createElement('a'); }
+function createAnchorElement() { return createElement('a'); }
 function createAbbrElement() { return createElement('abbr'); }
 function createAddressElement() { return createElement('address'); }
 function createAppletElement() { return createElement('applet'); }
@@ -32,7 +32,7 @@ function createAreaElement() { return createElement('area'); }
 function createArticleElement() { return createElement('article'); }
 function createAsideElement() { return createElement('aside'); }
 function createAudioElement() { return createElement('audio'); }
-function createBElement() { return createElement('b'); }
+function createBoldElement() { return createElement('b'); }
 function createBaseElement() { return createElement('base'); }
 function createBaseFontElement() { return createElement('basefont'); }
 function createBdiElement() { return createElement('bdi'); }
@@ -58,5 +58,7 @@ function createDirElement() { return createElement('dir'); }
 function createDivElement() { return createElement('div'); }
 function createDlElement() { return createElement('dl'); }
 function createDtElement() { return createElement('dt'); }
+function createEmElement() { return createElement('em'); }
+function createEmbedElement() { return createElement('embed'); }
 
-export { createAElement, createAbbrElement, createAddressElement, createAppletElement, createAreaElement, createArticleElement, createAsideElement, createAudioElement, createBElement, createBaseElement, createBaseFontElement, createBdiElement, createBdoElement, createBlockQuoteElement, createBodyElement, createBrElement, createButtonElement, createCanvasElement, createCaptionElement, createCiteElement, createCodeElement, createColElement, createColGroupElement, createDataElement, createDataListElement, createDdElement, createDelElement, createDetailsElement, createDfnElement, createDialogElement, createDirElement, createDivElement, createDlElement, createDtElement, createElement, setAttributes, setProperties };
+export { createAbbrElement, createAddressElement, createAnchorElement, createAppletElement, createAreaElement, createArticleElement, createAsideElement, createAudioElement, createBaseElement, createBaseFontElement, createBdiElement, createBdoElement, createBlockQuoteElement, createBodyElement, createBoldElement, createBrElement, createButtonElement, createCanvasElement, createCaptionElement, createCiteElement, createCodeElement, createColElement, createColGroupElement, createDataElement, createDataListElement, createDdElement, createDelElement, createDetailsElement, createDfnElement, createDialogElement, createDirElement, createDivElement, createDlElement, createDtElement, createElement, createEmElement, createEmbedElement, setAttributes, setProperties };

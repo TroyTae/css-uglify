@@ -28,7 +28,7 @@ function setProperties(element, propertyMap) {
     return element;
 }
 
-function createAElement() { return createElement('a'); }
+function createAnchorElement() { return createElement('a'); }
 function createAbbrElement() { return createElement('abbr'); }
 function createAddressElement() { return createElement('address'); }
 function createAppletElement() { return createElement('applet'); }
@@ -36,7 +36,7 @@ function createAreaElement() { return createElement('area'); }
 function createArticleElement() { return createElement('article'); }
 function createAsideElement() { return createElement('aside'); }
 function createAudioElement() { return createElement('audio'); }
-function createBElement() { return createElement('b'); }
+function createBoldElement() { return createElement('b'); }
 function createBaseElement() { return createElement('base'); }
 function createBaseFontElement() { return createElement('basefont'); }
 function createBdiElement() { return createElement('bdi'); }
@@ -62,22 +62,24 @@ function createDirElement() { return createElement('dir'); }
 function createDivElement() { return createElement('div'); }
 function createDlElement() { return createElement('dl'); }
 function createDtElement() { return createElement('dt'); }
+function createEmElement() { return createElement('em'); }
+function createEmbedElement() { return createElement('embed'); }
 
-exports.createAElement = createAElement;
 exports.createAbbrElement = createAbbrElement;
 exports.createAddressElement = createAddressElement;
+exports.createAnchorElement = createAnchorElement;
 exports.createAppletElement = createAppletElement;
 exports.createAreaElement = createAreaElement;
 exports.createArticleElement = createArticleElement;
 exports.createAsideElement = createAsideElement;
 exports.createAudioElement = createAudioElement;
-exports.createBElement = createBElement;
 exports.createBaseElement = createBaseElement;
 exports.createBaseFontElement = createBaseFontElement;
 exports.createBdiElement = createBdiElement;
 exports.createBdoElement = createBdoElement;
 exports.createBlockQuoteElement = createBlockQuoteElement;
 exports.createBodyElement = createBodyElement;
+exports.createBoldElement = createBoldElement;
 exports.createBrElement = createBrElement;
 exports.createButtonElement = createButtonElement;
 exports.createCanvasElement = createCanvasElement;
@@ -98,5 +100,7 @@ exports.createDivElement = createDivElement;
 exports.createDlElement = createDlElement;
 exports.createDtElement = createDtElement;
 exports.createElement = createElement;
+exports.createEmElement = createEmElement;
+exports.createEmbedElement = createEmbedElement;
 exports.setAttributes = setAttributes;
 exports.setProperties = setProperties;
