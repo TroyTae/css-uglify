@@ -41,6 +41,7 @@ const {
   createFontElement,
   createFooterElement,
   createFormElement,
+  createFrameElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -86,4 +87,5 @@ test('HTMLElement creation test', () => {
   expect(createFontElement().tagName).toBe('FONT');
   expect(createFooterElement().tagName).toBe('FOOTER');
   expect(createFormElement().tagName).toBe('FORM');
+  expect(createFrameElement().tagName).toBe('FRAME');
 });

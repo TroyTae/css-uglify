@@ -42,6 +42,7 @@ function createFigureElement(): HTMLElement { return createElement('figure'); }
 function createFontElement(): HTMLFontElement { return createElement('font'); }
 function createFooterElement(): HTMLElement { return createElement('footer'); }
 function createFormElement(): HTMLFormElement { return createElement('form'); }
+function createFrameElement(): HTMLFrameElement { return createElement('frame'); }
 
 export {
   createAnchorElement,
@@ -86,4 +87,5 @@ export {
   createFontElement,
   createFooterElement,
   createFormElement,
+  createFrameElement,
 };

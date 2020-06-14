@@ -44,6 +44,7 @@ import {
   createFontElement,
   createFooterElement,
   createFormElement,
+  createFrameElement,
 } from './html';
 
 export {
@@ -92,4 +93,5 @@ export {
   createFontElement,
   createFooterElement,
   createFormElement,
+  createFrameElement,
 };
