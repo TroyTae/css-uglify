@@ -43,6 +43,7 @@ import {
   createFigureElement,
   createFontElement,
   createFooterElement,
+  createFormElement,
 } from './html';
 
 export {
@@ -90,4 +91,5 @@ export {
   createFigureElement,
   createFontElement,
   createFooterElement,
+  createFormElement,
 };
