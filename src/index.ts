@@ -41,6 +41,8 @@ import {
   createFieldSetElement,
   createFigcaptionElement,
   createFigureElement,
+  createFontElement,
+  createFooterElement,
 } from './html';
 
 export {
@@ -86,4 +88,6 @@ export {
   createFieldSetElement,
   createFigcaptionElement,
   createFigureElement,
+  createFontElement,
+  createFooterElement,
 };

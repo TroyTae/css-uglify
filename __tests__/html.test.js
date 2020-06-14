@@ -38,6 +38,8 @@ const {
   createFieldSetElement,
   createFigcaptionElement,
   createFigureElement,
+  createFontElement,
+  createFooterElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -80,4 +82,6 @@ test('HTMLElement creation test', () => {
   expect(createFieldSetElement().tagName).toBe('FIELDSET');
   expect(createFigcaptionElement().tagName).toBe('FIGCAPTION');
   expect(createFigureElement().tagName).toBe('FIGURE');
+  expect(createFontElement().tagName).toBe('FONT');
+  expect(createFooterElement().tagName).toBe('FOOTER');
 });
