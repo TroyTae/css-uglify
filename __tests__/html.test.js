@@ -33,6 +33,7 @@ const {
   createDivElement,
   createDlElement,
   createDtElement,
+  createEmElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -70,4 +71,5 @@ test('HTMLElement creation test', () => {
   expect(createDivElement().tagName).toBe('DIV');
   expect(createDlElement().tagName).toBe('DL');
   expect(createDtElement().tagName).toBe('DT');
+  expect(createEmElement().tagName).toBe('EM');
 });

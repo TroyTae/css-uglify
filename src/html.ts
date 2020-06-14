@@ -34,6 +34,7 @@ function createDirElement(): HTMLDirectoryElement { return createElement('dir');
 function createDivElement(): HTMLDivElement { return createElement('div'); }
 function createDlElement(): HTMLDListElement { return createElement('dl'); }
 function createDtElement(): HTMLElement { return createElement('dt'); }
+function createEmElement(): HTMLElement { return createElement('em'); }
 
 export {
   createAElement,

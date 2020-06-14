@@ -3,7 +3,7 @@ type AttributeMap = {
 };
 
 function setAttributes(element: HTMLElement, attributeMap: AttributeMap): HTMLElement {
-  let key;
+  let key: string;
   for (key in attributeMap) {
     element.setAttribute(key, attributeMap[key]);
   }
