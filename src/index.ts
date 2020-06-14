@@ -38,6 +38,7 @@ import {
   createDtElement,
   createEmElement,
   createEmbedElement,
+  createFieldSetElement,
 } from './html';
 
 export {
@@ -80,4 +81,5 @@ export {
   createDtElement,
   createEmElement,
   createEmbedElement,
+  createFieldSetElement,
 };

@@ -36,6 +36,7 @@ function createDlElement(): HTMLDListElement { return createElement('dl'); }
 function createDtElement(): HTMLElement { return createElement('dt'); }
 function createEmElement(): HTMLElement { return createElement('em'); }
 function createEmbedElement(): HTMLEmbedElement { return createElement('embed'); }
+function createFieldSetElement(): HTMLFieldSetElement { return createElement('fieldset'); }
 
 export {
   createAnchorElement,
@@ -74,4 +75,5 @@ export {
   createDtElement,
   createEmElement,
   createEmbedElement,
+  createFieldSetElement,
 };
