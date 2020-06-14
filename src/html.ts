@@ -38,6 +38,7 @@ function createEmElement(): HTMLElement { return createElement('em'); }
 function createEmbedElement(): HTMLEmbedElement { return createElement('embed'); }
 function createFieldSetElement(): HTMLFieldSetElement { return createElement('fieldset'); }
 function createFigcaptionElement(): HTMLElement { return createElement('figcaption'); }
+function createFigureElement(): HTMLElement { return createElement('figure'); }
 
 export {
   createAnchorElement,
@@ -78,4 +79,5 @@ export {
   createEmbedElement,
   createFieldSetElement,
   createFigcaptionElement,
+  createFigureElement,
 };

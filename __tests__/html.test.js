@@ -37,6 +37,7 @@ const {
   createEmbedElement,
   createFieldSetElement,
   createFigcaptionElement,
+  createFigureElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -78,4 +79,5 @@ test('HTMLElement creation test', () => {
   expect(createEmbedElement().tagName).toBe('EMBED');
   expect(createFieldSetElement().tagName).toBe('FIELDSET');
   expect(createFigcaptionElement().tagName).toBe('FIGCAPTION');
+  expect(createFigureElement().tagName).toBe('FIGURE');
 });
