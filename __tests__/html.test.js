@@ -46,6 +46,7 @@ const {
   createH1Element,
   createH2Element,
   createH3Element,
+  createH4Element,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -96,4 +97,5 @@ test('HTMLElement creation test', () => {
   expect(createH1Element().tagName).toBe('H1');
   expect(createH2Element().tagName).toBe('H2');
   expect(createH3Element().tagName).toBe('H3');
+  expect(createH4Element().tagName).toBe('H4');
 });

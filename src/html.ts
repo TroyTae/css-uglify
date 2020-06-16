@@ -47,6 +47,7 @@ function createFrameSetElement(): HTMLFrameSetElement { return createElement('fr
 function createH1Element(): HTMLHeadingElement { return createElement('h1'); }
 function createH2Element(): HTMLHeadingElement { return createElement('h2'); }
 function createH3Element(): HTMLHeadingElement { return createElement('h3'); }
+function createH4Element(): HTMLHeadingElement { return createElement('h4'); }
 
 export {
   createAnchorElement,
@@ -96,4 +97,5 @@ export {
   createH1Element,
   createH2Element,
   createH3Element,
+  createH4Element,
 };
