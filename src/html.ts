@@ -44,6 +44,7 @@ function createFooterElement(): HTMLElement { return createElement('footer'); }
 function createFormElement(): HTMLFormElement { return createElement('form'); }
 function createFrameElement(): HTMLFrameElement { return createElement('frame'); }
 function createFrameSetElement(): HTMLFrameSetElement { return createElement('frameset'); }
+function createH1Element(): HTMLHeadingElement { return createElement('h1'); }
 
 export {
   createAnchorElement,
@@ -90,4 +91,5 @@ export {
   createFormElement,
   createFrameElement,
   createFrameSetElement,
+  createH1Element,
 };
