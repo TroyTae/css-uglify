@@ -72,6 +72,12 @@ function createFooterElement() { return createElement('footer'); }
 function createFormElement() { return createElement('form'); }
 function createFrameElement() { return createElement('frame'); }
 function createFrameSetElement() { return createElement('frameset'); }
+function createH1Element() { return createElement('h1'); }
+function createH2Element() { return createElement('h2'); }
+function createH3Element() { return createElement('h3'); }
+function createH4Element() { return createElement('h4'); }
+function createH5Element() { return createElement('h5'); }
+function createH6Element() { return createElement('h6'); }
 
 exports.createAbbrElement = createAbbrElement;
 exports.createAddressElement = createAddressElement;
@@ -118,5 +124,11 @@ exports.createFooterElement = createFooterElement;
 exports.createFormElement = createFormElement;
 exports.createFrameElement = createFrameElement;
 exports.createFrameSetElement = createFrameSetElement;
+exports.createH1Element = createH1Element;
+exports.createH2Element = createH2Element;
+exports.createH3Element = createH3Element;
+exports.createH4Element = createH4Element;
+exports.createH5Element = createH5Element;
+exports.createH6Element = createH6Element;
 exports.setAttributes = setAttributes;
 exports.setProperties = setProperties;
