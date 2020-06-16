@@ -47,6 +47,8 @@ import {
   createFrameElement,
   createFrameSetElement,
   createH1Element,
+  createH2Element,
+  createH3Element,
 } from './html';
 
 export {
@@ -98,4 +100,6 @@ export {
   createFrameElement,
   createFrameSetElement,
   createH1Element,
+  createH2Element,
+  createH3Element,
 };
