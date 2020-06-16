@@ -44,6 +44,7 @@ const {
   createFrameElement,
   createFrameSetElement,
   createH1Element,
+  createH2Element,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -92,4 +93,5 @@ test('HTMLElement creation test', () => {
   expect(createFrameElement().tagName).toBe('FRAME');
   expect(createFrameSetElement().tagName).toBe('FRAMESET');
   expect(createH1Element().tagName).toBe('H1');
+  expect(createH2Element().tagName).toBe('H2');
 });
