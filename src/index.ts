@@ -50,6 +50,8 @@ import {
   createH2Element,
   createH3Element,
   createH4Element,
+  createH5Element,
+  createH6Element,
 } from './html';
 
 export {
@@ -104,4 +106,6 @@ export {
   createH2Element,
   createH3Element,
   createH4Element,
+  createH5Element,
+  createH6Element,
 };

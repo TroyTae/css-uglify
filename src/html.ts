@@ -49,6 +49,7 @@ function createH2Element(): HTMLHeadingElement { return createElement('h2'); }
 function createH3Element(): HTMLHeadingElement { return createElement('h3'); }
 function createH4Element(): HTMLHeadingElement { return createElement('h4'); }
 function createH5Element(): HTMLHeadingElement { return createElement('h5'); }
+function createH6Element(): HTMLHeadingElement { return createElement('h6'); }
 
 export {
   createAnchorElement,
@@ -100,4 +101,5 @@ export {
   createH3Element,
   createH4Element,
   createH5Element,
+  createH6Element,
 };
