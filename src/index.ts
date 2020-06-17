@@ -53,6 +53,7 @@ import {
   createH5Element,
   createH6Element,
   createHeadElement,
+  createHeaderElement,
 } from './html';
 
 export {
@@ -110,4 +111,5 @@ export {
   createH5Element,
   createH6Element,
   createHeadElement,
+  createHeaderElement,
 };
