@@ -52,6 +52,7 @@ const {
   createHeadElement,
   createHeaderElement,
   createHGroupElement,
+  createHrElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -108,4 +109,5 @@ test('HTMLElement creation test', () => {
   expect(createHeadElement().tagName).toBe('HEAD');
   expect(createHeaderElement().tagName).toBe('HEADER');
   expect(createHGroupElement().tagName).toBe('HGROUP');
+  expect(createHrElement().tagName).toBe('HR');
 });

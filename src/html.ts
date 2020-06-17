@@ -53,6 +53,7 @@ function createH6Element(): HTMLHeadingElement { return createElement('h6'); }
 function createHeadElement(): HTMLHeadElement { return createElement('head'); }
 function createHeaderElement(): HTMLElement { return createElement('header'); }
 function createHGroupElement(): HTMLElement { return createElement('hgroup'); }
+function createHrElement(): HTMLHRElement { return createElement('hr'); }
 
 export {
   createAnchorElement,
@@ -108,4 +109,5 @@ export {
   createHeadElement,
   createHeaderElement,
   createHGroupElement,
+  createHrElement,
 };
