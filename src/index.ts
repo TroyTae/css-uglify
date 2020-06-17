@@ -59,6 +59,7 @@ import {
   createHtmlElement,
   createItalicElement,
   createIFrameElement,
+  createImageElement,
 } from './html';
 
 export {
@@ -122,4 +123,5 @@ export {
   createHtmlElement,
   createItalicElement,
   createIFrameElement,
+  createImageElement,
 };

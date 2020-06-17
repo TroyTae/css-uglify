@@ -57,6 +57,7 @@ function createHrElement(): HTMLHRElement { return createElement('hr'); }
 function createHtmlElement(): HTMLHtmlElement { return createElement('html'); }
 function createItalicElement(): HTMLElement { return createElement('i'); }
 function createIFrameElement(): HTMLIFrameElement { return createElement('iframe'); }
+function createImageElement(): HTMLImageElement { return createElement('img'); }
 
 export {
   createAnchorElement,
@@ -116,4 +117,5 @@ export {
   createHtmlElement,
   createItalicElement,
   createIFrameElement,
+  createImageElement,
 };
