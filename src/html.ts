@@ -63,6 +63,7 @@ function createInsElement(): HTMLModElement { return createElement('ins'); }
 function createKbdElement(): HTMLElement { return createElement('kbd'); }
 function createLabelElement(): HTMLLabelElement { return createElement('label'); }
 function createLegendElement(): HTMLLegendElement { return createElement('legend'); }
+function createLiElement(): HTMLLIElement { return createElement('li'); }
 
 export {
   createAnchorElement,
@@ -128,4 +129,5 @@ export {
   createKbdElement,
   createLabelElement,
   createLegendElement,
+  createLiElement,
 };

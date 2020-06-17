@@ -65,6 +65,7 @@ import {
   createKbdElement,
   createLabelElement,
   createLegendElement,
+  createLiElement,
 } from './html';
 
 export {
@@ -134,4 +135,5 @@ export {
   createKbdElement,
   createLabelElement,
   createLegendElement,
+  createLiElement,
 };
