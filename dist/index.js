@@ -88,6 +88,11 @@ function createIFrameElement() { return createElement('iframe'); }
 function createImageElement() { return createElement('img'); }
 function createInputElement() { return createElement('input'); }
 function createInsElement() { return createElement('ins'); }
+function createKbdElement() { return createElement('kbd'); }
+function createLabelElement() { return createElement('label'); }
+function createLegendElement() { return createElement('legend'); }
+function createLiElement() { return createElement('li'); }
+function createLinkElement() { return createElement('link'); }
 
 exports.createAbbrElement = createAbbrElement;
 exports.createAddressElement = createAddressElement;
@@ -150,5 +155,10 @@ exports.createImageElement = createImageElement;
 exports.createInputElement = createInputElement;
 exports.createInsElement = createInsElement;
 exports.createItalicElement = createItalicElement;
+exports.createKbdElement = createKbdElement;
+exports.createLabelElement = createLabelElement;
+exports.createLegendElement = createLegendElement;
+exports.createLiElement = createLiElement;
+exports.createLinkElement = createLinkElement;
 exports.setAttributes = setAttributes;
 exports.setProperties = setProperties;

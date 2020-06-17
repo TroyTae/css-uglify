@@ -64,6 +64,7 @@ function createKbdElement(): HTMLElement { return createElement('kbd'); }
 function createLabelElement(): HTMLLabelElement { return createElement('label'); }
 function createLegendElement(): HTMLLegendElement { return createElement('legend'); }
 function createLiElement(): HTMLLIElement { return createElement('li'); }
+function createLinkElement(): HTMLLinkElement { return createElement('link'); }
 
 export {
   createAnchorElement,
@@ -130,4 +131,5 @@ export {
   createLabelElement,
   createLegendElement,
   createLiElement,
+  createLinkElement,
 };

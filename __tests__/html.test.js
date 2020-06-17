@@ -63,6 +63,7 @@ const {
   createLabelElement,
   createLegendElement,
   createLiElement,
+  createLinkElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -130,4 +131,5 @@ test('HTMLElement creation test', () => {
   expect(createLabelElement().tagName).toBe('LABEL');
   expect(createLegendElement().tagName).toBe('LEGEND');
   expect(createLiElement().tagName).toBe('LI');
+  expect(createLinkElement().tagName).toBe('LINK');
 });
