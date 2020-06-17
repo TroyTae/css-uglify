@@ -58,6 +58,8 @@ function createHtmlElement(): HTMLHtmlElement { return createElement('html'); }
 function createItalicElement(): HTMLElement { return createElement('i'); }
 function createIFrameElement(): HTMLIFrameElement { return createElement('iframe'); }
 function createImageElement(): HTMLImageElement { return createElement('img'); }
+function createInputElement(): HTMLInputElement { return createElement('input'); }
+function createInsElement(): HTMLModElement { return createElement('ins'); }
 
 export {
   createAnchorElement,
@@ -118,4 +120,6 @@ export {
   createItalicElement,
   createIFrameElement,
   createImageElement,
+  createInputElement,
+  createInsElement,
 };

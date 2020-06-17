@@ -57,6 +57,8 @@ const {
   createItalicElement,
   createIFrameElement,
   createImageElement,
+  createInputElement,
+  createInsElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -118,4 +120,6 @@ test('HTMLElement creation test', () => {
   expect(createItalicElement().tagName).toBe('I');
   expect(createIFrameElement().tagName).toBe('IFRAME');
   expect(createImageElement().tagName).toBe('IMG');
+  expect(createInputElement().tagName).toBe('INPUT');
+  expect(createInsElement().tagName).toBe('INS');
 });

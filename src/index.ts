@@ -60,6 +60,8 @@ import {
   createItalicElement,
   createIFrameElement,
   createImageElement,
+  createInputElement,
+  createInsElement,
 } from './html';
 
 export {
@@ -124,4 +126,6 @@ export {
   createItalicElement,
   createIFrameElement,
   createImageElement,
+  createInputElement,
+  createInsElement,
 };
