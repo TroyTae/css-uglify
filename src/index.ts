@@ -63,6 +63,7 @@ import {
   createInputElement,
   createInsElement,
   createKbdElement,
+  createLabelElement,
 } from './html';
 
 export {
@@ -130,4 +131,5 @@ export {
   createInputElement,
   createInsElement,
   createKbdElement,
+  createLabelElement,
 };

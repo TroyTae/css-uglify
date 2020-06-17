@@ -61,6 +61,7 @@ function createImageElement(): HTMLImageElement { return createElement('img'); }
 function createInputElement(): HTMLInputElement { return createElement('input'); }
 function createInsElement(): HTMLModElement { return createElement('ins'); }
 function createKbdElement(): HTMLElement { return createElement('kbd'); }
+function createLabelElement(): HTMLLabelElement { return createElement('label'); }
 
 export {
   createAnchorElement,
@@ -124,4 +125,5 @@ export {
   createInputElement,
   createInsElement,
   createKbdElement,
+  createLabelElement,
 };

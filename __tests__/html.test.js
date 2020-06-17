@@ -60,6 +60,7 @@ const {
   createInputElement,
   createInsElement,
   createKbdElement,
+  createLabelElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -124,4 +125,5 @@ test('HTMLElement creation test', () => {
   expect(createInputElement().tagName).toBe('INPUT');
   expect(createInsElement().tagName).toBe('INS');
   expect(createKbdElement().tagName).toBe('KBD');
+  expect(createLabelElement().tagName).toBe('LABEL');
 });
