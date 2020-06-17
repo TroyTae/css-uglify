@@ -55,6 +55,8 @@ function createHeaderElement(): HTMLElement { return createElement('header'); }
 function createHGroupElement(): HTMLElement { return createElement('hgroup'); }
 function createHrElement(): HTMLHRElement { return createElement('hr'); }
 function createHtmlElement(): HTMLHtmlElement { return createElement('html'); }
+function createItalicElement(): HTMLElement { return createElement('i'); }
+function createIFrameElement(): HTMLIFrameElement { return createElement('iframe'); }
 
 export {
   createAnchorElement,
@@ -112,4 +114,6 @@ export {
   createHGroupElement,
   createHrElement,
   createHtmlElement,
+  createItalicElement,
+  createIFrameElement,
 };
