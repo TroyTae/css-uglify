@@ -51,6 +51,7 @@ const {
   createH6Element,
   createHeadElement,
   createHeaderElement,
+  createHGroupElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -106,4 +107,5 @@ test('HTMLElement creation test', () => {
   expect(createH6Element().tagName).toBe('H6');
   expect(createHeadElement().tagName).toBe('HEAD');
   expect(createHeaderElement().tagName).toBe('HEADER');
+  expect(createHGroupElement().tagName).toBe('HGROUP');
 });
