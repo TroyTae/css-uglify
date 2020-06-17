@@ -78,6 +78,16 @@ function createH3Element() { return createElement('h3'); }
 function createH4Element() { return createElement('h4'); }
 function createH5Element() { return createElement('h5'); }
 function createH6Element() { return createElement('h6'); }
+function createHeadElement() { return createElement('head'); }
+function createHeaderElement() { return createElement('header'); }
+function createHGroupElement() { return createElement('hgroup'); }
+function createHrElement() { return createElement('hr'); }
+function createHtmlElement() { return createElement('html'); }
+function createItalicElement() { return createElement('i'); }
+function createIFrameElement() { return createElement('iframe'); }
+function createImageElement() { return createElement('img'); }
+function createInputElement() { return createElement('input'); }
+function createInsElement() { return createElement('ins'); }
 
 exports.createAbbrElement = createAbbrElement;
 exports.createAddressElement = createAddressElement;
@@ -130,5 +140,15 @@ exports.createH3Element = createH3Element;
 exports.createH4Element = createH4Element;
 exports.createH5Element = createH5Element;
 exports.createH6Element = createH6Element;
+exports.createHGroupElement = createHGroupElement;
+exports.createHeadElement = createHeadElement;
+exports.createHeaderElement = createHeaderElement;
+exports.createHrElement = createHrElement;
+exports.createHtmlElement = createHtmlElement;
+exports.createIFrameElement = createIFrameElement;
+exports.createImageElement = createImageElement;
+exports.createInputElement = createInputElement;
+exports.createInsElement = createInsElement;
+exports.createItalicElement = createItalicElement;
 exports.setAttributes = setAttributes;
 exports.setProperties = setProperties;

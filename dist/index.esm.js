@@ -74,5 +74,15 @@ function createH3Element() { return createElement('h3'); }
 function createH4Element() { return createElement('h4'); }
 function createH5Element() { return createElement('h5'); }
 function createH6Element() { return createElement('h6'); }
+function createHeadElement() { return createElement('head'); }
+function createHeaderElement() { return createElement('header'); }
+function createHGroupElement() { return createElement('hgroup'); }
+function createHrElement() { return createElement('hr'); }
+function createHtmlElement() { return createElement('html'); }
+function createItalicElement() { return createElement('i'); }
+function createIFrameElement() { return createElement('iframe'); }
+function createImageElement() { return createElement('img'); }
+function createInputElement() { return createElement('input'); }
+function createInsElement() { return createElement('ins'); }
 
-export { createAbbrElement, createAddressElement, createAnchorElement, createAppletElement, createAreaElement, createArticleElement, createAsideElement, createAudioElement, createBaseElement, createBaseFontElement, createBdiElement, createBdoElement, createBlockQuoteElement, createBodyElement, createBoldElement, createBrElement, createButtonElement, createCanvasElement, createCaptionElement, createCiteElement, createCodeElement, createColElement, createColGroupElement, createDataElement, createDataListElement, createDdElement, createDelElement, createDetailsElement, createDfnElement, createDialogElement, createDirElement, createDivElement, createDlElement, createDtElement, createElement, createEmElement, createEmbedElement, createFieldSetElement, createFigcaptionElement, createFigureElement, createFontElement, createFooterElement, createFormElement, createFrameElement, createFrameSetElement, createH1Element, createH2Element, createH3Element, createH4Element, createH5Element, createH6Element, setAttributes, setProperties };
+export { createAbbrElement, createAddressElement, createAnchorElement, createAppletElement, createAreaElement, createArticleElement, createAsideElement, createAudioElement, createBaseElement, createBaseFontElement, createBdiElement, createBdoElement, createBlockQuoteElement, createBodyElement, createBoldElement, createBrElement, createButtonElement, createCanvasElement, createCaptionElement, createCiteElement, createCodeElement, createColElement, createColGroupElement, createDataElement, createDataListElement, createDdElement, createDelElement, createDetailsElement, createDfnElement, createDialogElement, createDirElement, createDivElement, createDlElement, createDtElement, createElement, createEmElement, createEmbedElement, createFieldSetElement, createFigcaptionElement, createFigureElement, createFontElement, createFooterElement, createFormElement, createFrameElement, createFrameSetElement, createH1Element, createH2Element, createH3Element, createH4Element, createH5Element, createH6Element, createHGroupElement, createHeadElement, createHeaderElement, createHrElement, createHtmlElement, createIFrameElement, createImageElement, createInputElement, createInsElement, createItalicElement, setAttributes, setProperties };
