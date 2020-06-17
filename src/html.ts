@@ -60,6 +60,7 @@ function createIFrameElement(): HTMLIFrameElement { return createElement('iframe
 function createImageElement(): HTMLImageElement { return createElement('img'); }
 function createInputElement(): HTMLInputElement { return createElement('input'); }
 function createInsElement(): HTMLModElement { return createElement('ins'); }
+function createKbdElement(): HTMLElement { return createElement('kbd'); }
 
 export {
   createAnchorElement,
@@ -122,4 +123,5 @@ export {
   createImageElement,
   createInputElement,
   createInsElement,
+  createKbdElement,
 };
