@@ -56,6 +56,7 @@ import {
   createHeaderElement,
   createHGroupElement,
   createHrElement,
+  createHtmlElement,
 } from './html';
 
 export {
@@ -116,4 +117,5 @@ export {
   createHeaderElement,
   createHGroupElement,
   createHrElement,
+  createHtmlElement,
 };
