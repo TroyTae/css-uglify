@@ -49,6 +49,7 @@ const {
   createH4Element,
   createH5Element,
   createH6Element,
+  createHeadElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -102,4 +103,5 @@ test('HTMLElement creation test', () => {
   expect(createH4Element().tagName).toBe('H4');
   expect(createH5Element().tagName).toBe('H5');
   expect(createH6Element().tagName).toBe('H6');
+  expect(createHeadElement().tagName).toBe('HEAD');
 });

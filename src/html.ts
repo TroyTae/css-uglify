@@ -50,6 +50,7 @@ function createH3Element(): HTMLHeadingElement { return createElement('h3'); }
 function createH4Element(): HTMLHeadingElement { return createElement('h4'); }
 function createH5Element(): HTMLHeadingElement { return createElement('h5'); }
 function createH6Element(): HTMLHeadingElement { return createElement('h6'); }
+function createHeadElement(): HTMLHeadElement { return createElement('head'); }
 
 export {
   createAnchorElement,
@@ -102,4 +103,5 @@ export {
   createH4Element,
   createH5Element,
   createH6Element,
+  createHeadElement,
 };
