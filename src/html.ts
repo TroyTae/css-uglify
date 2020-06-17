@@ -62,6 +62,7 @@ function createInputElement(): HTMLInputElement { return createElement('input');
 function createInsElement(): HTMLModElement { return createElement('ins'); }
 function createKbdElement(): HTMLElement { return createElement('kbd'); }
 function createLabelElement(): HTMLLabelElement { return createElement('label'); }
+function createLegendElement(): HTMLLegendElement { return createElement('legend'); }
 
 export {
   createAnchorElement,
@@ -126,4 +127,5 @@ export {
   createInsElement,
   createKbdElement,
   createLabelElement,
+  createLegendElement,
 };

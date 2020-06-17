@@ -64,6 +64,7 @@ import {
   createInsElement,
   createKbdElement,
   createLabelElement,
+  createLegendElement,
 } from './html';
 
 export {
@@ -132,4 +133,5 @@ export {
   createInsElement,
   createKbdElement,
   createLabelElement,
+  createLegendElement,
 };
