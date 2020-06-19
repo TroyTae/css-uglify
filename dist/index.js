@@ -102,6 +102,11 @@ function createMetaElement() { return createElement('meta'); }
 function createMeterElement() { return createElement('meter'); }
 function createNavElement() { return createElement('nav'); }
 function createNoScriptElement() { return createElement('noscript'); }
+function createObjectElement() { return createElement('object'); }
+function createOListElement() { return createElement('ol'); }
+function createOptGroupElement() { return createElement('optgroup'); }
+function createOptionElement() { return createElement('option'); }
+function createOutputElement() { return createElement('output'); }
 
 exports.createAbbrElement = createAbbrElement;
 exports.createAddressElement = createAddressElement;
@@ -178,5 +183,10 @@ exports.createMetaElement = createMetaElement;
 exports.createMeterElement = createMeterElement;
 exports.createNavElement = createNavElement;
 exports.createNoScriptElement = createNoScriptElement;
+exports.createOListElement = createOListElement;
+exports.createObjectElement = createObjectElement;
+exports.createOptGroupElement = createOptGroupElement;
+exports.createOptionElement = createOptionElement;
+exports.createOutputElement = createOutputElement;
 exports.setAttributes = setAttributes;
 exports.setProperties = setProperties;

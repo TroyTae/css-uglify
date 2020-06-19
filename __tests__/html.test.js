@@ -77,6 +77,7 @@ const {
   createOListElement,
   createOptGroupElement,
   createOptionElement,
+  createOutputElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -158,4 +159,5 @@ test('HTMLElement creation test', () => {
   expect(createOListElement().tagName).toBe('OL');
   expect(createOptGroupElement().tagName).toBe('OPTGROUP');
   expect(createOptionElement().tagName).toBe('OPTION');
+  expect(createOutputElement().tagName).toBe('OUTPUT');
 });

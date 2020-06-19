@@ -78,6 +78,7 @@ function createObjectElement(): HTMLObjectElement { return createElement('object
 function createOListElement(): HTMLOListElement { return createElement('ol'); }
 function createOptGroupElement(): HTMLOptGroupElement { return createElement('optgroup'); }
 function createOptionElement(): HTMLOptionElement { return createElement('option'); }
+function createOutputElement(): HTMLOutputElement { return createElement('output'); }
 
 export {
   createAnchorElement,
@@ -158,4 +159,5 @@ export {
   createOListElement,
   createOptGroupElement,
   createOptionElement,
+  createOutputElement,
 };
