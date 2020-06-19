@@ -72,6 +72,7 @@ import {
   createMarkElement,
   createMarqueeElement,
   createMenuElement,
+  createMetaElement,
 } from './html';
 
 export {
@@ -148,4 +149,5 @@ export {
   createMarkElement,
   createMarqueeElement,
   createMenuElement,
+  createMetaElement,
 };
