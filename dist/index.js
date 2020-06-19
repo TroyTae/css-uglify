@@ -107,6 +107,11 @@ function createOListElement() { return createElement('ol'); }
 function createOptGroupElement() { return createElement('optgroup'); }
 function createOptionElement() { return createElement('option'); }
 function createOutputElement() { return createElement('output'); }
+function createParagraphElement() { return createElement('p'); }
+function createParamElement() { return createElement('param'); }
+function createPictureElement() { return createElement('picture'); }
+function createPreElement() { return createElement('pre'); }
+function createProgressElement() { return createElement('progress'); }
 
 exports.createAbbrElement = createAbbrElement;
 exports.createAddressElement = createAddressElement;
@@ -188,5 +193,10 @@ exports.createObjectElement = createObjectElement;
 exports.createOptGroupElement = createOptGroupElement;
 exports.createOptionElement = createOptionElement;
 exports.createOutputElement = createOutputElement;
+exports.createParagraphElement = createParagraphElement;
+exports.createParamElement = createParamElement;
+exports.createPictureElement = createPictureElement;
+exports.createPreElement = createPreElement;
+exports.createProgressElement = createProgressElement;
 exports.setAttributes = setAttributes;
 exports.setProperties = setProperties;

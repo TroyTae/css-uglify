@@ -82,6 +82,7 @@ const {
   createParamElement,
   createPictureElement,
   createPreElement,
+  createProgressElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -168,4 +169,5 @@ test('HTMLElement creation test', () => {
   expect(createParamElement().tagName).toBe('PARAM');
   expect(createPictureElement().tagName).toBe('PICTURE');
   expect(createPreElement().tagName).toBe('PRE');
+  expect(createProgressElement().tagName).toBe('PROGRESS');
 });

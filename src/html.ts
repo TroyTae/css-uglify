@@ -83,6 +83,7 @@ function createParagraphElement(): HTMLParagraphElement { return createElement('
 function createParamElement(): HTMLParamElement { return createElement('param'); }
 function createPictureElement(): HTMLPictureElement { return createElement('picture'); }
 function createPreElement(): HTMLPreElement { return createElement('pre'); }
+function createProgressElement(): HTMLProgressElement { return createElement('progress'); }
 
 export {
   createAnchorElement,
@@ -168,4 +169,5 @@ export {
   createParamElement,
   createPictureElement,
   createPreElement,
+  createProgressElement,
 };
