@@ -73,6 +73,7 @@ const {
   createMeterElement,
   createNavElement,
   createNoScriptElement,
+  createObjectElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -150,4 +151,5 @@ test('HTMLElement creation test', () => {
   expect(createMeterElement().tagName).toBe('METER');
   expect(createNavElement().tagName).toBe('NAV');
   expect(createNoScriptElement().tagName).toBe('NOSCRIPT');
+  expect(createObjectElement().tagName).toBe('OBJECT');
 });

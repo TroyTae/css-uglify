@@ -76,6 +76,7 @@ import {
   createMeterElement,
   createNavElement,
   createNoScriptElement,
+  createObjectElement,
 } from './html';
 
 export {
@@ -156,4 +157,5 @@ export {
   createMeterElement,
   createNavElement,
   createNoScriptElement,
+  createObjectElement,
 };
