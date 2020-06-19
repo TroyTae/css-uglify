@@ -75,6 +75,7 @@ function createMeterElement(): HTMLMeterElement { return createElement('meter');
 function createNavElement(): HTMLElement { return createElement('nav'); }
 function createNoScriptElement(): HTMLElement { return createElement('noscript'); }
 function createObjectElement(): HTMLObjectElement { return createElement('object'); }
+function createOListElement(): HTMLOListElement { return createElement('ol'); }
 
 export {
   createAnchorElement,
@@ -152,4 +153,5 @@ export {
   createNavElement,
   createNoScriptElement,
   createObjectElement,
+  createOListElement,
 };

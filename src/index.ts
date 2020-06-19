@@ -77,6 +77,7 @@ import {
   createNavElement,
   createNoScriptElement,
   createObjectElement,
+  createOListElement,
 } from './html';
 
 export {
@@ -158,4 +159,5 @@ export {
   createNavElement,
   createNoScriptElement,
   createObjectElement,
+  createOListElement,
 };
