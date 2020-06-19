@@ -69,6 +69,7 @@ import {
   createLinkElement,
   createMainElement,
   createMapElement,
+  createMarkElement,
 } from './html';
 
 export {
@@ -142,4 +143,5 @@ export {
   createLinkElement,
   createMainElement,
   createMapElement,
+  createMarkElement,
 };

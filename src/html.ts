@@ -67,6 +67,7 @@ function createLiElement(): HTMLLIElement { return createElement('li'); }
 function createLinkElement(): HTMLLinkElement { return createElement('link'); }
 function createMainElement(): HTMLElement { return createElement('main'); }
 function createMapElement(): HTMLMapElement { return createElement('map'); }
+function createMarkElement(): HTMLElement { return createElement('mark'); }
 
 export {
   createAnchorElement,
@@ -136,4 +137,5 @@ export {
   createLinkElement,
   createMainElement,
   createMapElement,
+  createMarkElement,
 };
