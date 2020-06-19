@@ -75,6 +75,7 @@ import {
   createMetaElement,
   createMeterElement,
   createNavElement,
+  createNoScriptElement,
 } from './html';
 
 export {
@@ -154,4 +155,5 @@ export {
   createMetaElement,
   createMeterElement,
   createNavElement,
+  createNoScriptElement,
 };

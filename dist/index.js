@@ -93,6 +93,15 @@ function createLabelElement() { return createElement('label'); }
 function createLegendElement() { return createElement('legend'); }
 function createLiElement() { return createElement('li'); }
 function createLinkElement() { return createElement('link'); }
+function createMainElement() { return createElement('main'); }
+function createMapElement() { return createElement('map'); }
+function createMarkElement() { return createElement('mark'); }
+function createMarqueeElement() { return createElement('marquee'); }
+function createMenuElement() { return createElement('menu'); }
+function createMetaElement() { return createElement('meta'); }
+function createMeterElement() { return createElement('meter'); }
+function createNavElement() { return createElement('nav'); }
+function createNoScriptElement() { return createElement('noscript'); }
 
 exports.createAbbrElement = createAbbrElement;
 exports.createAddressElement = createAddressElement;
@@ -160,5 +169,14 @@ exports.createLabelElement = createLabelElement;
 exports.createLegendElement = createLegendElement;
 exports.createLiElement = createLiElement;
 exports.createLinkElement = createLinkElement;
+exports.createMainElement = createMainElement;
+exports.createMapElement = createMapElement;
+exports.createMarkElement = createMarkElement;
+exports.createMarqueeElement = createMarqueeElement;
+exports.createMenuElement = createMenuElement;
+exports.createMetaElement = createMetaElement;
+exports.createMeterElement = createMeterElement;
+exports.createNavElement = createNavElement;
+exports.createNoScriptElement = createNoScriptElement;
 exports.setAttributes = setAttributes;
 exports.setProperties = setProperties;
