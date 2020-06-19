@@ -79,6 +79,7 @@ import {
   createObjectElement,
   createOListElement,
   createOptGroupElement,
+  createOptionElement,
 } from './html';
 
 export {
@@ -162,4 +163,5 @@ export {
   createObjectElement,
   createOListElement,
   createOptGroupElement,
+  createOptionElement,
 };
