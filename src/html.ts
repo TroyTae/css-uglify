@@ -72,6 +72,7 @@ function createMarqueeElement(): HTMLMarqueeElement { return createElement('marq
 function createMenuElement(): HTMLMenuElement { return createElement('menu'); }
 function createMetaElement(): HTMLMetaElement { return createElement('meta'); }
 function createMeterElement(): HTMLMeterElement { return createElement('meter'); }
+function createNavElement(): HTMLElement { return createElement('nav'); }
 
 export {
   createAnchorElement,
@@ -146,4 +147,5 @@ export {
   createMenuElement,
   createMetaElement,
   createMeterElement,
+  createNavElement,
 };

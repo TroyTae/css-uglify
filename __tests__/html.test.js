@@ -71,6 +71,7 @@ const {
   createMenuElement,
   createMetaElement,
   createMeterElement,
+  createNavElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -146,4 +147,5 @@ test('HTMLElement creation test', () => {
   expect(createMenuElement().tagName).toBe('MENU');
   expect(createMetaElement().tagName).toBe('META');
   expect(createMeterElement().tagName).toBe('METER');
+  expect(createNavElement().tagName).toBe('NAV');
 });
