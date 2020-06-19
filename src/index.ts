@@ -67,6 +67,7 @@ import {
   createLegendElement,
   createLiElement,
   createLinkElement,
+  createMainElement,
 } from './html';
 
 export {
@@ -138,4 +139,5 @@ export {
   createLegendElement,
   createLiElement,
   createLinkElement,
+  createMainElement,
 };
