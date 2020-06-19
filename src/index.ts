@@ -68,6 +68,7 @@ import {
   createLiElement,
   createLinkElement,
   createMainElement,
+  createMapElement,
 } from './html';
 
 export {
@@ -140,4 +141,5 @@ export {
   createLiElement,
   createLinkElement,
   createMainElement,
+  createMapElement,
 };

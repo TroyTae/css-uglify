@@ -66,6 +66,7 @@ function createLegendElement(): HTMLLegendElement { return createElement('legend
 function createLiElement(): HTMLLIElement { return createElement('li'); }
 function createLinkElement(): HTMLLinkElement { return createElement('link'); }
 function createMainElement(): HTMLElement { return createElement('main'); }
+function createMapElement(): HTMLMapElement { return createElement('map'); }
 
 export {
   createAnchorElement,
@@ -134,4 +135,5 @@ export {
   createLiElement,
   createLinkElement,
   createMainElement,
+  createMapElement,
 };
