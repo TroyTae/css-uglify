@@ -80,6 +80,7 @@ const {
   createOutputElement,
   createParagraphElement,
   createParamElement,
+  createPictureElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -164,4 +165,5 @@ test('HTMLElement creation test', () => {
   expect(createOutputElement().tagName).toBe('OUTPUT');
   expect(createParagraphElement().tagName).toBe('P');
   expect(createParamElement().tagName).toBe('PARAM');
+  expect(createPictureElement().tagName).toBe('PICTURE');
 });
