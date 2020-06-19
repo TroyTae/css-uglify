@@ -81,6 +81,7 @@ import {
   createOptGroupElement,
   createOptionElement,
   createOutputElement,
+  createParagraphElement,
 } from './html';
 
 export {
@@ -166,4 +167,5 @@ export {
   createOptGroupElement,
   createOptionElement,
   createOutputElement,
+  createParagraphElement,
 };

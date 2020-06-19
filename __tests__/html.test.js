@@ -78,6 +78,7 @@ const {
   createOptGroupElement,
   createOptionElement,
   createOutputElement,
+  createParagraphElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -160,4 +161,5 @@ test('HTMLElement creation test', () => {
   expect(createOptGroupElement().tagName).toBe('OPTGROUP');
   expect(createOptionElement().tagName).toBe('OPTION');
   expect(createOutputElement().tagName).toBe('OUTPUT');
+  expect(createParagraphElement().tagName).toBe('P');
 });
