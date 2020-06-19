@@ -75,6 +75,7 @@ const {
   createNoScriptElement,
   createObjectElement,
   createOListElement,
+  createOptGroupElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -154,4 +155,5 @@ test('HTMLElement creation test', () => {
   expect(createNoScriptElement().tagName).toBe('NOSCRIPT');
   expect(createObjectElement().tagName).toBe('OBJECT');
   expect(createOListElement().tagName).toBe('OL');
+  expect(createOptGroupElement().tagName).toBe('OPTGROUP');
 });

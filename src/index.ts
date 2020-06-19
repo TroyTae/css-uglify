@@ -78,6 +78,7 @@ import {
   createNoScriptElement,
   createObjectElement,
   createOListElement,
+  createOptGroupElement,
 } from './html';
 
 export {
@@ -160,4 +161,5 @@ export {
   createNoScriptElement,
   createObjectElement,
   createOListElement,
+  createOptGroupElement,
 };
