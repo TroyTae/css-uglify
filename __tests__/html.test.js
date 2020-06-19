@@ -70,6 +70,7 @@ const {
   createMarqueeElement,
   createMenuElement,
   createMetaElement,
+  createMeterElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -144,4 +145,5 @@ test('HTMLElement creation test', () => {
   expect(createMarqueeElement().tagName).toBe('MARQUEE');
   expect(createMenuElement().tagName).toBe('MENU');
   expect(createMetaElement().tagName).toBe('META');
+  expect(createMeterElement().tagName).toBe('METER');
 });

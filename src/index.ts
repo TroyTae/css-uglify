@@ -73,6 +73,7 @@ import {
   createMarqueeElement,
   createMenuElement,
   createMetaElement,
+  createMeterElement,
 } from './html';
 
 export {
@@ -150,4 +151,5 @@ export {
   createMarqueeElement,
   createMenuElement,
   createMetaElement,
+  createMeterElement,
 };
