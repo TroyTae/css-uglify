@@ -84,6 +84,7 @@ import {
   createParagraphElement,
   createParamElement,
   createPictureElement,
+  createPreElement,
 } from './html';
 
 export {
@@ -172,4 +173,5 @@ export {
   createParagraphElement,
   createParamElement,
   createPictureElement,
+  createPreElement,
 };
