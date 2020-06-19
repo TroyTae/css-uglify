@@ -69,6 +69,7 @@ function createMainElement(): HTMLElement { return createElement('main'); }
 function createMapElement(): HTMLMapElement { return createElement('map'); }
 function createMarkElement(): HTMLElement { return createElement('mark'); }
 function createMarqueeElement(): HTMLMarqueeElement { return createElement('marquee'); }
+function createMenuElement(): HTMLMenuElement { return createElement('menu'); }
 
 export {
   createAnchorElement,
@@ -140,4 +141,5 @@ export {
   createMapElement,
   createMarkElement,
   createMarqueeElement,
+  createMenuElement,
 };
