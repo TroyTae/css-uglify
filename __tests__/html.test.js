@@ -67,6 +67,7 @@ const {
   createMainElement,
   createMapElement,
   createMarkElement,
+  createMarqueeElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -138,4 +139,5 @@ test('HTMLElement creation test', () => {
   expect(createMainElement().tagName).toBe('MAIN');
   expect(createMapElement().tagName).toBe('MAP');
   expect(createMarkElement().tagName).toBe('MARK');
+  expect(createMarqueeElement().tagName).toBe('MARQUEE');
 });

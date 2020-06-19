@@ -70,6 +70,7 @@ import {
   createMainElement,
   createMapElement,
   createMarkElement,
+  createMarqueeElement,
 } from './html';
 
 export {
@@ -144,4 +145,5 @@ export {
   createMainElement,
   createMapElement,
   createMarkElement,
+  createMarqueeElement,
 };
