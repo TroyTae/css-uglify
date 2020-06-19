@@ -80,6 +80,7 @@ function createOptGroupElement(): HTMLOptGroupElement { return createElement('op
 function createOptionElement(): HTMLOptionElement { return createElement('option'); }
 function createOutputElement(): HTMLOutputElement { return createElement('output'); }
 function createParagraphElement(): HTMLParagraphElement { return createElement('p'); }
+function createParamElement(): HTMLParamElement { return createElement('param'); }
 
 export {
   createAnchorElement,
@@ -162,4 +163,5 @@ export {
   createOptionElement,
   createOutputElement,
   createParagraphElement,
+  createParamElement,
 };

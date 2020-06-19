@@ -82,6 +82,7 @@ import {
   createOptionElement,
   createOutputElement,
   createParagraphElement,
+  createParamElement,
 } from './html';
 
 export {
@@ -168,4 +169,5 @@ export {
   createOptionElement,
   createOutputElement,
   createParagraphElement,
+  createParamElement,
 };
