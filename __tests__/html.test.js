@@ -88,6 +88,7 @@ const {
   createRtElement,
   createRubyElement,
   createStrikethroughElement,
+  createSampElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -180,4 +181,5 @@ test('HTMLElement creation test', () => {
   expect(createRtElement().tagName).toBe('RT');
   expect(createRubyElement().tagName).toBe('RUBY');
   expect(createStrikethroughElement().tagName).toBe('S');
+  expect(createSampElement().tagName).toBe('SAMP');
 });

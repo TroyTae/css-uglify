@@ -89,6 +89,7 @@ function createRpElement(): HTMLElement { return createElement('rp'); }
 function createRtElement(): HTMLElement { return createElement('rt'); }
 function createRubyElement(): HTMLElement { return createElement('ruby'); }
 function createStrikethroughElement(): HTMLElement { return createElement('s'); }
+function createSampElement(): HTMLElement { return createElement('samp'); }
 
 export {
   createAnchorElement,
@@ -180,4 +181,5 @@ export {
   createRtElement,
   createRubyElement,
   createStrikethroughElement,
+  createSampElement,
 };
