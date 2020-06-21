@@ -93,6 +93,7 @@ import {
   createStrikethroughElement,
   createSampElement,
   createScriptElement,
+  createSectionElement,
 } from './html';
 
 export {
@@ -190,4 +191,5 @@ export {
   createStrikethroughElement,
   createSampElement,
   createScriptElement,
+  createSectionElement,
 };
