@@ -91,6 +91,7 @@ const {
   createSampElement,
   createScriptElement,
   createSectionElement,
+  createSelectElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -186,4 +187,5 @@ test('HTMLElement creation test', () => {
   expect(createSampElement().tagName).toBe('SAMP');
   expect(createScriptElement().tagName).toBe('SCRIPT');
   expect(createSectionElement().tagName).toBe('SECTION');
+  expect(createSelectElement().tagName).toBe('SELECT');
 });

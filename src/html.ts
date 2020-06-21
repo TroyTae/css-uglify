@@ -92,6 +92,7 @@ function createStrikethroughElement(): HTMLElement { return createElement('s'); 
 function createSampElement(): HTMLElement { return createElement('samp'); }
 function createScriptElement(): HTMLScriptElement { return createElement('script'); }
 function createSectionElement(): HTMLElement { return createElement('section'); }
+function createSelectElement(): HTMLSelectElement { return createElement('select'); }
 
 export {
   createAnchorElement,
@@ -186,4 +187,5 @@ export {
   createSampElement,
   createScriptElement,
   createSectionElement,
+  createSelectElement,
 };

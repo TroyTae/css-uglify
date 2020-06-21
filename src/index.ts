@@ -94,6 +94,7 @@ import {
   createSampElement,
   createScriptElement,
   createSectionElement,
+  createSelectElement,
 } from './html';
 
 export {
@@ -192,4 +193,5 @@ export {
   createSampElement,
   createScriptElement,
   createSectionElement,
+  createSelectElement,
 };
