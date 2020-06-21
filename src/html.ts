@@ -90,6 +90,7 @@ function createRtElement(): HTMLElement { return createElement('rt'); }
 function createRubyElement(): HTMLElement { return createElement('ruby'); }
 function createStrikethroughElement(): HTMLElement { return createElement('s'); }
 function createSampElement(): HTMLElement { return createElement('samp'); }
+function createScriptElement(): HTMLScriptElement { return createElement('script'); }
 
 export {
   createAnchorElement,
@@ -182,4 +183,5 @@ export {
   createRubyElement,
   createStrikethroughElement,
   createSampElement,
+  createScriptElement,
 };

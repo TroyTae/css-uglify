@@ -92,6 +92,7 @@ import {
   createRubyElement,
   createStrikethroughElement,
   createSampElement,
+  createScriptElement,
 } from './html';
 
 export {
@@ -188,4 +189,5 @@ export {
   createRubyElement,
   createStrikethroughElement,
   createSampElement,
+  createScriptElement,
 };
