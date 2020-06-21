@@ -88,6 +88,7 @@ function createQuoteElement(): HTMLQuoteElement { return createElement('q'); }
 function createRpElement(): HTMLElement { return createElement('rp'); }
 function createRtElement(): HTMLElement { return createElement('rt'); }
 function createRubyElement(): HTMLElement { return createElement('ruby'); }
+function createStrikethroughElement(): HTMLElement { return createElement('s'); }
 
 export {
   createAnchorElement,
@@ -178,4 +179,5 @@ export {
   createRpElement,
   createRtElement,
   createRubyElement,
+  createStrikethroughElement,
 };
