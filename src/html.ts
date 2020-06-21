@@ -95,6 +95,7 @@ function createSectionElement(): HTMLElement { return createElement('section'); 
 function createSelectElement(): HTMLSelectElement { return createElement('select'); }
 function createSlotElement(): HTMLSlotElement { return createElement('slot'); }
 function createSmallElement(): HTMLElement { return createElement('small'); }
+function createSourceElement(): HTMLSourceElement { return createElement('source'); }
 
 export {
   createAnchorElement,
@@ -192,4 +193,5 @@ export {
   createSelectElement,
   createSlotElement,
   createSmallElement,
+  createSourceElement,
 };

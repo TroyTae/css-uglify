@@ -112,6 +112,18 @@ function createParamElement() { return createElement('param'); }
 function createPictureElement() { return createElement('picture'); }
 function createPreElement() { return createElement('pre'); }
 function createProgressElement() { return createElement('progress'); }
+function createQuoteElement() { return createElement('q'); }
+function createRpElement() { return createElement('rp'); }
+function createRtElement() { return createElement('rt'); }
+function createRubyElement() { return createElement('ruby'); }
+function createStrikethroughElement() { return createElement('s'); }
+function createSampElement() { return createElement('samp'); }
+function createScriptElement() { return createElement('script'); }
+function createSectionElement() { return createElement('section'); }
+function createSelectElement() { return createElement('select'); }
+function createSlotElement() { return createElement('slot'); }
+function createSmallElement() { return createElement('small'); }
+function createSourceElement() { return createElement('source'); }
 
 exports.createAbbrElement = createAbbrElement;
 exports.createAddressElement = createAddressElement;
@@ -198,5 +210,17 @@ exports.createParamElement = createParamElement;
 exports.createPictureElement = createPictureElement;
 exports.createPreElement = createPreElement;
 exports.createProgressElement = createProgressElement;
+exports.createQuoteElement = createQuoteElement;
+exports.createRpElement = createRpElement;
+exports.createRtElement = createRtElement;
+exports.createRubyElement = createRubyElement;
+exports.createSampElement = createSampElement;
+exports.createScriptElement = createScriptElement;
+exports.createSectionElement = createSectionElement;
+exports.createSelectElement = createSelectElement;
+exports.createSlotElement = createSlotElement;
+exports.createSmallElement = createSmallElement;
+exports.createSourceElement = createSourceElement;
+exports.createStrikethroughElement = createStrikethroughElement;
 exports.setAttributes = setAttributes;
 exports.setProperties = setProperties;
