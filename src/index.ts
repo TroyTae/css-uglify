@@ -86,6 +86,7 @@ import {
   createPictureElement,
   createPreElement,
   createProgressElement,
+  createQuoteElement,
 } from './html';
 
 export {
@@ -176,4 +177,5 @@ export {
   createPictureElement,
   createPreElement,
   createProgressElement,
+  createQuoteElement,
 };
