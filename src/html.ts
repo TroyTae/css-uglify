@@ -93,6 +93,7 @@ function createSampElement(): HTMLElement { return createElement('samp'); }
 function createScriptElement(): HTMLScriptElement { return createElement('script'); }
 function createSectionElement(): HTMLElement { return createElement('section'); }
 function createSelectElement(): HTMLSelectElement { return createElement('select'); }
+function createSlotElement(): HTMLSlotElement { return createElement('slot'); }
 
 export {
   createAnchorElement,
@@ -188,4 +189,5 @@ export {
   createScriptElement,
   createSectionElement,
   createSelectElement,
+  createSlotElement,
 };

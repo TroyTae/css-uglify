@@ -92,6 +92,7 @@ const {
   createScriptElement,
   createSectionElement,
   createSelectElement,
+  createSlotElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -188,4 +189,5 @@ test('HTMLElement creation test', () => {
   expect(createScriptElement().tagName).toBe('SCRIPT');
   expect(createSectionElement().tagName).toBe('SECTION');
   expect(createSelectElement().tagName).toBe('SELECT');
+  expect(createSlotElement().tagName).toBe('SLOT');
 });
