@@ -94,6 +94,7 @@ function createScriptElement(): HTMLScriptElement { return createElement('script
 function createSectionElement(): HTMLElement { return createElement('section'); }
 function createSelectElement(): HTMLSelectElement { return createElement('select'); }
 function createSlotElement(): HTMLSlotElement { return createElement('slot'); }
+function createSmallElement(): HTMLElement { return createElement('small'); }
 
 export {
   createAnchorElement,
@@ -190,4 +191,5 @@ export {
   createSectionElement,
   createSelectElement,
   createSlotElement,
+  createSmallElement,
 };
