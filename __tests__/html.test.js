@@ -85,6 +85,7 @@ const {
   createProgressElement,
   createQuoteElement,
   createRpElement,
+  createRtElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -174,4 +175,5 @@ test('HTMLElement creation test', () => {
   expect(createProgressElement().tagName).toBe('PROGRESS');
   expect(createQuoteElement().tagName).toBe('Q');
   expect(createRpElement().tagName).toBe('RP');
+  expect(createRtElement().tagName).toBe('RT');
 });

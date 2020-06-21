@@ -86,6 +86,7 @@ function createPreElement(): HTMLPreElement { return createElement('pre'); }
 function createProgressElement(): HTMLProgressElement { return createElement('progress'); }
 function createQuoteElement(): HTMLQuoteElement { return createElement('q'); }
 function createRpElement(): HTMLElement { return createElement('rp'); }
+function createRtElement(): HTMLElement { return createElement('rt'); }
 
 export {
   createAnchorElement,
@@ -174,4 +175,5 @@ export {
   createProgressElement,
   createQuoteElement,
   createRpElement,
+  createRtElement,
 };
