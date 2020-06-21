@@ -89,6 +89,7 @@ import {
   createQuoteElement,
   createRpElement,
   createRtElement,
+  createRubyElement,
 } from './html';
 
 export {
@@ -182,4 +183,5 @@ export {
   createQuoteElement,
   createRpElement,
   createRtElement,
+  createRubyElement,
 };

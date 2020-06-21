@@ -86,6 +86,7 @@ const {
   createQuoteElement,
   createRpElement,
   createRtElement,
+  createRubyElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -176,4 +177,5 @@ test('HTMLElement creation test', () => {
   expect(createQuoteElement().tagName).toBe('Q');
   expect(createRpElement().tagName).toBe('RP');
   expect(createRtElement().tagName).toBe('RT');
+  expect(createRubyElement().tagName).toBe('RUBY');
 });
