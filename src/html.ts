@@ -98,6 +98,7 @@ function createSmallElement(): HTMLElement { return createElement('small'); }
 function createSourceElement(): HTMLSourceElement { return createElement('source'); }
 function createSpanElement(): HTMLSpanElement { return createElement('span'); }
 function createStrongElement(): HTMLElement { return createElement('strong'); }
+function createStyleElement(): HTMLStyleElement { return createElement('style'); }
 
 export {
   createAnchorElement,
@@ -198,4 +199,5 @@ export {
   createSourceElement,
   createSpanElement,
   createStrongElement,
+  createStyleElement,
 };
