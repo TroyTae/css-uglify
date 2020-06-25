@@ -124,6 +124,10 @@ function createSelectElement() { return createElement('select'); }
 function createSlotElement() { return createElement('slot'); }
 function createSmallElement() { return createElement('small'); }
 function createSourceElement() { return createElement('source'); }
+function createSpanElement() { return createElement('span'); }
+function createStrongElement() { return createElement('strong'); }
+function createStyleElement() { return createElement('style'); }
+function createSubElement() { return createElement('sub'); }
 
 exports.createAbbrElement = createAbbrElement;
 exports.createAddressElement = createAddressElement;
@@ -221,6 +225,10 @@ exports.createSelectElement = createSelectElement;
 exports.createSlotElement = createSlotElement;
 exports.createSmallElement = createSmallElement;
 exports.createSourceElement = createSourceElement;
+exports.createSpanElement = createSpanElement;
 exports.createStrikethroughElement = createStrikethroughElement;
+exports.createStrongElement = createStrongElement;
+exports.createStyleElement = createStyleElement;
+exports.createSubElement = createSubElement;
 exports.setAttributes = setAttributes;
 exports.setProperties = setProperties;

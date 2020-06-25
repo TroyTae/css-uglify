@@ -99,6 +99,7 @@ const {
   createStrongElement,
   createStyleElement,
   createSubElement,
+  createTableElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -202,4 +203,5 @@ test('HTMLElement creation test', () => {
   expect(createStrongElement().tagName).toBe('STRONG');
   expect(createStyleElement().tagName).toBe('STYLE');
   expect(createSubElement().tagName).toBe('SUB');
+  expect(createTableElement().tagName).toBe('TABLE');
 });

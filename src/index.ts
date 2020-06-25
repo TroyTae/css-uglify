@@ -102,6 +102,7 @@ import {
   createStrongElement,
   createStyleElement,
   createSubElement,
+  createTableElement,
 } from './html';
 
 export {
@@ -208,4 +209,5 @@ export {
   createStrongElement,
   createStyleElement,
   createSubElement,
+  createTableElement,
 };

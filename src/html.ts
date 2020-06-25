@@ -100,6 +100,7 @@ function createSpanElement(): HTMLSpanElement { return createElement('span'); }
 function createStrongElement(): HTMLElement { return createElement('strong'); }
 function createStyleElement(): HTMLStyleElement { return createElement('style'); }
 function createSubElement(): HTMLElement { return createElement('sub'); }
+function createTableElement(): HTMLTableElement { return createElement('table'); }
 
 export {
   createAnchorElement,
@@ -202,4 +203,5 @@ export {
   createStrongElement,
   createStyleElement,
   createSubElement,
+  createTableElement,
 };
