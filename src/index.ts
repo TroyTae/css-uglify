@@ -101,6 +101,7 @@ import {
   createSpanElement,
   createStrongElement,
   createStyleElement,
+  createSubElement,
 } from './html';
 
 export {
@@ -206,4 +207,5 @@ export {
   createSpanElement,
   createStrongElement,
   createStyleElement,
+  createSubElement,
 };
