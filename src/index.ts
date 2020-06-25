@@ -98,6 +98,7 @@ import {
   createSlotElement,
   createSmallElement,
   createSourceElement,
+  createSpanElement,
 } from './html';
 
 export {
@@ -200,4 +201,5 @@ export {
   createSlotElement,
   createSmallElement,
   createSourceElement,
+  createSpanElement,
 };
