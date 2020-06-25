@@ -96,6 +96,7 @@ const {
   createSmallElement,
   createSourceElement,
   createSpanElement,
+  createStrongElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -196,4 +197,5 @@ test('HTMLElement creation test', () => {
   expect(createSmallElement().tagName).toBe('SMALL');
   expect(createSourceElement().tagName).toBe('SOURCE');
   expect(createSpanElement().tagName).toBe('SPAN');
+  expect(createStrongElement().tagName).toBe('STRONG');
 });

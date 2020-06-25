@@ -97,6 +97,7 @@ function createSlotElement(): HTMLSlotElement { return createElement('slot'); }
 function createSmallElement(): HTMLElement { return createElement('small'); }
 function createSourceElement(): HTMLSourceElement { return createElement('source'); }
 function createSpanElement(): HTMLSpanElement { return createElement('span'); }
+function createStrongElement(): HTMLElement { return createElement('strong'); }
 
 export {
   createAnchorElement,
@@ -196,4 +197,5 @@ export {
   createSmallElement,
   createSourceElement,
   createSpanElement,
+  createStrongElement,
 };
