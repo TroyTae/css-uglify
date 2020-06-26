@@ -108,6 +108,7 @@ function createTextAreaElement(): HTMLTextAreaElement { return createElement('te
 function createTableFooterElement(): HTMLTableSectionElement { return createElement('tfoot'); }
 function createTableHeaderElement(): HTMLTableHeaderCellElement { return createElement('th'); }
 function createTableHeadElement(): HTMLTableSectionElement { return createElement('thead'); }
+function createTimeElement(): HTMLTimeElement { return createElement('time'); }
 
 export {
   createAnchorElement,
@@ -218,4 +219,5 @@ export {
   createTableFooterElement,
   createTableHeaderElement,
   createTableHeadElement,
+  createTimeElement,
 };
