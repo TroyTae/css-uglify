@@ -103,6 +103,7 @@ const {
   createTableSectionElement,
   createTableDataCellElement,
   createTemplateElement,
+  createTextAreaElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -210,4 +211,5 @@ test('HTMLElement creation test', () => {
   expect(createTableSectionElement().tagName).toBe('TBODY');
   expect(createTableDataCellElement().tagName).toBe('TD');
   expect(createTemplateElement().tagName).toBe('TEMPLATE');
+  expect(createTextAreaElement().tagName).toBe('TEXTAREA');
 });

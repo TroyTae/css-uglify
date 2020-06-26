@@ -104,6 +104,7 @@ function createTableElement(): HTMLTableElement { return createElement('table');
 function createTableSectionElement(): HTMLTableSectionElement { return createElement('tbody'); }
 function createTableDataCellElement(): HTMLTableDataCellElement { return createElement('td'); }
 function createTemplateElement(): HTMLTemplateElement { return createElement('template'); }
+function createTextAreaElement(): HTMLTextAreaElement { return createElement('textarea'); }
 
 export {
   createAnchorElement,
@@ -210,4 +211,5 @@ export {
   createTableSectionElement,
   createTableDataCellElement,
   createTemplateElement,
+  createTextAreaElement,
 };

@@ -106,6 +106,7 @@ import {
   createTableSectionElement,
   createTableDataCellElement,
   createTemplateElement,
+  createTextAreaElement,
 } from './html';
 
 export {
@@ -216,4 +217,5 @@ export {
   createTableSectionElement,
   createTableDataCellElement,
   createTemplateElement,
+  createTextAreaElement,
 };
