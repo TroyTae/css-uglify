@@ -109,6 +109,7 @@ import {
   createTextAreaElement,
   createTableFooterElement,
   createTableHeaderElement,
+  createTableHeadElement,
 } from './html';
 
 export {
@@ -222,4 +223,5 @@ export {
   createTextAreaElement,
   createTableFooterElement,
   createTableHeaderElement,
+  createTableHeadElement,
 };

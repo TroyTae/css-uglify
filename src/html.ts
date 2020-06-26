@@ -107,6 +107,7 @@ function createTemplateElement(): HTMLTemplateElement { return createElement('te
 function createTextAreaElement(): HTMLTextAreaElement { return createElement('textarea'); }
 function createTableFooterElement(): HTMLTableSectionElement { return createElement('tfoot'); }
 function createTableHeaderElement(): HTMLTableHeaderCellElement { return createElement('th'); }
+function createTableHeadElement(): HTMLTableSectionElement { return createElement('thead'); }
 
 export {
   createAnchorElement,
@@ -216,4 +217,5 @@ export {
   createTextAreaElement,
   createTableFooterElement,
   createTableHeaderElement,
+  createTableHeadElement,
 };

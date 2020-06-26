@@ -106,6 +106,7 @@ const {
   createTextAreaElement,
   createTableFooterElement,
   createTableHeaderElement,
+  createTableHeadElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -216,4 +217,5 @@ test('HTMLElement creation test', () => {
   expect(createTextAreaElement().tagName).toBe('TEXTAREA');
   expect(createTableFooterElement().tagName).toBe('TFOOT');
   expect(createTableHeaderElement().tagName).toBe('TH');
+  expect(createTableHeadElement().tagName).toBe('THEAD');
 });
