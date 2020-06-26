@@ -101,10 +101,12 @@ function createStrongElement(): HTMLElement { return createElement('strong'); }
 function createStyleElement(): HTMLStyleElement { return createElement('style'); }
 function createSubElement(): HTMLElement { return createElement('sub'); }
 function createTableElement(): HTMLTableElement { return createElement('table'); }
-function createTableSectionElement(): HTMLTableSectionElement { return createElement('tbody'); }
-function createTableDataCellElement(): HTMLTableDataCellElement { return createElement('td'); }
+function createTableBodyElement(): HTMLTableSectionElement { return createElement('tbody'); }
+function createTableDataElement(): HTMLTableDataCellElement { return createElement('td'); }
 function createTemplateElement(): HTMLTemplateElement { return createElement('template'); }
 function createTextAreaElement(): HTMLTextAreaElement { return createElement('textarea'); }
+function createTableFooterElement(): HTMLTableSectionElement { return createElement('tfoot'); }
+function createTableHeaderElement(): HTMLTableHeaderCellElement { return createElement('th'); }
 
 export {
   createAnchorElement,
@@ -208,8 +210,9 @@ export {
   createStyleElement,
   createSubElement,
   createTableElement,
-  createTableSectionElement,
-  createTableDataCellElement,
+  createTableBodyElement,
+  createTableDataElement,
   createTemplateElement,
   createTextAreaElement,
+  createTableFooterElement,
 };

@@ -103,10 +103,11 @@ import {
   createStyleElement,
   createSubElement,
   createTableElement,
-  createTableSectionElement,
-  createTableDataCellElement,
+  createTableBodyElement,
+  createTableDataElement,
   createTemplateElement,
   createTextAreaElement,
+  createTableFooterElement,
 } from './html';
 
 export {
@@ -214,8 +215,9 @@ export {
   createStyleElement,
   createSubElement,
   createTableElement,
-  createTableSectionElement,
-  createTableDataCellElement,
+  createTableBodyElement,
+  createTableDataElement,
   createTemplateElement,
   createTextAreaElement,
+  createTableFooterElement,
 };

@@ -100,10 +100,11 @@ const {
   createStyleElement,
   createSubElement,
   createTableElement,
-  createTableSectionElement,
-  createTableDataCellElement,
+  createTableBodyElement,
+  createTableDataElement,
   createTemplateElement,
   createTextAreaElement,
+  createTableFooterElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -208,8 +209,9 @@ test('HTMLElement creation test', () => {
   expect(createStyleElement().tagName).toBe('STYLE');
   expect(createSubElement().tagName).toBe('SUB');
   expect(createTableElement().tagName).toBe('TABLE');
-  expect(createTableSectionElement().tagName).toBe('TBODY');
-  expect(createTableDataCellElement().tagName).toBe('TD');
+  expect(createTableBodyElement().tagName).toBe('TBODY');
+  expect(createTableDataElement().tagName).toBe('TD');
   expect(createTemplateElement().tagName).toBe('TEMPLATE');
   expect(createTextAreaElement().tagName).toBe('TEXTAREA');
+  expect(createTableFooterElement().tagName).toBe('TFOOT');
 });
