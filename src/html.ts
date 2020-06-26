@@ -110,6 +110,7 @@ function createTableHeaderElement(): HTMLTableHeaderCellElement { return createE
 function createTableHeadElement(): HTMLTableSectionElement { return createElement('thead'); }
 function createTimeElement(): HTMLTimeElement { return createElement('time'); }
 function createTitleElement(): HTMLTitleElement { return createElement('title'); }
+function createTableRowElement(): HTMLTableRowElement { return createElement('tr'); }
 
 export {
   createAnchorElement,
@@ -222,4 +223,5 @@ export {
   createTableHeadElement,
   createTimeElement,
   createTitleElement,
+  createTableRowElement,
 };

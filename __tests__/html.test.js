@@ -109,6 +109,7 @@ const {
   createTableHeadElement,
   createTimeElement,
   createTitleElement,
+  createTableRowElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -222,4 +223,5 @@ test('HTMLElement creation test', () => {
   expect(createTableHeadElement().tagName).toBe('THEAD');
   expect(createTimeElement().tagName).toBe('TIME');
   expect(createTitleElement().tagName).toBe('TITLE');
+  expect(createTableRowElement().tagName).toBe('TR');
 });
