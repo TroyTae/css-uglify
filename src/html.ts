@@ -103,6 +103,7 @@ function createSubElement(): HTMLElement { return createElement('sub'); }
 function createTableElement(): HTMLTableElement { return createElement('table'); }
 function createTableSectionElement(): HTMLTableSectionElement { return createElement('tbody'); }
 function createTableDataCellElement(): HTMLTableDataCellElement { return createElement('td'); }
+function createTemplateElement(): HTMLTemplateElement { return createElement('template'); }
 
 export {
   createAnchorElement,
@@ -208,4 +209,5 @@ export {
   createTableElement,
   createTableSectionElement,
   createTableDataCellElement,
+  createTemplateElement,
 };

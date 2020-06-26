@@ -105,6 +105,7 @@ import {
   createTableElement,
   createTableSectionElement,
   createTableDataCellElement,
+  createTemplateElement,
 } from './html';
 
 export {
@@ -214,4 +215,5 @@ export {
   createTableElement,
   createTableSectionElement,
   createTableDataCellElement,
+  createTemplateElement,
 };

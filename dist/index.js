@@ -128,6 +128,10 @@ function createSpanElement() { return createElement('span'); }
 function createStrongElement() { return createElement('strong'); }
 function createStyleElement() { return createElement('style'); }
 function createSubElement() { return createElement('sub'); }
+function createTableElement() { return createElement('table'); }
+function createTableSectionElement() { return createElement('tbody'); }
+function createTableDataCellElement() { return createElement('td'); }
+function createTemplateElement() { return createElement('template'); }
 
 exports.createAbbrElement = createAbbrElement;
 exports.createAddressElement = createAddressElement;
@@ -230,5 +234,9 @@ exports.createStrikethroughElement = createStrikethroughElement;
 exports.createStrongElement = createStrongElement;
 exports.createStyleElement = createStyleElement;
 exports.createSubElement = createSubElement;
+exports.createTableDataCellElement = createTableDataCellElement;
+exports.createTableElement = createTableElement;
+exports.createTableSectionElement = createTableSectionElement;
+exports.createTemplateElement = createTemplateElement;
 exports.setAttributes = setAttributes;
 exports.setProperties = setProperties;
