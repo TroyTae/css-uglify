@@ -129,9 +129,17 @@ function createStrongElement() { return createElement('strong'); }
 function createStyleElement() { return createElement('style'); }
 function createSubElement() { return createElement('sub'); }
 function createTableElement() { return createElement('table'); }
-function createTableSectionElement() { return createElement('tbody'); }
-function createTableDataCellElement() { return createElement('td'); }
+function createTableBodyElement() { return createElement('tbody'); }
+function createTableDataElement() { return createElement('td'); }
 function createTemplateElement() { return createElement('template'); }
+function createTextAreaElement() { return createElement('textarea'); }
+function createTableFooterElement() { return createElement('tfoot'); }
+function createTableHeaderElement() { return createElement('th'); }
+function createTableHeadElement() { return createElement('thead'); }
+function createTimeElement() { return createElement('time'); }
+function createTitleElement() { return createElement('title'); }
+function createTableRowElement() { return createElement('tr'); }
+function createTrackElement() { return createElement('track'); }
 
 exports.createAbbrElement = createAbbrElement;
 exports.createAddressElement = createAddressElement;
@@ -234,9 +242,17 @@ exports.createStrikethroughElement = createStrikethroughElement;
 exports.createStrongElement = createStrongElement;
 exports.createStyleElement = createStyleElement;
 exports.createSubElement = createSubElement;
-exports.createTableDataCellElement = createTableDataCellElement;
+exports.createTableBodyElement = createTableBodyElement;
+exports.createTableDataElement = createTableDataElement;
 exports.createTableElement = createTableElement;
-exports.createTableSectionElement = createTableSectionElement;
+exports.createTableFooterElement = createTableFooterElement;
+exports.createTableHeadElement = createTableHeadElement;
+exports.createTableHeaderElement = createTableHeaderElement;
+exports.createTableRowElement = createTableRowElement;
 exports.createTemplateElement = createTemplateElement;
+exports.createTextAreaElement = createTextAreaElement;
+exports.createTimeElement = createTimeElement;
+exports.createTitleElement = createTitleElement;
+exports.createTrackElement = createTrackElement;
 exports.setAttributes = setAttributes;
 exports.setProperties = setProperties;

@@ -113,6 +113,7 @@ import {
   createTimeElement,
   createTitleElement,
   createTableRowElement,
+  createTrackElement,
 } from './html';
 
 export {
@@ -230,4 +231,5 @@ export {
   createTimeElement,
   createTitleElement,
   createTableRowElement,
+  createTrackElement,
 };
