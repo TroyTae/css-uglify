@@ -102,6 +102,7 @@ function createStyleElement(): HTMLStyleElement { return createElement('style');
 function createSubElement(): HTMLElement { return createElement('sub'); }
 function createTableElement(): HTMLTableElement { return createElement('table'); }
 function createTableSectionElement(): HTMLTableSectionElement { return createElement('tbody'); }
+function createTableDataCellElement(): HTMLTableDataCellElement { return createElement('td'); }
 
 export {
   createAnchorElement,
@@ -206,4 +207,5 @@ export {
   createSubElement,
   createTableElement,
   createTableSectionElement,
+  createTableDataCellElement,
 };

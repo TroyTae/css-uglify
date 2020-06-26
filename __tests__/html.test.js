@@ -101,6 +101,7 @@ const {
   createSubElement,
   createTableElement,
   createTableSectionElement,
+  createTableDataCellElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -206,4 +207,5 @@ test('HTMLElement creation test', () => {
   expect(createSubElement().tagName).toBe('SUB');
   expect(createTableElement().tagName).toBe('TABLE');
   expect(createTableSectionElement().tagName).toBe('TBODY');
+  expect(createTableDataCellElement().tagName).toBe('TD');
 });
