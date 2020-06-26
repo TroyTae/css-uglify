@@ -108,6 +108,7 @@ import {
   createTemplateElement,
   createTextAreaElement,
   createTableFooterElement,
+  createTableHeaderElement,
 } from './html';
 
 export {
@@ -220,4 +221,5 @@ export {
   createTemplateElement,
   createTextAreaElement,
   createTableFooterElement,
+  createTableHeaderElement,
 };

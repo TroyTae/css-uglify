@@ -215,4 +215,5 @@ export {
   createTemplateElement,
   createTextAreaElement,
   createTableFooterElement,
+  createTableHeaderElement,
 };
