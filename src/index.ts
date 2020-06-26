@@ -111,6 +111,7 @@ import {
   createTableHeaderElement,
   createTableHeadElement,
   createTimeElement,
+  createTitleElement,
 } from './html';
 
 export {
@@ -226,4 +227,5 @@ export {
   createTableHeaderElement,
   createTableHeadElement,
   createTimeElement,
+  createTitleElement,
 };
