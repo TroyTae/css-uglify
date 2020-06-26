@@ -100,6 +100,7 @@ const {
   createStyleElement,
   createSubElement,
   createTableElement,
+  createTableSectionElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -204,4 +205,5 @@ test('HTMLElement creation test', () => {
   expect(createStyleElement().tagName).toBe('STYLE');
   expect(createSubElement().tagName).toBe('SUB');
   expect(createTableElement().tagName).toBe('TABLE');
+  expect(createTableSectionElement().tagName).toBe('TBODY');
 });
