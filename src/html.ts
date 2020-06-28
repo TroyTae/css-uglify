@@ -115,6 +115,7 @@ function createTrackElement(): HTMLTrackElement { return createElement('track');
 function createUnarticulatedAnnotationElement(): HTMLElement { return createElement('u'); }
 function createUlElement(): HTMLUListElement { return createElement('ul'); }
 function createVarElement(): HTMLElement { return createElement('var'); }
+function createVideoElement(): HTMLVideoElement { return createElement('video'); }
 
 export {
   createAnchorElement,
@@ -232,4 +233,5 @@ export {
   createUnarticulatedAnnotationElement,
   createUlElement,
   createVarElement,
+  createVideoElement,
 };

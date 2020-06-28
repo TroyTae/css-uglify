@@ -117,6 +117,7 @@ import {
   createUnarticulatedAnnotationElement,
   createUlElement,
   createVarElement,
+  createVideoElement,
 } from './html';
 
 export {
@@ -238,4 +239,5 @@ export {
   createUnarticulatedAnnotationElement,
   createUlElement,
   createVarElement,
+  createVideoElement,
 };

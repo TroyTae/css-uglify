@@ -114,6 +114,7 @@ const {
   createUnarticulatedAnnotationElement,
   createUlElement,
   createVarElement,
+  createVideoElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -232,4 +233,5 @@ test('HTMLElement creation test', () => {
   expect(createUnarticulatedAnnotationElement().tagName).toBe('U');
   expect(createUlElement().tagName).toBe('UL');
   expect(createVarElement().tagName).toBe('VAR');
+  expect(createVideoElement().tagName).toBe('VIDEO');
 });
