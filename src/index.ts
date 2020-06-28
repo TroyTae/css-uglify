@@ -116,6 +116,7 @@ import {
   createTrackElement,
   createUnarticulatedAnnotationElement,
   createUlElement,
+  createVarElement,
 } from './html';
 
 export {
@@ -236,4 +237,5 @@ export {
   createTrackElement,
   createUnarticulatedAnnotationElement,
   createUlElement,
+  createVarElement,
 };

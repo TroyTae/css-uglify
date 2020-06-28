@@ -113,6 +113,7 @@ const {
   createTrackElement,
   createUnarticulatedAnnotationElement,
   createUlElement,
+  createVarElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -230,4 +231,5 @@ test('HTMLElement creation test', () => {
   expect(createTrackElement().tagName).toBe('TRACK');
   expect(createUnarticulatedAnnotationElement().tagName).toBe('U');
   expect(createUlElement().tagName).toBe('UL');
+  expect(createVarElement().tagName).toBe('VAR');
 });
