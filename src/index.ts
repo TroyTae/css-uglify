@@ -114,6 +114,7 @@ import {
   createTitleElement,
   createTableRowElement,
   createTrackElement,
+  createUnarticulatedAnnotationElement,
 } from './html';
 
 export {
@@ -232,4 +233,5 @@ export {
   createTitleElement,
   createTableRowElement,
   createTrackElement,
+  createUnarticulatedAnnotationElement,
 };
