@@ -112,6 +112,7 @@ const {
   createTableRowElement,
   createTrackElement,
   createUnarticulatedAnnotationElement,
+  createUlElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -228,4 +229,5 @@ test('HTMLElement creation test', () => {
   expect(createTableRowElement().tagName).toBe('TR');
   expect(createTrackElement().tagName).toBe('TRACK');
   expect(createUnarticulatedAnnotationElement().tagName).toBe('U');
+  expect(createUlElement().tagName).toBe('UL');
 });

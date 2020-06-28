@@ -113,6 +113,7 @@ function createTitleElement(): HTMLTitleElement { return createElement('title');
 function createTableRowElement(): HTMLTableRowElement { return createElement('tr'); }
 function createTrackElement(): HTMLTrackElement { return createElement('track'); }
 function createUnarticulatedAnnotationElement(): HTMLElement { return createElement('u'); }
+function createUlElement(): HTMLUListElement { return createElement('ul'); }
 
 export {
   createAnchorElement,
@@ -228,4 +229,5 @@ export {
   createTableRowElement,
   createTrackElement,
   createUnarticulatedAnnotationElement,
+  createUlElement,
 };
