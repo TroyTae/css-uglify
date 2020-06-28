@@ -115,6 +115,7 @@ const {
   createUlElement,
   createVarElement,
   createVideoElement,
+  createWbrElement,
 } = require('../dist/index');
 
 test('HTMLElement creation test', () => {
@@ -234,4 +235,5 @@ test('HTMLElement creation test', () => {
   expect(createUlElement().tagName).toBe('UL');
   expect(createVarElement().tagName).toBe('VAR');
   expect(createVideoElement().tagName).toBe('VIDEO');
+  expect(createWbrElement().tagName).toBe('WBR');
 });

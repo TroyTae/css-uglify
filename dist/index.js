@@ -140,6 +140,11 @@ function createTimeElement() { return createElement('time'); }
 function createTitleElement() { return createElement('title'); }
 function createTableRowElement() { return createElement('tr'); }
 function createTrackElement() { return createElement('track'); }
+function createUnarticulatedAnnotationElement() { return createElement('u'); }
+function createUlElement() { return createElement('ul'); }
+function createVarElement() { return createElement('var'); }
+function createVideoElement() { return createElement('video'); }
+function createWbrElement() { return createElement('wbr'); }
 
 exports.createAbbrElement = createAbbrElement;
 exports.createAddressElement = createAddressElement;
@@ -254,5 +259,10 @@ exports.createTextAreaElement = createTextAreaElement;
 exports.createTimeElement = createTimeElement;
 exports.createTitleElement = createTitleElement;
 exports.createTrackElement = createTrackElement;
+exports.createUlElement = createUlElement;
+exports.createUnarticulatedAnnotationElement = createUnarticulatedAnnotationElement;
+exports.createVarElement = createVarElement;
+exports.createVideoElement = createVideoElement;
+exports.createWbrElement = createWbrElement;
 exports.setAttributes = setAttributes;
 exports.setProperties = setProperties;

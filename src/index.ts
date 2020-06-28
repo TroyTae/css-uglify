@@ -118,6 +118,7 @@ import {
   createUlElement,
   createVarElement,
   createVideoElement,
+  createWbrElement,
 } from './html';
 
 export {
@@ -240,4 +241,5 @@ export {
   createUlElement,
   createVarElement,
   createVideoElement,
+  createWbrElement,
 };

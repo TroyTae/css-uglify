@@ -116,6 +116,7 @@ function createUnarticulatedAnnotationElement(): HTMLElement { return createElem
 function createUlElement(): HTMLUListElement { return createElement('ul'); }
 function createVarElement(): HTMLElement { return createElement('var'); }
 function createVideoElement(): HTMLVideoElement { return createElement('video'); }
+function createWbrElement(): HTMLElement { return createElement('wbr'); }
 
 export {
   createAnchorElement,
@@ -234,4 +235,5 @@ export {
   createUlElement,
   createVarElement,
   createVideoElement,
+  createWbrElement,
 };
