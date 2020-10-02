@@ -1,25 +1,17 @@
 {
-  "name": "hellper",
+  "name": "noliter",
   "version": "1.0.0",
-  "description": "A helper library from hell for handling DOM 😈",
+  "description": "",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
-  "directories": {
-    "lib": "dist",
-    "test": "__tests__",
-    "doc": "README.md"
-  },
   "scripts": {
     "build": "rollup --c rollup.config.js",
-    "test": "npm run test:lint & npm run test:unit",
-    "test:lint": "eslint --ext .ts src/",
-    "fix:lint": "eslint --fix --ext .ts src/",
-    "test:unit": "jest"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TroyTae/hellper.git"
+    "url": "git+https://github.com/TroyTae/noliter.git"
   },
   "keywords": [
     "DOM"
@@ -27,14 +19,15 @@
   "author": "TroyTae",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TroyTae/hellper/issues"
+    "url": "https://github.com/TroyTae/noliter/issues"
   },
-  "homepage": "https://github.com/TroyTae/hellper#readme",
   "devDependencies": {
-    "eslint-config-troy-recommended": "git+https://github.com/TroyTae/eslint-config-troy-recommended.git",
-    "troyjs": "git+https://github.com/TroyTae/troyjs.git"
-  },
-  "eslintConfig": {
-    "extends": "troy-recommended"
+    "fs-extra": "^9.0.1",
+    "jest": "^26.4.2",
+    "naming-convention-transfer": "^1.0.2",
+    "rollup": "^2.28.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.27.3",
+    "typescript": "^4.0.3"
   }
 }
