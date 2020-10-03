@@ -5,13 +5,16 @@ const {
   PROP_VALUE,
   PROP_CHECKED,
   PROP_DISABLED,
+  INPUT_TYPE_TEXT,
+  INPUT_TYPE_CHECKBOX,
+  INPUT_TYPE_RADIO,
 } = require('../dist/index');
 
 test('Property: value', () => {
   console.log(ATTR_TYPE);
   expect(
     $(TAG_NAME_INPUT)
-      .setAttributes(ATTR_TYPE, 'text')
+      .setAttributes(ATTR_TYPE, INPUT_TYPE_TEXT)
       .setProperties(PROP_VALUE, 'test-value')
       .dom[PROP_VALUE]
   ).toBe('test-value');
@@ -20,7 +23,7 @@ test('Property: value', () => {
 test('Property: checked', () => {
   expect(
     $(TAG_NAME_INPUT)
-      .setAttributes(ATTR_TYPE, 'checkbox')
+      .setAttributes(ATTR_TYPE, INPUT_TYPE_CHECKBOX)
       .setProperties(PROP_CHECKED, true)
       .dom[PROP_CHECKED]
   ).toBe(true);
@@ -29,7 +32,7 @@ test('Property: checked', () => {
 test('Property: disabled', () => {
   expect(
     $(TAG_NAME_INPUT)
-      .setAttributes(ATTR_TYPE, 'text')
+      .setAttributes(ATTR_TYPE, INPUT_TYPE_RADIO)
       .setProperties(PROP_DISABLED, true)
       .dom[PROP_DISABLED]
   ).toBe(true);

@@ -2,17 +2,18 @@ const {
   $,
   TAG_NAME_DIV,
   TAG_NAME_INPUT,
-  ATTR_VALUE,
+  ATTR_TYPE,
   ATTR_CLASS,
+  INPUT_TYPE_TEXT,
 } = require('../dist/index');
 
-test('Attribute: value', () => {
+test('Attribute: type', () => {
   expect(
     $(TAG_NAME_INPUT)
-      .setAttributes(ATTR_VALUE, 'test-value')
+      .setAttributes(ATTR_TYPE, INPUT_TYPE_TEXT)
       .dom
-      .getAttribute(ATTR_VALUE)
-  ).toBe('test-value');
+      .getAttribute(ATTR_TYPE)
+  ).toBe(INPUT_TYPE_TEXT);
 });
 
 test('Attribute: class', () => {
