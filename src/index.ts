@@ -1,5 +1,20 @@
 import $ from './Noliter';
 import {
+  ATTR_VALUE,
+  ATTR_CLASS,
+  ATTR_TYPE,
+} from './constants/Attribute';
+import {
+  INPUT_TYPE_TEXT,
+  INPUT_TYPE_RADIO,
+  INPUT_TYPE_CHECKBOX,
+} from './constants/InputType';
+import {
+  PROP_VALUE,
+  PROP_CHECKED,
+  PROP_DISABLED,
+} from './constants/Property';
+import {
   TAG_NAME_ANCHOR,
   TAG_NAME_ABBR,
   TAG_NAME_ADDRESS,
@@ -96,6 +111,15 @@ import {
 
 export {
   $,
+  ATTR_VALUE,
+  ATTR_CLASS,
+  ATTR_TYPE,
+  INPUT_TYPE_TEXT,
+  INPUT_TYPE_RADIO,
+  INPUT_TYPE_CHECKBOX,
+  PROP_VALUE,
+  PROP_CHECKED,
+  PROP_DISABLED,
   TAG_NAME_ANCHOR,
   TAG_NAME_ABBR,
   TAG_NAME_ADDRESS,

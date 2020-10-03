@@ -8,6 +8,7 @@ const {
 } = require('../dist/index');
 
 test('Property: value', () => {
+  console.log(ATTR_TYPE);
   expect(
     $(TAG_NAME_INPUT)
       .setAttributes(ATTR_TYPE, 'text')
