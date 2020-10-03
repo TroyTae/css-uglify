@@ -4,7 +4,7 @@ const {terser} = require('rollup-plugin-terser');
 const typescript = require('rollup-plugin-typescript2');
 const {kebabToPascal} = require('naming-convention-transfer');
 
-const input = 'src/index.ts';
+const input = 'src/Index.ts';
 
 function createConfig({ pkg, input, format, file }) {
   return {	
