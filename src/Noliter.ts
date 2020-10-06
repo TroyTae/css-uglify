@@ -12,6 +12,11 @@ class Noliter<K extends keyof HTMLElementTagNameMap> {
     return this;
   }
 
+  append(...children: Noliter<K>[]) {
+    this.dom.append.apply(this.dom, children.map((v) => v.dom));
+    return this;
+  }
+
   setAttributes(...attributes: Primitive[]) {
     let index = 0;
     for (; index < attributes.length; ++index) {
