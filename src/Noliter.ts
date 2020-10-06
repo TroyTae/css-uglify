@@ -32,6 +32,15 @@ class Noliter<K extends keyof HTMLElementTagNameMap> {
     }
     return this;
   }
+
+  addEvent<E extends keyof HTMLElementEventMap>(
+    type: E,
+    listener: EventListenerOrEventListenerObject,
+    options?: boolean | AddEventListenerOptions,
+  ) {
+    this.dom.addEventListener(type, listener, options);
+    return this;
+  }
 }
 
 export default function $<
