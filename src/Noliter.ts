@@ -7,19 +7,24 @@ class Noliter<K extends keyof HTMLElementTagNameMap> {
     this.dom = document.createElement(tagName);
   }
 
-  update(callback: (dom: HTMLElementTagNameMap[K]) => void) {
-    callback(this.dom);
-    return this;
-  }
-
-  append(...children: Noliter<K>[]) {
-    this.dom.append.apply(this.dom, children.map((v) => v.dom));
+  append(...children: (string | Node | Noliter<K>)[]) {
+    let index = children.length;
+    while (--index) {
+      if (children[index] instanceof Noliter) {
+        children[index] = (children[index] as Noliter<K>).dom;
+      }
+    }
+    this.dom.append.apply(
+      this.dom,
+      children as (string | Node)[],
+    );
     return this;
   }
 
   setAttributes(...attributes: Primitive[]) {
     let index = 0;
-    for (; index < attributes.length; ++index) {
+    const max = attributes.length;
+    for (; index < max; ++index) {
       this.dom.setAttribute(
         attributes[index] as string,
         attributes[++index] as string,
@@ -30,7 +35,8 @@ class Noliter<K extends keyof HTMLElementTagNameMap> {
 
   setProperties(...properties: Primitive[]) {
     let index = 0;
-    for (; index < properties.length; ++index) {
+    const max = properties.length;
+    for (; index < max; ++index) {
       (this.dom as any)
         [properties[index] as string]
           = properties[++index];
