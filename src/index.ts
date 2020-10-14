@@ -1,8 +1,10 @@
 import $ from './Noliter';
 import {
+  ATTR_ID,
   ATTR_VALUE,
   ATTR_CLASS,
   ATTR_TYPE,
+  ATTR_STYLE,
 } from './constants/Attribute';
 import {
   INPUT_TYPE_TEXT,
@@ -151,9 +153,11 @@ import {
 
 export {
   $,
+  ATTR_ID,
   ATTR_VALUE,
   ATTR_CLASS,
   ATTR_TYPE,
+  ATTR_STYLE,
   INPUT_TYPE_TEXT,
   INPUT_TYPE_RADIO,
   INPUT_TYPE_CHECKBOX,
