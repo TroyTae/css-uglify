@@ -10,7 +10,7 @@ const {
 test('Attribute: type', () => {
   expect(
     $(TAG_NAME_INPUT)
-      .setAttributes(ATTR_TYPE, INPUT_TYPE_TEXT)
+      .attrs(ATTR_TYPE, INPUT_TYPE_TEXT)
       .dom
       .getAttribute(ATTR_TYPE)
   ).toBe(INPUT_TYPE_TEXT);
@@ -19,7 +19,7 @@ test('Attribute: type', () => {
 test('Attribute: class', () => {
   expect(
     $(TAG_NAME_DIV)
-      .setAttributes(ATTR_CLASS, 'test-class')
+      .attrs(ATTR_CLASS, 'test-class')
       .dom
       .getAttribute(ATTR_CLASS)
   ).toBe('test-class');

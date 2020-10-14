@@ -13,8 +13,8 @@ const {
 test('Property: value', () => {
   expect(
     $(TAG_NAME_INPUT)
-      .setAttributes(ATTR_TYPE, INPUT_TYPE_TEXT)
-      .setProperties(PROP_VALUE, 'test-value')
+      .attrs(ATTR_TYPE, INPUT_TYPE_TEXT)
+      .props(PROP_VALUE, 'test-value')
       .dom[PROP_VALUE]
   ).toBe('test-value');
 });
@@ -22,8 +22,8 @@ test('Property: value', () => {
 test('Property: checked', () => {
   expect(
     $(TAG_NAME_INPUT)
-      .setAttributes(ATTR_TYPE, INPUT_TYPE_CHECKBOX)
-      .setProperties(PROP_CHECKED, true)
+      .attrs(ATTR_TYPE, INPUT_TYPE_CHECKBOX)
+      .props(PROP_CHECKED, true)
       .dom[PROP_CHECKED]
   ).toBe(true);
 });
@@ -31,8 +31,8 @@ test('Property: checked', () => {
 test('Property: disabled', () => {
   expect(
     $(TAG_NAME_INPUT)
-      .setAttributes(ATTR_TYPE, INPUT_TYPE_RADIO)
-      .setProperties(PROP_DISABLED, true)
+      .attrs(ATTR_TYPE, INPUT_TYPE_RADIO)
+      .props(PROP_DISABLED, true)
       .dom[PROP_DISABLED]
   ).toBe(true);
 });
