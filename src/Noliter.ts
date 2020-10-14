@@ -21,7 +21,7 @@ class Noliter<K extends keyof HTMLElementTagNameMap> {
     return this;
   }
 
-  setAttributes(...attributes: Primitive[]) {
+  attrs(...attributes: Primitive[]) {
     let index = 0;
     for (; index < attributes.length; ++index) {
       this.dom.setAttribute(
@@ -32,7 +32,7 @@ class Noliter<K extends keyof HTMLElementTagNameMap> {
     return this;
   }
 
-  setProperties(...properties: Primitive[]) {
+  props(...properties: Primitive[]) {
     let index = 0;
     for (; index < properties.length; ++index) {
       (this.dom as any)
@@ -42,7 +42,7 @@ class Noliter<K extends keyof HTMLElementTagNameMap> {
     return this;
   }
 
-  addEvent<E extends keyof HTMLElementEventMap>(
+  events<E extends keyof HTMLElementEventMap>(
     type: E,
     listener: EventListenerOrEventListenerObject,
     options?: boolean | AddEventListenerOptions,
