@@ -1,10 +1,10 @@
 type Primitive = boolean | number | string;
 
-class Noliter<K extends keyof HTMLElementTagNameMap> {
-  dom: HTMLElementTagNameMap[K];
+export default class Noliter<K extends HTMLElement> {
+  dom: K;
 
-  constructor(tagName: K) {
-    this.dom = document.createElement(tagName);
+  constructor(tagName: keyof HTMLElementTagNameMap) {
+    this.dom = <K>document.createElement(tagName);
   }
 
   append(...children: (string | Node | Noliter<K>)[]) {
@@ -50,10 +50,4 @@ class Noliter<K extends keyof HTMLElementTagNameMap> {
     this.dom.addEventListener(type, listener, options);
     return this;
   }
-}
-
-export default function $<
-  K extends keyof HTMLElementTagNameMap
->(tagName: K): Noliter<keyof HTMLElementTagNameMap> {
-  return new Noliter(tagName);
 }
