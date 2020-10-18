@@ -53,3 +53,4 @@ export function createKbd() { return new Noliter('kbd'); }
 export function createLabel() { return new Noliter<HTMLLabelElement>('label'); }
 export function createLegend() { return new Noliter<HTMLLegendElement>('legend'); }
 export function createLi() { return new Noliter<HTMLLIElement>('li'); }
+export function createLink() { return new Noliter<HTMLLinkElement>('link'); }
