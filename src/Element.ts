@@ -86,3 +86,4 @@ export function createTfoot() { return new Noliter<HTMLTableSectionElement>('tfo
 export function createTh() { return new Noliter<HTMLTableHeaderCellElement>('th'); }
 export function createTr() { return new Noliter<HTMLTableRowElement>('tr'); }
 export function createTd() { return new Noliter<HTMLTableDataCellElement>('td'); }
+export function createTime() { return new Noliter<HTMLTimeElement>('time'); }
