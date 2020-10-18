@@ -1,6 +1,3 @@
-export const TAG_NAME_ASIDE = 'aside';
-export const TAG_NAME_AUDIO = 'audio';
-export const TAG_NAME_BOLD = 'b';
 export const TAG_NAME_BDI = 'bdi';
 export const TAG_NAME_BDO = 'bdo';
 export const TAG_NAME_BLOCKQUOTE = 'blockquote';
