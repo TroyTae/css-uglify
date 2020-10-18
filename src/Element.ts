@@ -35,3 +35,4 @@ export function createFieldSet() { return new Noliter<HTMLFieldSetElement>('fiel
 export function createFigCaption() { return new Noliter('figcaption'); }
 export function createFigure() { return new Noliter('figure'); }
 export function createFooter() { return new Noliter('footer'); }
+export function createForm() { return new Noliter<HTMLFormElement>('form'); }
