@@ -56,3 +56,4 @@ export function createLi() { return new Noliter<HTMLLIElement>('li'); }
 export function createLink() { return new Noliter<HTMLLinkElement>('link'); }
 export function createMain() { return new Noliter('main'); }
 export function createMap() { return new Noliter<HTMLMapElement>('map'); }
+export function createMark() { return new Noliter('mark'); }
