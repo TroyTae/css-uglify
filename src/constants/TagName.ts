@@ -1,4 +1,3 @@
-export const TAG_NAME_HEADER = 'header';
 export const TAG_NAME_HR = 'hr';
 export const TAG_NAME_ITALIC = 'i';
 export const TAG_NAME_IFRAME = 'iframe';
