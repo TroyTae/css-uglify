@@ -1,4 +1,3 @@
-export const TAG_NAME_TH = 'th';
 export const TAG_NAME_TR = 'tr';
 export const TAG_NAME_TD = 'td';
 export const TAG_NAME_TIME = 'time';
