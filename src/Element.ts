@@ -48,3 +48,4 @@ export function createItalic() { return new Noliter('i'); }
 export function createIframe() { return new Noliter<HTMLIFrameElement>('iframe'); }
 export function createImg() { return new Noliter<HTMLImageElement>('img'); }
 export function createInput() { return new Noliter<HTMLInputElement>('input'); }
+export function createIns() { return new Noliter<HTMLModElement>('ins'); }
