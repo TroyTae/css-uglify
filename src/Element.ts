@@ -27,3 +27,4 @@ export function createDetails() { return new Noliter<HTMLDetailsElement>('detail
 export function createDfn() { return new Noliter('dfn'); }
 export function createDialog() { return new Noliter<HTMLDialogElement>('dialog'); }
 export function createDiv() { return new Noliter<HTMLDivElement>('div'); }
+export function createDl() { return new Noliter<HTMLDListElement>('dl'); }
