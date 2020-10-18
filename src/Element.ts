@@ -59,3 +59,4 @@ export function createMap() { return new Noliter<HTMLMapElement>('map'); }
 export function createMark() { return new Noliter('mark'); }
 export function createMeter() { return new Noliter<HTMLMeterElement>('meter'); }
 export function createNav() { return new Noliter('nav'); }
+export function createObject() { return new Noliter<HTMLObjectElement>('object'); }

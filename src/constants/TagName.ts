@@ -1,5 +1,3 @@
-export const TAG_NAME_NOSCRIPT = 'noscript';
-export const TAG_NAME_OBJECT = 'object';
 export const TAG_NAME_OL = 'ol';
 export const TAG_NAME_OPTGROUP = 'optgroup';
 export const TAG_NAME_OPTION = 'option';
