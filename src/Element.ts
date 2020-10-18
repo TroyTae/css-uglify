@@ -30,3 +30,4 @@ export function createDiv() { return new Noliter<HTMLDivElement>('div'); }
 export function createDl() { return new Noliter<HTMLDListElement>('dl'); }
 export function createDt() { return new Noliter('dt'); }
 export function createEm() { return new Noliter('em'); }
+export function createEmbed() { return new Noliter('embed'); }
