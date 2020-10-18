@@ -77,3 +77,4 @@ export function createSmall() { return new Noliter('small'); }
 export function createSource() { return new Noliter<HTMLSourceElement>('source'); }
 export function createSpan() { return new Noliter<HTMLSpanElement>('span'); }
 export function createStrong() { return new Noliter('strong'); }
+export function createSub() { return new Noliter('sub'); }

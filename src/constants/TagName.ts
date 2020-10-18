@@ -1,4 +1,3 @@
-export const TAG_NAME_SUB = 'sub';
 export const TAG_NAME_TEXTAREA = 'textarea';
 export const TAG_NAME_TABLE = 'table';
 export const TAG_NAME_THEAD = 'thead';
