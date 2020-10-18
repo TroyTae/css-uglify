@@ -10,11 +10,12 @@ export function createAudio() { return new Noliter<HTMLAudioElement>('audio'); }
 export function createBold() { return new Noliter('b'); }
 export function createBdi() { return new Noliter('bdi'); }
 export function createBdo() { return new Noliter('bdo'); }
-export function createBlockQuote() { return new Noliter('blockquote'); }
+export function createBlockQuote() { return new Noliter<HTMLQuoteElement>('blockquote'); }
 export function createBr() { return new Noliter<HTMLBRElement>('br'); }
 export function createButton() { return new Noliter<HTMLButtonElement>('button'); }
 export function createCanvas() { return new Noliter<HTMLCanvasElement>('canvas'); }
-export function createCaption() { return new Noliter('caption'); }
+export function createCaption() { return new Noliter<HTMLTableCaptionElement>('caption'); }
 export function createCite() { return new Noliter('cite'); }
 export function createCode() { return new Noliter('code'); }
 export function createCol() { return new Noliter<HTMLTableColElement>('col'); }
+export function createColGroup() { return new Noliter<HTMLTableColElement>('colgroup'); }
