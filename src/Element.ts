@@ -37,3 +37,4 @@ export function createFigure() { return new Noliter('figure'); }
 export function createFooter() { return new Noliter('footer'); }
 export function createForm() { return new Noliter<HTMLFormElement>('form'); }
 export function createH1() { return new Noliter<HTMLHeadingElement>('h1'); }
+export function createH2() { return new Noliter<HTMLHeadingElement>('h2'); }

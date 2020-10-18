@@ -1,4 +1,3 @@
-export const TAG_NAME_H2 = 'h2';
 export const TAG_NAME_H3 = 'h3';
 export const TAG_NAME_H4 = 'h4';
 export const TAG_NAME_H5 = 'h5';
