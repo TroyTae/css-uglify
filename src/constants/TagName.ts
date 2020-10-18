@@ -1,4 +1,3 @@
-export const TAG_NAME_BDI = 'bdi';
 export const TAG_NAME_BDO = 'bdo';
 export const TAG_NAME_BLOCKQUOTE = 'blockquote';
 export const TAG_NAME_BR = 'br';

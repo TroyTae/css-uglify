@@ -8,3 +8,4 @@ export function createArticle() { return new Noliter('article'); }
 export function createAside() { return new Noliter('aside'); }
 export function createAudio() { return new Noliter<HTMLAudioElement>('audio'); }
 export function createBold() { return new Noliter('b'); }
+export function createBdi() { return new Noliter('bdi'); }
