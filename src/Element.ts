@@ -72,3 +72,4 @@ export function createProgress() { return new Noliter<HTMLProgressElement>('prog
 export function createQuote() { return new Noliter<HTMLQuoteElement>('q'); }
 export function createSamp() { return new Noliter('samp'); }
 export function createSection() { return new Noliter('section'); }
+export function createSelect() { return new Noliter<HTMLSelectElement>('select'); }
