@@ -1,4 +1,3 @@
-export const TAG_NAME_SPAN = 'span';
 export const TAG_NAME_STRONG = 'strong';
 export const TAG_NAME_SUB = 'sub';
 export const TAG_NAME_TEXTAREA = 'textarea';

@@ -75,3 +75,4 @@ export function createSection() { return new Noliter('section'); }
 export function createSelect() { return new Noliter<HTMLSelectElement>('select'); }
 export function createSmall() { return new Noliter('small'); }
 export function createSource() { return new Noliter<HTMLSourceElement>('source'); }
+export function createSpan() { return new Noliter<HTMLSpanElement>('span'); }
