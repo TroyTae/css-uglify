@@ -1,4 +1,3 @@
-export const TAG_NAME_INPUT = 'input';
 export const TAG_NAME_INS = 'ins';
 export const TAG_NAME_KBD = 'kbd';
 export const TAG_NAME_LABEL = 'label';
