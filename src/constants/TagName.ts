@@ -1,4 +1,3 @@
-export const TAG_NAME_DIALOG = 'dialog';
 export const TAG_NAME_DIV = 'div';
 export const TAG_NAME_DL = 'dl';
 export const TAG_NAME_DT = 'dt';

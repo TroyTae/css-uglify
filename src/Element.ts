@@ -25,3 +25,4 @@ export function createDd() { return new Noliter('dd'); }
 export function createDel() { return new Noliter<HTMLModElement>('del'); }
 export function createDetails() { return new Noliter<HTMLDetailsElement>('details'); }
 export function createDfn() { return new Noliter('dfn'); }
+export function createDialog() { return new Noliter<HTMLDialogElement>('dialog'); }
