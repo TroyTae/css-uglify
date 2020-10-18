@@ -68,3 +68,4 @@ export function createParagraph() { return new Noliter<HTMLParagraphElement>('p'
 export function createParam() { return new Noliter<HTMLParamElement>('param'); }
 export function createPicture() { return new Noliter<HTMLPictureElement>('picture'); }
 export function createPre() { return new Noliter<HTMLPreElement>('pre'); }
+export function createProgress() { return new Noliter<HTMLProgressElement>('progress'); }

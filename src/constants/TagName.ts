@@ -1,4 +1,3 @@
-export const TAG_NAME_PROGRESS = 'progress';
 export const TAG_NAME_QUOTE = 'q';
 export const TAG_NAME_SAMP = 'samp';
 export const TAG_NAME_SECTION = 'section';
