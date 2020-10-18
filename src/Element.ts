@@ -26,3 +26,4 @@ export function createDel() { return new Noliter<HTMLModElement>('del'); }
 export function createDetails() { return new Noliter<HTMLDetailsElement>('details'); }
 export function createDfn() { return new Noliter('dfn'); }
 export function createDialog() { return new Noliter<HTMLDialogElement>('dialog'); }
+export function createDiv() { return new Noliter<HTMLDivElement>('div'); }
