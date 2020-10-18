@@ -1,4 +1,3 @@
-export const TAG_NAME_SMALL = 'small';
 export const TAG_NAME_SOURCE = 'source';
 export const TAG_NAME_SPAN = 'span';
 export const TAG_NAME_STRONG = 'strong';
