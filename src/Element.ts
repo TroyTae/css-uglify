@@ -17,3 +17,4 @@ export function createCanvas() { return new Noliter<HTMLCanvasElement>('canvas')
 export function createCaption() { return new Noliter('caption'); }
 export function createCite() { return new Noliter('cite'); }
 export function createCode() { return new Noliter('code'); }
+export function createCol() { return new Noliter<HTMLTableColElement>('col'); }

@@ -1,4 +1,3 @@
-export const TAG_NAME_COL = 'col';
 export const TAG_NAME_COLGROUP = 'colgroup';
 export const TAG_NAME_DATA = 'data';
 export const TAG_NAME_DATALIST = 'datalist';
