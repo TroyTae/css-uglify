@@ -1,4 +1,3 @@
-export const TAG_NAME_OPTGROUP = 'optgroup';
 export const TAG_NAME_OPTION = 'option';
 export const TAG_NAME_OUTPUT = 'output';
 export const TAG_NAME_PARAGRAPH = 'p';
