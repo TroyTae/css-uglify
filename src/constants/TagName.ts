@@ -1,4 +1,3 @@
-export const TAG_NAME_PICTURE = 'picture';
 export const TAG_NAME_PRE = 'pre';
 export const TAG_NAME_PROGRESS = 'progress';
 export const TAG_NAME_QUOTE = 'q';

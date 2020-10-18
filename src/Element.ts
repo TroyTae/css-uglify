@@ -66,3 +66,4 @@ export function createOption() { return new Noliter<HTMLOptionElement>('option')
 export function createOutput() { return new Noliter<HTMLOutputElement>('output'); }
 export function createParagraph() { return new Noliter<HTMLParagraphElement>('p'); }
 export function createParam() { return new Noliter<HTMLParamElement>('param'); }
+export function createPicture() { return new Noliter<HTMLPictureElement>('picture'); }
