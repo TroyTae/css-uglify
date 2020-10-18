@@ -70,3 +70,4 @@ export function createPicture() { return new Noliter<HTMLPictureElement>('pictur
 export function createPre() { return new Noliter<HTMLPreElement>('pre'); }
 export function createProgress() { return new Noliter<HTMLProgressElement>('progress'); }
 export function createQuote() { return new Noliter<HTMLQuoteElement>('q'); }
+export function createSamp() { return new Noliter('samp'); }

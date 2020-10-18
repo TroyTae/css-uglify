@@ -1,4 +1,3 @@
-export const TAG_NAME_SAMP = 'samp';
 export const TAG_NAME_SECTION = 'section';
 export const TAG_NAME_SELECT = 'select';
 export const TAG_NAME_SMALL = 'small';
