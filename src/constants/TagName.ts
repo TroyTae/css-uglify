@@ -1,4 +1,3 @@
-export const TAG_NAME_EM = 'em';
 export const TAG_NAME_EMBED = 'embed';
 export const TAG_NAME_FIELDSET = 'fieldset';
 export const TAG_NAME_FIGCAPTION = 'figcaption';
