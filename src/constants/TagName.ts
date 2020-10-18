@@ -1,4 +1,3 @@
-export const TAG_NAME_ARTICLE = 'article';
 export const TAG_NAME_ASIDE = 'aside';
 export const TAG_NAME_AUDIO = 'audio';
 export const TAG_NAME_BOLD = 'b';
