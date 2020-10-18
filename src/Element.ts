@@ -51,3 +51,4 @@ export function createInput() { return new Noliter<HTMLInputElement>('input'); }
 export function createIns() { return new Noliter<HTMLModElement>('ins'); }
 export function createKbd() { return new Noliter('kbd'); }
 export function createLabel() { return new Noliter<HTMLLabelElement>('label'); }
+export function createLegend() { return new Noliter<HTMLLegendElement>('legend'); }
