@@ -39,3 +39,4 @@ export function createForm() { return new Noliter<HTMLFormElement>('form'); }
 export function createH1() { return new Noliter<HTMLHeadingElement>('h1'); }
 export function createH2() { return new Noliter<HTMLHeadingElement>('h2'); }
 export function createH3() { return new Noliter<HTMLHeadingElement>('h3'); }
+export function createH4() { return new Noliter<HTMLHeadingElement>('h4'); }
