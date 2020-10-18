@@ -1,4 +1,3 @@
-export const TAG_NAME_DD = 'dd';
 export const TAG_NAME_DEL = 'del';
 export const TAG_NAME_DETAILS = 'details';
 export const TAG_NAME_DFN = 'dfn';
