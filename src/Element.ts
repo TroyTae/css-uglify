@@ -9,3 +9,4 @@ export function createAside() { return new Noliter('aside'); }
 export function createAudio() { return new Noliter<HTMLAudioElement>('audio'); }
 export function createBold() { return new Noliter('b'); }
 export function createBdi() { return new Noliter('bdi'); }
+export function createBdo() { return new Noliter('bdo'); }
