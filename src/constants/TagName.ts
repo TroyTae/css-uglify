@@ -1,4 +1,3 @@
-export const TAG_NAME_MAP = 'map';
 export const TAG_NAME_MARK = 'mark';
 export const TAG_NAME_METER = 'meter';
 export const TAG_NAME_NAV = 'nav';
