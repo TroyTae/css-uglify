@@ -1,4 +1,3 @@
-export const TAG_NAME_FOOTER = 'footer';
 export const TAG_NAME_FORM = 'form';
 export const TAG_NAME_H1 = 'h1';
 export const TAG_NAME_H2 = 'h2';

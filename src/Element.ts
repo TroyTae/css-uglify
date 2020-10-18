@@ -34,3 +34,4 @@ export function createEmbed() { return new Noliter<HTMLEmbedElement>('embed'); }
 export function createFieldSet() { return new Noliter<HTMLFieldSetElement>('fieldset'); }
 export function createFigCaption() { return new Noliter('figcaption'); }
 export function createFigure() { return new Noliter('figure'); }
+export function createFooter() { return new Noliter('footer'); }
