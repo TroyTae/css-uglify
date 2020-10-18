@@ -79,3 +79,4 @@ export function createSpan() { return new Noliter<HTMLSpanElement>('span'); }
 export function createStrong() { return new Noliter('strong'); }
 export function createSub() { return new Noliter('sub'); }
 export function createTextArea() { return new Noliter<HTMLTextAreaElement>('textarea'); }
+export function createTable() { return new Noliter<HTMLTableElement>('table'); }
