@@ -84,3 +84,4 @@ export function createThead() { return new Noliter<HTMLTableSectionElement>('the
 export function createTbody() { return new Noliter<HTMLTableSectionElement>('tbody'); }
 export function createTfoot() { return new Noliter<HTMLTableSectionElement>('tfoot'); }
 export function createTh() { return new Noliter<HTMLTableHeaderCellElement>('th'); }
+export function createTr() { return new Noliter<HTMLTableRowElement>('tr'); }
