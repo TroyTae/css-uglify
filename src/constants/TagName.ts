@@ -1,4 +1,3 @@
-export const TAG_NAME_CANVAS = 'canvas';
 export const TAG_NAME_CAPTION = 'caption';
 export const TAG_NAME_CITE = 'cite';
 export const TAG_NAME_CODE = 'code';

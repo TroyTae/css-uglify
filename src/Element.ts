@@ -13,3 +13,4 @@ export function createBdo() { return new Noliter('bdo'); }
 export function createBlockQuote() { return new Noliter('blockquote'); }
 export function createBr() { return new Noliter<HTMLBRElement>('br'); }
 export function createButton() { return new Noliter<HTMLButtonElement>('button'); }
+export function createCanvas() { return new Noliter<HTMLCanvasElement>('canvas'); }
