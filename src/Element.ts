@@ -16,3 +16,4 @@ export function createButton() { return new Noliter<HTMLButtonElement>('button')
 export function createCanvas() { return new Noliter<HTMLCanvasElement>('canvas'); }
 export function createCaption() { return new Noliter('caption'); }
 export function createCite() { return new Noliter('cite'); }
+export function createCode() { return new Noliter('code'); }
