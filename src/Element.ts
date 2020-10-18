@@ -67,3 +67,4 @@ export function createOutput() { return new Noliter<HTMLOutputElement>('output')
 export function createParagraph() { return new Noliter<HTMLParagraphElement>('p'); }
 export function createParam() { return new Noliter<HTMLParamElement>('param'); }
 export function createPicture() { return new Noliter<HTMLPictureElement>('picture'); }
+export function createPre() { return new Noliter<HTMLPreElement>('pre'); }
