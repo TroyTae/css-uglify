@@ -1,4 +1,3 @@
-export const TAG_NAME_OUTPUT = 'output';
 export const TAG_NAME_PARAGRAPH = 'p';
 export const TAG_NAME_PARAM = 'param';
 export const TAG_NAME_PICTURE = 'picture';

@@ -63,3 +63,4 @@ export function createObject() { return new Noliter<HTMLObjectElement>('object')
 export function createOl() { return new Noliter<HTMLOListElement>('ol'); }
 export function createOptGroup() { return new Noliter<HTMLOptGroupElement>('optgroup'); }
 export function createOption() { return new Noliter<HTMLOptionElement>('option'); }
+export function createOutput() { return new Noliter<HTMLOutputElement>('output'); }
