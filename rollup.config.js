@@ -23,6 +23,5 @@ fs.emptyDirSync('./dist');
 
 module.exports = [
   createConfig({ pkg, input, format: 'cjs', file: pkg.main }),
-  createConfig({ pkg, input, format: 'esm', file: pkg.module }),
-  createConfig({ pkg, input, format: 'iife', file: `dist/${pkg.name}.js` })
+  createConfig({ pkg, input, format: 'esm', file: pkg.module })
 ];

@@ -1,5 +1,3 @@
-export const TAG_NAME_ADDRESS = 'address';
-export const TAG_NAME_AREA = 'area';
 export const TAG_NAME_ARTICLE = 'article';
 export const TAG_NAME_ASIDE = 'aside';
 export const TAG_NAME_AUDIO = 'audio';
