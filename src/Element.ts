@@ -88,3 +88,4 @@ export function createTr() { return new Noliter<HTMLTableRowElement>('tr'); }
 export function createTd() { return new Noliter<HTMLTableDataCellElement>('td'); }
 export function createTime() { return new Noliter<HTMLTimeElement>('time'); }
 export function createTrack() { return new Noliter<HTMLTrackElement>('track'); }
+export function createUl() { return new Noliter<HTMLUListElement>('ul'); }
