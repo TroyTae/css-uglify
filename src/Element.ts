@@ -43,3 +43,4 @@ export function createH4() { return new Noliter<HTMLHeadingElement>('h4'); }
 export function createH5() { return new Noliter<HTMLHeadingElement>('h5'); }
 export function createH6() { return new Noliter<HTMLHeadingElement>('h6'); }
 export function createHeader() { return new Noliter('header'); }
+export function createHr() { return new Noliter('hr'); }
