@@ -45,3 +45,4 @@ export function createH6() { return new Noliter<HTMLHeadingElement>('h6'); }
 export function createHeader() { return new Noliter('header'); }
 export function createHr() { return new Noliter<HTMLHRElement>('hr'); }
 export function createItalic() { return new Noliter('i'); }
+export function createIframe() { return new Noliter<HTMLIFrameElement>('iframe'); }

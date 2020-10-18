@@ -1,4 +1,3 @@
-export const TAG_NAME_IFRAME = 'iframe';
 export const TAG_NAME_IMG = 'img';
 export const TAG_NAME_INPUT = 'input';
 export const TAG_NAME_INS = 'ins';
