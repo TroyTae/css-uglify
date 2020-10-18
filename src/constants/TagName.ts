@@ -1,4 +1,3 @@
-export const TAG_NAME_LI = 'li';
 export const TAG_NAME_LINK = 'link';
 export const TAG_NAME_MAIN = 'main';
 export const TAG_NAME_MAP = 'map';
