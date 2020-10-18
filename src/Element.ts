@@ -50,3 +50,4 @@ export function createImg() { return new Noliter<HTMLImageElement>('img'); }
 export function createInput() { return new Noliter<HTMLInputElement>('input'); }
 export function createIns() { return new Noliter<HTMLModElement>('ins'); }
 export function createKbd() { return new Noliter('kbd'); }
+export function createLabel() { return new Noliter<HTMLLabelElement>('label'); }
