@@ -1,4 +1,3 @@
-export const TAG_NAME_THEAD = 'thead';
 export const TAG_NAME_TBODY = 'tbody';
 export const TAG_NAME_TFOOT = 'tfoot';
 export const TAG_NAME_TH = 'th';
