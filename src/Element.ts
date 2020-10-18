@@ -82,3 +82,4 @@ export function createTextArea() { return new Noliter<HTMLTextAreaElement>('text
 export function createTable() { return new Noliter<HTMLTableElement>('table'); }
 export function createThead() { return new Noliter<HTMLTableSectionElement>('thead'); }
 export function createTbody() { return new Noliter<HTMLTableSectionElement>('tbody'); }
+export function createTfoot() { return new Noliter<HTMLTableSectionElement>('tfoot'); }
