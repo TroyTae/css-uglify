@@ -1,4 +1,3 @@
-export const TAG_NAME_METER = 'meter';
 export const TAG_NAME_NAV = 'nav';
 export const TAG_NAME_NOSCRIPT = 'noscript';
 export const TAG_NAME_OBJECT = 'object';
