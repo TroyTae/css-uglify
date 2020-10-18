@@ -1,4 +1,3 @@
-export const TAG_NAME_BR = 'br';
 export const TAG_NAME_BUTTON = 'button';
 export const TAG_NAME_CANVAS = 'canvas';
 export const TAG_NAME_CAPTION = 'caption';
