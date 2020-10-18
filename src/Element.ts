@@ -19,3 +19,4 @@ export function createCite() { return new Noliter('cite'); }
 export function createCode() { return new Noliter('code'); }
 export function createCol() { return new Noliter<HTMLTableColElement>('col'); }
 export function createColGroup() { return new Noliter<HTMLTableColElement>('colgroup'); }
+export function createData() { return new Noliter<HTMLDataElement>('data'); }

@@ -1,4 +1,3 @@
-export const TAG_NAME_DATA = 'data';
 export const TAG_NAME_DATALIST = 'datalist';
 export const TAG_NAME_DD = 'dd';
 export const TAG_NAME_DEL = 'del';
