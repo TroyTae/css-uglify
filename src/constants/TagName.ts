@@ -1,4 +1,3 @@
-export const TAG_NAME_FIGCAPTION = 'figcaption';
 export const TAG_NAME_FIGURE = 'figure';
 export const TAG_NAME_FOOTER = 'footer';
 export const TAG_NAME_FORM = 'form';

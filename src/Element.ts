@@ -32,3 +32,4 @@ export function createDt() { return new Noliter('dt'); }
 export function createEm() { return new Noliter('em'); }
 export function createEmbed() { return new Noliter<HTMLEmbedElement>('embed'); }
 export function createFieldSet() { return new Noliter<HTMLFieldSetElement>('fieldset'); }
+export function createFigCaption() { return new Noliter('figcaption'); }
