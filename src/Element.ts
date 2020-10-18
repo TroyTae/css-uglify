@@ -22,3 +22,4 @@ export function createColGroup() { return new Noliter<HTMLTableColElement>('colg
 export function createData() { return new Noliter<HTMLDataElement>('data'); }
 export function createDataList() { return new Noliter<HTMLDataListElement>('datalist'); }
 export function createDd() { return new Noliter('dd'); }
+export function createDel() { return new Noliter<HTMLModElement>('del'); }
