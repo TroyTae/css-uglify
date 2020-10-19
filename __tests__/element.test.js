@@ -259,3 +259,11 @@ test('createDataList', () => {
       .tagName
   ).toBe('DATALIST');
 });
+
+test('createDd', () => {
+  expect(
+    createDd()
+      .dom
+      .tagName
+  ).toBe('DD');
+});
