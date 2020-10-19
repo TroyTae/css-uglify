@@ -283,3 +283,11 @@ test('createDetails', () => {
       .tagName
   ).toBe('DETAILS');
 });
+
+test('createDfn', () => {
+  expect(
+    createDfn()
+      .dom
+      .tagName
+  ).toBe('DFN');
+});
