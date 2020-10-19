@@ -331,3 +331,11 @@ test('createEm', () => {
       .tagName
   ).toBe('EM');
 });
+
+test('createEmbed', () => {
+  expect(
+    createEmbed()
+      .dom
+      .tagName
+  ).toBe('EMBED');
+});
