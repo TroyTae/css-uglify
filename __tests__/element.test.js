@@ -299,3 +299,11 @@ test('createDialog', () => {
       .tagName
   ).toBe('DIALOG');
 });
+
+test('createDiv', () => {
+  expect(
+    createDiv()
+      .dom
+      .tagName
+  ).toBe('DIV');
+});
