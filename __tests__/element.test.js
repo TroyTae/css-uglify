@@ -235,3 +235,11 @@ test('createCol', () => {
       .tagName
   ).toBe('COL');
 });
+
+test('createColGroup', () => {
+  expect(
+    createColGroup()
+      .dom
+      .tagName
+  ).toBe('COLGROUP');
+});
