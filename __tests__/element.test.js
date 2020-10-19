@@ -179,3 +179,11 @@ test('createBlockQuote', () => {
       .tagName
   ).toBe('BLOCKQUOTE');
 });
+
+test('createBr', () => {
+  expect(
+    createBr()
+      .dom
+      .tagName
+  ).toBe('BR');
+});
