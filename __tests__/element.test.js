@@ -187,3 +187,11 @@ test('createBr', () => {
       .tagName
   ).toBe('BR');
 });
+
+test('createButton', () => {
+  expect(
+    createButton()
+      .dom
+      .tagName
+  ).toBe('BUTTON');
+});
