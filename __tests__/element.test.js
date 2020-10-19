@@ -107,3 +107,11 @@ test('createAbbr', () => {
       .tagName
   ).toBe('ABBR');
 });
+
+test('createAddress', () => {
+  expect(
+    createAddress()
+      .dom
+      .tagName
+  ).toBe('ADDRESS');
+});
