@@ -139,3 +139,11 @@ test('createAside', () => {
       .tagName
   ).toBe('ASIDE');
 });
+
+test('createAudio', () => {
+  expect(
+    createAudio()
+      .dom
+      .tagName
+  ).toBe('AUDIO');
+});
