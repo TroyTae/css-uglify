@@ -4,7 +4,7 @@ const {
   TAG_NAME_PARAGRAPH,
 } = require('../dist/index');
 
-test('Append: string', () => {
+test.skip('Append: string', () => {
   const text = 'Something Text';
   expect(
     $(TAG_NAME_PARAGRAPH)
@@ -14,7 +14,7 @@ test('Append: string', () => {
   ).toBe(text);
 });
 
-test('Append: element', () => {
+test.skip('Append: element', () => {
   expect(
     $(TAG_NAME_DIV)
       .append(
@@ -28,7 +28,7 @@ test('Append: element', () => {
   ).toBe(3);
 });
 
-test('Append: noliter', () => {
+test.skip('Append: noliter', () => {
   expect(
     $(TAG_NAME_DIV)
       .append(

@@ -7,7 +7,7 @@ const {
   INPUT_TYPE_TEXT,
 } = require('../dist/index');
 
-test('Attribute: type', () => {
+test.skip('Attribute: type', () => {
   expect(
     $(TAG_NAME_INPUT)
       .attrs(ATTR_TYPE, INPUT_TYPE_TEXT)
@@ -16,7 +16,7 @@ test('Attribute: type', () => {
   ).toBe(INPUT_TYPE_TEXT);
 });
 
-test('Attribute: class', () => {
+test.skip('Attribute: class', () => {
   expect(
     $(TAG_NAME_DIV)
       .attrs(ATTR_CLASS, 'test-class')

@@ -10,7 +10,7 @@ const {
   INPUT_TYPE_RADIO,
 } = require('../dist/index');
 
-test('Property: value', () => {
+test.skip('Property: value', () => {
   expect(
     $(TAG_NAME_INPUT)
       .attrs(ATTR_TYPE, INPUT_TYPE_TEXT)
@@ -19,7 +19,7 @@ test('Property: value', () => {
   ).toBe('test-value');
 });
 
-test('Property: checked', () => {
+test.skip('Property: checked', () => {
   expect(
     $(TAG_NAME_INPUT)
       .attrs(ATTR_TYPE, INPUT_TYPE_CHECKBOX)
@@ -28,7 +28,7 @@ test('Property: checked', () => {
   ).toBe(true);
 });
 
-test('Property: disabled', () => {
+test.skip('Property: disabled', () => {
   expect(
     $(TAG_NAME_INPUT)
       .attrs(ATTR_TYPE, INPUT_TYPE_RADIO)
