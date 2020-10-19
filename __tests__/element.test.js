@@ -147,3 +147,11 @@ test('createAudio', () => {
       .tagName
   ).toBe('AUDIO');
 });
+
+test('createBold', () => {
+  expect(
+    createBold()
+      .dom
+      .tagName
+  ).toBe('B');
+});
