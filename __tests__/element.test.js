@@ -267,3 +267,11 @@ test('createDd', () => {
       .tagName
   ).toBe('DD');
 });
+
+test('createDel', () => {
+  expect(
+    createDel()
+      .dom
+      .tagName
+  ).toBe('DEL');
+});
