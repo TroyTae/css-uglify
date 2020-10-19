@@ -203,3 +203,11 @@ test('createCanvas', () => {
       .tagName
   ).toBe('CANVAS');
 });
+
+test('createCaption', () => {
+  expect(
+    createCaption()
+      .dom
+      .tagName
+  ).toBe('CAPTION');
+});
