@@ -291,3 +291,11 @@ test('createDfn', () => {
       .tagName
   ).toBe('DFN');
 });
+
+test('createDialog', () => {
+  expect(
+    createDialog()
+      .dom
+      .tagName
+  ).toBe('DIALOG');
+});
