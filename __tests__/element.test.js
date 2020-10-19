@@ -99,3 +99,11 @@ test('createAnchor', () => {
       .tagName
   ).toBe('A');
 });
+
+test('createAbbr', () => {
+  expect(
+    createAbbr()
+      .dom
+      .tagName
+  ).toBe('ABBR');
+});
