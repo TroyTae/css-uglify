@@ -195,3 +195,11 @@ test('createButton', () => {
       .tagName
   ).toBe('BUTTON');
 });
+
+test('createCanvas', () => {
+  expect(
+    createCanvas()
+      .dom
+      .tagName
+  ).toBe('CANVAS');
+});
