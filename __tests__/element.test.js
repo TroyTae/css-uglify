@@ -347,3 +347,11 @@ test('createFieldSet', () => {
       .tagName
   ).toBe('FIELDSET');
 });
+
+test('createFigCaption', () => {
+  expect(
+    createFigCaption()
+      .dom
+      .tagName
+  ).toBe('FIGCAPTION');
+});
