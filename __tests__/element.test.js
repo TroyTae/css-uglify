@@ -155,3 +155,11 @@ test('createBold', () => {
       .tagName
   ).toBe('B');
 });
+
+test('createBdi', () => {
+  expect(
+    createBdi()
+      .dom
+      .tagName
+  ).toBe('BDI');
+});
