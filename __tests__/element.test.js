@@ -163,3 +163,11 @@ test('createBdi', () => {
       .tagName
   ).toBe('BDI');
 });
+
+test('createBdo', () => {
+  expect(
+    createBdo()
+      .dom
+      .tagName
+  ).toBe('BDO');
+});
