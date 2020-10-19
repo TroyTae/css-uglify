@@ -339,3 +339,11 @@ test('createEmbed', () => {
       .tagName
   ).toBe('EMBED');
 });
+
+test('createFieldSet', () => {
+  expect(
+    createFieldSet()
+      .dom
+      .tagName
+  ).toBe('FIELDSET');
+});
