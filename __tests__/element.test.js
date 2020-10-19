@@ -363,3 +363,11 @@ test('createFigure', () => {
       .tagName
   ).toBe('FIGURE');
 });
+
+test('createFooter', () => {
+  expect(
+    createFooter()
+      .dom
+      .tagName
+  ).toBe('FOOTER');
+});
