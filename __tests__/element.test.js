@@ -243,3 +243,11 @@ test('createColGroup', () => {
       .tagName
   ).toBe('COLGROUP');
 });
+
+test('createData', () => {
+  expect(
+    createData()
+      .dom
+      .tagName
+  ).toBe('DATA');
+});
