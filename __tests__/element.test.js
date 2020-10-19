@@ -355,3 +355,11 @@ test('createFigCaption', () => {
       .tagName
   ).toBe('FIGCAPTION');
 });
+
+test('createFigure', () => {
+  expect(
+    createFigure()
+      .dom
+      .tagName
+  ).toBe('FIGURE');
+});
