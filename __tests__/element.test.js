@@ -115,3 +115,11 @@ test('createAddress', () => {
       .tagName
   ).toBe('ADDRESS');
 });
+
+test('createArea', () => {
+  expect(
+    createArea()
+      .dom
+      .tagName
+  ).toBe('AREA');
+});
