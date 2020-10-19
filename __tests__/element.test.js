@@ -227,3 +227,11 @@ test('createCode', () => {
       .tagName
   ).toBe('CODE');
 });
+
+test('createCol', () => {
+  expect(
+    createCol()
+      .dom
+      .tagName
+  ).toBe('COL');
+});
