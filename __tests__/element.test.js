@@ -131,3 +131,11 @@ test('createArticle', () => {
       .tagName
   ).toBe('ARTICLE');
 });
+
+test('createAside', () => {
+  expect(
+    createAside()
+      .dom
+      .tagName
+  ).toBe('ASIDE');
+});
