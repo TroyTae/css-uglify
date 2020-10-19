@@ -307,3 +307,11 @@ test('createDiv', () => {
       .tagName
   ).toBe('DIV');
 });
+
+test('createDl', () => {
+  expect(
+    createDl()
+      .dom
+      .tagName
+  ).toBe('DL');
+});
