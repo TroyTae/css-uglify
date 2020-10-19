@@ -171,3 +171,11 @@ test('createBdo', () => {
       .tagName
   ).toBe('BDO');
 });
+
+test('createBlockQuote', () => {
+  expect(
+    createBlockQuote()
+      .dom
+      .tagName
+  ).toBe('BLOCKQUOTE');
+});
