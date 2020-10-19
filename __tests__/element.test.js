@@ -315,3 +315,11 @@ test('createDl', () => {
       .tagName
   ).toBe('DL');
 });
+
+test('createDt', () => {
+  expect(
+    createDt()
+      .dom
+      .tagName
+  ).toBe('DT');
+});
