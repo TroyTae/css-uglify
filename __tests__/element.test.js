@@ -219,3 +219,11 @@ test('createCite', () => {
       .tagName
   ).toBe('CITE');
 });
+
+test('createCode', () => {
+  expect(
+    createCode()
+      .dom
+      .tagName
+  ).toBe('CODE');
+});
