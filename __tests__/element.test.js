@@ -92,346 +92,107 @@ const {
   createVideo,
 } = require('../dist/index');
 
-test('createAnchor', () => {
-  expect(
-    createAnchor()
-      .dom
-      .tagName
-  ).toBe('A');
-});
 
-test('createAbbr', () => {
-  expect(
-    createAbbr()
-      .dom
-      .tagName
-  ).toBe('ABBR');
-});
+const testCases = [
+  { method: createAnchor, tagName: 'A' },
+  { method: createAbbr, tagName: 'ABBR' },
+  { method: createAddress, tagName: 'ADDRESS' },
+  { method: createArea, tagName: 'AREA' },
+  { method: createArticle, tagName: 'ARTICLE' },
+  { method: createAside, tagName: 'ASIDE' },
+  { method: createAudio, tagName: 'AUDIO' },
+  { method: createBold, tagName: 'B' },
+  { method: createBdi, tagName: 'BDI' },
+  { method: createBdo, tagName: 'BDO' },
+  { method: createBlockQuote, tagName: 'BLOCKQUOTE' },
+  { method: createBr, tagName: 'BR' },
+  { method: createButton, tagName: 'BUTTON' },
+  { method: createCanvas, tagName: 'CANVAS' },
+  { method: createCaption, tagName: 'CAPTION' },
+  { method: createCite, tagName: 'CITE' },
+  { method: createCode, tagName: 'CODE' },
+  { method: createCol, tagName: 'COL' },
+  { method: createColGroup, tagName: 'COLGROUP' },
+  { method: createData, tagName: 'DATA' },
+  { method: createDataList, tagName: 'DATALIST' },
+  { method: createDd, tagName: 'DD' },
+  { method: createDel, tagName: 'DEL' },
+  { method: createDetails, tagName: 'DETAILS' },
+  { method: createDfn, tagName: 'DFN' },
+  { method: createDialog, tagName: 'DIALOG' },
+  { method: createDiv, tagName: 'DIV' },
+  { method: createDl, tagName: 'DL' },
+  { method: createDt, tagName: 'DT' },
+  { method: createEm, tagName: 'EM' },
+  { method: createEmbed, tagName: 'EMBED' },
+  { method: createFieldSet, tagName: 'FIELDSET' },
+  { method: createFigCaption, tagName: 'FIGCAPTION' },
+  { method: createFigure, tagName: 'FIGURE' },
+  { method: createFooter, tagName: 'FOOTER' },
+  { method: createForm, tagName: 'FORM' },
+  { method: createH1, tagName: 'H1' },
+  { method: createH2, tagName: 'H2' },
+  { method: createH3, tagName: 'H3' },
+  { method: createH4, tagName: 'H4' },
+  { method: createH5, tagName: 'H5' },
+  { method: createH6, tagName: 'H6' },
+  { method: createHeader, tagName: 'HEADER' },
+  { method: createHr, tagName: 'HR' },
+  { method: createItalic, tagName: 'I' },
+  { method: createIframe, tagName: 'IFRAME' },
+  { method: createImg, tagName: 'IMG' },
+  { method: createInput, tagName: 'INPUT' },
+  { method: createIns, tagName: 'INS' },
+  { method: createKbd, tagName: 'KBD' },
+  { method: createLabel, tagName: 'LABEL' },
+  { method: createLegend, tagName: 'LEGEND' },
+  { method: createLi, tagName: 'LI' },
+  { method: createLink, tagName: 'LINK' },
+  { method: createMain, tagName: 'MAIN' },
+  { method: createMap, tagName: 'MAP' },
+  { method: createMark, tagName: 'MARK' },
+  { method: createMeter, tagName: 'METER' },
+  { method: createNav, tagName: 'NAV' },
+  { method: createObject, tagName: 'OBJECT' },
+  { method: createOl, tagName: 'OL' },
+  { method: createOptGroup, tagName: 'OPTGROUP' },
+  { method: createOption, tagName: 'OPTION' },
+  { method: createOutput, tagName: 'OUTPUT' },
+  { method: createParagraph, tagName: 'P' },
+  { method: createParam, tagName: 'PARAM' },
+  { method: createPicture, tagName: 'PICTURE' },
+  { method: createPre, tagName: 'PRE' },
+  { method: createProgress, tagName: 'PROGRESS' },
+  { method: createQuote, tagName: 'Q' },
+  { method: createSamp, tagName: 'SAMP' },
+  { method: createSection, tagName: 'SECTION' },
+  { method: createSelect, tagName: 'SELECT' },
+  { method: createSmall, tagName: 'SMALL' },
+  { method: createSource, tagName: 'SOURCE' },
+  { method: createSpan, tagName: 'SPAN' },
+  { method: createStrong, tagName: 'STRONG' },
+  { method: createSub, tagName: 'SUB' },
+  { method: createTextArea, tagName: 'TEXTAREA' },
+  { method: createTable, tagName: 'TABLE' },
+  { method: createThead, tagName: 'THEAD' },
+  { method: createTbody, tagName: 'TBODY' },
+  { method: createTfoot, tagName: 'TFOOT' },
+  { method: createTh, tagName: 'TH' },
+  { method: createTr, tagName: 'TR' },
+  { method: createTd, tagName: 'TD' },
+  { method: createTime, tagName: 'TIME' },
+  { method: createTrack, tagName: 'TRACK' },
+  { method: createUl, tagName: 'UL' },
+  { method: createVar, tagName: 'VAR' },
+  { method: createVideo, tagName: 'VIDEO' },
+];
 
-test('createAddress', () => {
-  expect(
-    createAddress()
-      .dom
-      .tagName
-  ).toBe('ADDRESS');
-});
-
-test('createArea', () => {
-  expect(
-    createArea()
-      .dom
-      .tagName
-  ).toBe('AREA');
-});
-
-test('createArticle', () => {
-  expect(
-    createArticle()
-      .dom
-      .tagName
-  ).toBe('ARTICLE');
-});
-
-test('createAside', () => {
-  expect(
-    createAside()
-      .dom
-      .tagName
-  ).toBe('ASIDE');
-});
-
-test('createAudio', () => {
-  expect(
-    createAudio()
-      .dom
-      .tagName
-  ).toBe('AUDIO');
-});
-
-test('createBold', () => {
-  expect(
-    createBold()
-      .dom
-      .tagName
-  ).toBe('B');
-});
-
-test('createBdi', () => {
-  expect(
-    createBdi()
-      .dom
-      .tagName
-  ).toBe('BDI');
-});
-
-test('createBdo', () => {
-  expect(
-    createBdo()
-      .dom
-      .tagName
-  ).toBe('BDO');
-});
-
-test('createBlockQuote', () => {
-  expect(
-    createBlockQuote()
-      .dom
-      .tagName
-  ).toBe('BLOCKQUOTE');
-});
-
-test('createBr', () => {
-  expect(
-    createBr()
-      .dom
-      .tagName
-  ).toBe('BR');
-});
-
-test('createButton', () => {
-  expect(
-    createButton()
-      .dom
-      .tagName
-  ).toBe('BUTTON');
-});
-
-test('createCanvas', () => {
-  expect(
-    createCanvas()
-      .dom
-      .tagName
-  ).toBe('CANVAS');
-});
-
-test('createCaption', () => {
-  expect(
-    createCaption()
-      .dom
-      .tagName
-  ).toBe('CAPTION');
-});
-
-test('createCite', () => {
-  expect(
-    createCite()
-      .dom
-      .tagName
-  ).toBe('CITE');
-});
-
-test('createCode', () => {
-  expect(
-    createCode()
-      .dom
-      .tagName
-  ).toBe('CODE');
-});
-
-test('createCol', () => {
-  expect(
-    createCol()
-      .dom
-      .tagName
-  ).toBe('COL');
-});
-
-test('createColGroup', () => {
-  expect(
-    createColGroup()
-      .dom
-      .tagName
-  ).toBe('COLGROUP');
-});
-
-test('createData', () => {
-  expect(
-    createData()
-      .dom
-      .tagName
-  ).toBe('DATA');
-});
-
-test('createDataList', () => {
-  expect(
-    createDataList()
-      .dom
-      .tagName
-  ).toBe('DATALIST');
-});
-
-test('createDd', () => {
-  expect(
-    createDd()
-      .dom
-      .tagName
-  ).toBe('DD');
-});
-
-test('createDel', () => {
-  expect(
-    createDel()
-      .dom
-      .tagName
-  ).toBe('DEL');
-});
-
-test('createDetails', () => {
-  expect(
-    createDetails()
-      .dom
-      .tagName
-  ).toBe('DETAILS');
-});
-
-test('createDfn', () => {
-  expect(
-    createDfn()
-      .dom
-      .tagName
-  ).toBe('DFN');
-});
-
-test('createDialog', () => {
-  expect(
-    createDialog()
-      .dom
-      .tagName
-  ).toBe('DIALOG');
-});
-
-test('createDiv', () => {
-  expect(
-    createDiv()
-      .dom
-      .tagName
-  ).toBe('DIV');
-});
-
-test('createDl', () => {
-  expect(
-    createDl()
-      .dom
-      .tagName
-  ).toBe('DL');
-});
-
-test('createDt', () => {
-  expect(
-    createDt()
-      .dom
-      .tagName
-  ).toBe('DT');
-});
-
-test('createEm', () => {
-  expect(
-    createEm()
-      .dom
-      .tagName
-  ).toBe('EM');
-});
-
-test('createEmbed', () => {
-  expect(
-    createEmbed()
-      .dom
-      .tagName
-  ).toBe('EMBED');
-});
-
-test('createFieldSet', () => {
-  expect(
-    createFieldSet()
-      .dom
-      .tagName
-  ).toBe('FIELDSET');
-});
-
-test('createFigCaption', () => {
-  expect(
-    createFigCaption()
-      .dom
-      .tagName
-  ).toBe('FIGCAPTION');
-});
-
-test('createFigure', () => {
-  expect(
-    createFigure()
-      .dom
-      .tagName
-  ).toBe('FIGURE');
-});
-
-test('createFooter', () => {
-  expect(
-    createFooter()
-      .dom
-      .tagName
-  ).toBe('FOOTER');
-});
-
-test('createForm', () => {
-  expect(
-    createForm()
-      .dom
-      .tagName
-  ).toBe('FORM');
-});
-
-test('createH1', () => {
-  expect(
-    createH1()
-      .dom
-      .tagName
-  ).toBe('H1');
-});
-
-test('createH2', () => {
-  expect(
-    createH2()
-      .dom
-      .tagName
-  ).toBe('H2');
-});
-
-test('createH3', () => {
-  expect(
-    createH3()
-      .dom
-      .tagName
-  ).toBe('H3');
-});
-
-test('createH4', () => {
-  expect(
-    createH4()
-      .dom
-      .tagName
-  ).toBe('H4');
-});
-
-test('createH5', () => {
-  expect(
-    createH5()
-      .dom
-      .tagName
-  ).toBe('H5');
-});
-
-test('createH6', () => {
-  expect(
-    createH6()
-      .dom
-      .tagName
-  ).toBe('H6');
-});
-
-test('createHeader', () => {
-  expect(
-    createHeader()
-      .dom
-      .tagName
-  ).toBe('HEADER');
+test('TagName comparison', () => {
+  testCases.forEach(({ method, tagName }) => {
+    expect(
+      method()
+        .dom
+        .tagName
+    ).toBe(tagName);
+  });
 });
