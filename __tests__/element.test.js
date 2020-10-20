@@ -387,3 +387,11 @@ test('createH1', () => {
       .tagName
   ).toBe('H1');
 });
+
+test('createH2', () => {
+  expect(
+    createH2()
+      .dom
+      .tagName
+  ).toBe('H2');
+});
