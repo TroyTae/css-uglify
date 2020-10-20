@@ -427,3 +427,11 @@ test('createH6', () => {
       .tagName
   ).toBe('H6');
 });
+
+test('createHeader', () => {
+  expect(
+    createHeader()
+      .dom
+      .tagName
+  ).toBe('HEADER');
+});
