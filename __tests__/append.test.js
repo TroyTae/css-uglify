@@ -1,43 +1,40 @@
 const {
-  $,
-  TAG_NAME_DIV,
-  TAG_NAME_PARAGRAPH,
+  createDiv,
+  createParagraph,
 } = require('../dist/index');
 
-test.skip('Append: string', () => {
+test('Append string', () => {
   const text = 'Something Text';
   expect(
-    $(TAG_NAME_PARAGRAPH)
+    createParagraph()
       .append(text)
       .dom
       .textContent
   ).toBe(text);
 });
 
-test.skip('Append: element', () => {
-  expect(
-    $(TAG_NAME_DIV)
-      .append(
-        document.createElement(TAG_NAME_DIV),
-        document.createElement(TAG_NAME_DIV),
-        document.createElement(TAG_NAME_DIV)
-      )
-      .dom
-      .children
-      .length
-  ).toBe(3);
+test('Append element', () => {
+  const children = createDiv()
+    .append(
+      document.createElement('input'),
+      document.createElement('button'),
+    )
+    .dom
+    .children;
+
+  expect(children.length).toBe(2);
+  expect(children[0].tagName + children[1].tagName).toBe('INPUTBUTTON');
 });
 
-test.skip('Append: noliter', () => {
-  expect(
-    $(TAG_NAME_DIV)
-      .append(
-        $(TAG_NAME_DIV),
-        $(TAG_NAME_DIV),
-        $(TAG_NAME_DIV)
-      )
-      .dom
-      .children
-      .length
-  ).toBe(3);
+test('Append noliter instance', () => {
+  const children = createDiv()
+    .append(
+      createDiv(),
+      createParagraph(),
+    )
+    .dom
+    .children;
+
+  expect(children.length).toBe(2);
+  expect(children[0].tagName + children[1].tagName).toBe('DIVP');
 });
