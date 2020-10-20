@@ -1,38 +1,53 @@
 const {
-  $,
-  TAG_NAME_INPUT,
-  ATTR_TYPE,
+  createInput,
+  PROP_ID,
+  PROP_TYPE,
+  PROP_CLASS,
   PROP_VALUE,
   PROP_CHECKED,
   PROP_DISABLED,
   INPUT_TYPE_TEXT,
-  INPUT_TYPE_CHECKBOX,
   INPUT_TYPE_RADIO,
+  INPUT_TYPE_CHECKBOX,
 } = require('../dist/index');
 
-test.skip('Property: value', () => {
-  expect(
-    $(TAG_NAME_INPUT)
-      .attrs(ATTR_TYPE, INPUT_TYPE_TEXT)
-      .props(PROP_VALUE, 'test-value')
-      .dom[PROP_VALUE]
-  ).toBe('test-value');
+test('common', () => {
+  const id = 'some-id';
+  const className = 'some-class';
+  const dom = createInput()
+    .props(
+      PROP_ID, id,
+      PROP_CLASS, className,
+    )
+    .dom;
+  expect(dom.id).toBe(id);
+  expect(dom.className).toBe(className);
 });
 
-test.skip('Property: checked', () => {
-  expect(
-    $(TAG_NAME_INPUT)
-      .attrs(ATTR_TYPE, INPUT_TYPE_CHECKBOX)
-      .props(PROP_CHECKED, true)
-      .dom[PROP_CHECKED]
-  ).toBe(true);
+test('value', () => {
+  const value = 'some-value';
+  const input = createInput()
+    .props(
+      PROP_TYPE, INPUT_TYPE_TEXT,
+      PROP_VALUE, value,
+    );
+  expect(input.dom.value).toBe(value);
 });
 
-test.skip('Property: disabled', () => {
-  expect(
-    $(TAG_NAME_INPUT)
-      .attrs(ATTR_TYPE, INPUT_TYPE_RADIO)
-      .props(PROP_DISABLED, true)
-      .dom[PROP_DISABLED]
-  ).toBe(true);
+test('checked', () => {
+  const input = createInput()
+    .props(
+      PROP_TYPE, INPUT_TYPE_RADIO,
+      PROP_CHECKED, true,
+    );
+  expect(input.dom.checked).toBe(true);
+});
+
+test('disabled', () => {
+  const input = createInput()
+    .props(
+      PROP_TYPE, INPUT_TYPE_CHECKBOX,
+      PROP_DISABLED, true,
+    );
+  expect(input.dom.disabled).toBe(true);
 });
