@@ -419,3 +419,11 @@ test('createH5', () => {
       .tagName
   ).toBe('H5');
 });
+
+test('createH6', () => {
+  expect(
+    createH6()
+      .dom
+      .tagName
+  ).toBe('H6');
+});
