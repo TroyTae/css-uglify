@@ -379,3 +379,11 @@ test('createForm', () => {
       .tagName
   ).toBe('FORM');
 });
+
+test('createH1', () => {
+  expect(
+    createH1()
+      .dom
+      .tagName
+  ).toBe('H1');
+});
