@@ -18,7 +18,7 @@ npm install noliter
 
 #### attrs
 
-```
+```javascript
 import {
   createDiv,
   ATTR_ID,
@@ -34,7 +34,7 @@ createDiv()
 
 #### props
 
-```
+```javascript
 import {
   createInput,
   PROP_CHECKED,
@@ -50,7 +50,7 @@ createInput()
 
 #### append
 
-```
+```javascript
 import { createDiv } from 'noliter';
 
 createDiv()
@@ -63,7 +63,7 @@ createDiv()
 
 #### events
 
-```
+```javascript
 import {
   createButton,
   EVENT_TYPE_BLUR,
