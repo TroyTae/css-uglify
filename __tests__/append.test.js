@@ -3,7 +3,7 @@ const {
   createParagraph,
 } = require('../dist/index');
 
-test('Append string', () => {
+test('string', () => {
   const text = 'Something Text';
   expect(
     createParagraph()
@@ -13,7 +13,7 @@ test('Append string', () => {
   ).toBe(text);
 });
 
-test('Append element', () => {
+test('element', () => {
   const children = createDiv()
     .append(
       document.createElement('input'),
@@ -26,7 +26,7 @@ test('Append element', () => {
   expect(children[0].tagName + children[1].tagName).toBe('INPUTBUTTON');
 });
 
-test('Append noliter instance', () => {
+test('noliter instance', () => {
   const children = createDiv()
     .append(
       createDiv(),
