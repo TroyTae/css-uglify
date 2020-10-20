@@ -403,3 +403,11 @@ test('createH3', () => {
       .tagName
   ).toBe('H3');
 });
+
+test('createH4', () => {
+  expect(
+    createH4()
+      .dom
+      .tagName
+  ).toBe('H4');
+});
