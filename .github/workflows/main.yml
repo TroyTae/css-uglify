@@ -1,10 +1,10 @@
-name: hellper
+name: noliter
 
 on:
   pull_request:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
