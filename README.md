@@ -20,12 +20,13 @@ npm install noliter
 
 ```javascript
 import {
-  createDiv,
+  $,
+  TAG_NAME_DIV,
   ATTR_ID,
   ATTR_CLASS
 } from 'noliter';
 
-createDiv()
+$(TAG_NAME_DIV)
   .attrs(
     ATTR_ID, 'my-id',
     ATTR_CLASS, 'class-name'
@@ -36,12 +37,13 @@ createDiv()
 
 ```javascript
 import {
-  createInput,
+  $,
+  TAG_NAME_INPUT,
   PROP_CHECKED,
   PROP_DISABLED
 } from 'noliter';
 
-createInput()
+$(TAG_NAME_INPUT)
   .props(
     PROP_CHECKED, true,
     PROP_DISABLED, true
@@ -51,9 +53,12 @@ createInput()
 #### append
 
 ```javascript
-import { createDiv } from 'noliter';
+import {
+  $,
+  TAG_NAME_DIV
+} from 'noliter';
 
-createDiv()
+$(TAG_NAME_DIV)
   .append(
     'text',
     document.createElement('div'),
@@ -65,12 +70,13 @@ createDiv()
 
 ```javascript
 import {
-  createButton,
+  $,
+  TAG_NAME_BUTTON,
   EVENT_TYPE_BLUR,
   EVENT_TYPE_FOCUS
 } from 'noliter';
 
-createButton()
+$(TAG_NAME_BUTTON)
   .append('click me')
   .events(
     EVENT_TYPE_BLUR, () => console.log('blur'),
