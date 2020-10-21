@@ -8,11 +8,10 @@ const {
   PROP_CHECKED,
   PROP_DISABLED,
   INPUT_TYPE_TEXT,
-  INPUT_TYPE_RADIO,
   INPUT_TYPE_CHECKBOX,
 } = require('../dist/index');
 
-test('common', () => {
+test('id/class', () => {
   const id = 'some-id';
   const className = 'some-class';
   const dom = $(TAG_NAME_INPUT)
@@ -35,20 +34,13 @@ test('value', () => {
   expect(input.dom.value).toBe(value);
 });
 
-test('checked', () => {
-  const input = $(TAG_NAME_INPUT)
-    .props(
-      PROP_TYPE, INPUT_TYPE_RADIO,
-      PROP_CHECKED, true,
-    );
-  expect(input.dom.checked).toBe(true);
-});
-
-test('disabled', () => {
+test('checked/disabled', () => {
   const input = $(TAG_NAME_INPUT)
     .props(
       PROP_TYPE, INPUT_TYPE_CHECKBOX,
       PROP_DISABLED, true,
+      PROP_CHECKED, true,
     );
+  expect(input.dom.checked).toBe(true);
   expect(input.dom.disabled).toBe(true);
 });
