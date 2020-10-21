@@ -1,10 +1,11 @@
+type TagNames = keyof HTMLElementTagNameMap;
 type Primitive = boolean | number | string;
 
-export default class Noliter<K extends HTMLElement> {
-  dom: K;
+class Noliter<K extends TagNames> {
+  dom: HTMLElementTagNameMap[K];
 
-  constructor(tagName: keyof HTMLElementTagNameMap) {
-    this.dom = <K>document.createElement(tagName);
+  constructor(tagName: K) {
+    this.dom = document.createElement(tagName);
   }
 
   append(...children: (string | Node | Noliter<K>)[]) {
@@ -50,4 +51,8 @@ export default class Noliter<K extends HTMLElement> {
     this.dom.addEventListener(type, listener, options);
     return this;
   }
+}
+
+export default function $<K extends TagNames>(tagName: K) {
+  return new Noliter(tagName);
 }

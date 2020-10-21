@@ -80,6 +80,7 @@ createButton()
 
 ### Constants
 
+ - [TagName](./src/constants/TagName.ts)
  - [Attribute](./src/constants/Attribute.ts)
  - [Property](./src/constants/Property.ts)
  - [InputType](./src/constants/InputType.ts)

@@ -1,3 +1,4 @@
+import $ from './Noliter';
 import {
   ATTR_ID,
   ATTR_VALUE,
@@ -154,6 +155,7 @@ import {
 } from './constants/TagName';
 
 export {
+  $,
   ATTR_ID,
   ATTR_VALUE,
   ATTR_CLASS,
