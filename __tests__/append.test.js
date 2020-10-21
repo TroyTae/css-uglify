@@ -1,12 +1,13 @@
 const {
-  createDiv,
-  createParagraph,
+  $,
+  TAG_NAME_DIV,
+  TAG_NAME_PARAGRAPH,
 } = require('../dist/index');
 
 test('string', () => {
   const text = 'Something Text';
   expect(
-    createParagraph()
+    $(TAG_NAME_PARAGRAPH)
       .append(text)
       .dom
       .textContent
@@ -14,7 +15,7 @@ test('string', () => {
 });
 
 test('element', () => {
-  const children = createDiv()
+  const children = $(TAG_NAME_DIV)
     .append(
       document.createElement('input'),
       document.createElement('button'),
@@ -27,10 +28,10 @@ test('element', () => {
 });
 
 test('noliter instance', () => {
-  const children = createDiv()
+  const children = $(TAG_NAME_DIV)
     .append(
-      createDiv(),
-      createParagraph(),
+      $(TAG_NAME_DIV),
+      $(TAG_NAME_PARAGRAPH),
     )
     .dom
     .children;

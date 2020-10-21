@@ -1,5 +1,6 @@
 const {
-  createInput,
+  $,
+  TAG_NAME_INPUT,
   ATTR_ID,
   ATTR_VALUE,
   ATTR_CLASS,
@@ -11,7 +12,7 @@ test('attribute', () => {
   const id = 'some-id';
   const value = 'some-value';
   const className = 'some-class';
-  const dom = createInput()
+  const dom = $(TAG_NAME_INPUT)
     .attrs(
       ATTR_ID, id,
       ATTR_VALUE, value,

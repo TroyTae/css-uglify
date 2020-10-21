@@ -1,5 +1,6 @@
 const {
-  createInput,
+  $,
+  TAG_NAME_INPUT,
   PROP_ID,
   PROP_TYPE,
   PROP_CLASS,
@@ -14,7 +15,7 @@ const {
 test('common', () => {
   const id = 'some-id';
   const className = 'some-class';
-  const dom = createInput()
+  const dom = $(TAG_NAME_INPUT)
     .props(
       PROP_ID, id,
       PROP_CLASS, className,
@@ -26,7 +27,7 @@ test('common', () => {
 
 test('value', () => {
   const value = 'some-value';
-  const input = createInput()
+  const input = $(TAG_NAME_INPUT)
     .props(
       PROP_TYPE, INPUT_TYPE_TEXT,
       PROP_VALUE, value,
@@ -35,7 +36,7 @@ test('value', () => {
 });
 
 test('checked', () => {
-  const input = createInput()
+  const input = $(TAG_NAME_INPUT)
     .props(
       PROP_TYPE, INPUT_TYPE_RADIO,
       PROP_CHECKED, true,
@@ -44,7 +45,7 @@ test('checked', () => {
 });
 
 test('disabled', () => {
-  const input = createInput()
+  const input = $(TAG_NAME_INPUT)
     .props(
       PROP_TYPE, INPUT_TYPE_CHECKBOX,
       PROP_DISABLED, true,
