@@ -1,18 +1,20 @@
-type TagNames = keyof HTMLElementTagNameMap;
 type Primitive = boolean | number | string;
 
-class Noliter<K extends TagNames> {
-  dom: HTMLElementTagNameMap[K];
+class Noliter<
+  T extends keyof HTMLElementTagNameMap,
+  H extends HTMLElementTagNameMap[T],
+> {
+  dom: H;
 
-  constructor(tagName: K) {
-    this.dom = document.createElement(tagName);
+  constructor(tagName: T) {
+    this.dom = <H>document.createElement(tagName);
   }
 
-  append(...children: (string | Node | Noliter<TagNames>)[]) {
+  append(...children: (string | Node | Noliter<T, H>)[]) {
     let index = children.length;
     while (index--) {
       if (children[index] instanceof Noliter) {
-        children[index] = (children[index] as Noliter<TagNames>).dom;
+        children[index] = (children[index] as Noliter<T, H>).dom;
       }
     }
     this.dom.append.apply(
@@ -43,16 +45,23 @@ class Noliter<K extends TagNames> {
     return this;
   }
 
-  events<E extends keyof HTMLElementEventMap>(
+  on<E extends keyof HTMLElementEventMap>(
     type: E,
-    listener: EventListenerOrEventListenerObject,
+    listener: (this: H, e: HTMLElementEventMap[E]) => void,
     options?: boolean | AddEventListenerOptions,
   ) {
-    this.dom.addEventListener(type, listener, options);
+    this.dom.addEventListener(
+      type,
+      listener as EventListener,
+      options,
+    );
     return this;
   }
 }
 
-export default function $<K extends TagNames>(tagName: K) {
-  return new Noliter(tagName);
+export default function $<
+  T extends keyof HTMLElementTagNameMap,
+  H extends HTMLElementTagNameMap[T],
+>(tagName: T) {
+  return new Noliter<T, H>(tagName);
 }
