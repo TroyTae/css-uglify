@@ -8,11 +8,11 @@ class Noliter<K extends TagNames> {
     this.dom = document.createElement(tagName);
   }
 
-  append(...children: (string | Node | Noliter<K>)[]) {
+  append(...children: (string | Node | Noliter<TagNames>)[]) {
     let index = children.length;
     while (index--) {
       if (children[index] instanceof Noliter) {
-        children[index] = (children[index] as Noliter<K>).dom;
+        children[index] = (children[index] as Noliter<TagNames>).dom;
       }
     }
     this.dom.append.apply(
