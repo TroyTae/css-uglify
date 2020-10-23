@@ -1,11 +1,13 @@
 const {
   $,
+  TAG_NAME_ANCHOR,
   TAG_NAME_INPUT,
   ATTR_ID,
   ATTR_VALUE,
   ATTR_CLASS,
   ATTR_TYPE,
   ATTR_STYLE,
+  ATTR_HREF,
 } = require('../dist/index');
 
 test('id/class', () => {
@@ -41,4 +43,12 @@ test('style', () => {
     .attrs(ATTR_STYLE, 'display: none;')
     .dom;
   expect(dom.style.display).toBe('none');
+});
+
+test('href', () => {
+  const href = 'https://domain.com/link';
+  const dom = $(TAG_NAME_ANCHOR)
+    .attrs(ATTR_HREF, href)
+    .dom;
+  expect(dom.href).toBe(href);
 });

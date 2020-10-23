@@ -1,11 +1,13 @@
 const {
   $,
+  TAG_NAME_ANCHOR,
   TAG_NAME_INPUT,
   PROP_ID,
   PROP_TYPE,
   PROP_CLASS,
   PROP_VALUE,
   PROP_CHECKED,
+  PROP_HREF,
   PROP_DISABLED,
   INPUT_TYPE_TEXT,
   INPUT_TYPE_CHECKBOX,
@@ -26,21 +28,31 @@ test('id/class', () => {
 
 test('value', () => {
   const value = 'some-value';
-  const input = $(TAG_NAME_INPUT)
+  const dom = $(TAG_NAME_INPUT)
     .props(
       PROP_TYPE, INPUT_TYPE_TEXT,
       PROP_VALUE, value,
-    );
-  expect(input.dom.value).toBe(value);
+    )
+    .dom;
+  expect(dom.value).toBe(value);
 });
 
 test('checked/disabled', () => {
-  const input = $(TAG_NAME_INPUT)
+  const dom = $(TAG_NAME_INPUT)
     .props(
       PROP_TYPE, INPUT_TYPE_CHECKBOX,
       PROP_DISABLED, true,
       PROP_CHECKED, true,
-    );
-  expect(input.dom.checked).toBe(true);
-  expect(input.dom.disabled).toBe(true);
+    )
+    .dom;
+  expect(dom.checked).toBe(true);
+  expect(dom.disabled).toBe(true);
+});
+
+test('href', () => {
+  const href = 'https://domain.com/link';
+  const dom = $(TAG_NAME_ANCHOR)
+    .props(PROP_HREF, href)
+    .dom;
+  expect(dom.href).toBe(href);
 });
