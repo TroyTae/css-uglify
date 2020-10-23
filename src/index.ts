@@ -5,6 +5,7 @@ import {
   ATTR_CLASS,
   ATTR_TYPE,
   ATTR_STYLE,
+  ATTR_HREF,
 } from './constants/Attribute';
 import {
   INPUT_TYPE_TEXT,
@@ -18,6 +19,7 @@ import {
   PROP_VALUE,
   PROP_CHECKED,
   PROP_DISABLED,
+  PROP_HREF,
 } from './constants/Property';
 import {
   EVENT_TYPE_BLUR,
@@ -161,6 +163,7 @@ export {
   ATTR_CLASS,
   ATTR_TYPE,
   ATTR_STYLE,
+  ATTR_HREF,
   INPUT_TYPE_TEXT,
   INPUT_TYPE_RADIO,
   INPUT_TYPE_CHECKBOX,
@@ -170,6 +173,7 @@ export {
   PROP_VALUE,
   PROP_CHECKED,
   PROP_DISABLED,
+  PROP_HREF,
   EVENT_TYPE_BLUR,
   EVENT_TYPE_CHANGE,
   EVENT_TYPE_CLICK,
