@@ -18,11 +18,12 @@ class Noliter<
   }
 
   attr(...attributes: Primitive[]) {
+    const dom = this.dom;
     if (attributes.length === 1) {
-      return this.dom.getAttribute(attributes[0] as string);
+      return dom.getAttribute(attributes[0] as string);
     }
     for (let index = 0; index < attributes.length;) {
-      this.dom.setAttribute(
+      dom.setAttribute(
         attributes[index++] as string,
         attributes[index++] as string,
       );
@@ -30,12 +31,14 @@ class Noliter<
     return this;
   }
 
-  props(...properties: Primitive[]) {
-    let index = 0;
-    while (index < properties.length) {
-      (this.dom as any)
-        [properties[index++] as string]
-          = properties[index++];
+  prop(...properties: Primitive[]) {
+    const dom: any = this.dom;
+    if (properties.length === 1) {
+      return dom[properties[0] as string];
+    }
+    for (let index = 0; index < properties.length;) {
+      dom[properties[index++] as string]
+        = properties[index++];
     }
     return this;
   }
