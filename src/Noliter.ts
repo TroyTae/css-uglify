@@ -11,16 +11,9 @@ class Noliter<
   }
 
   append(...children: (string | Node | Noliter<T, H>)[]) {
-    let index = children.length;
-    while (index--) {
-      if (children[index] instanceof Noliter) {
-        children[index] = (children[index] as Noliter<T, H>).dom;
-      }
-    }
-    this.dom.append.apply(
-      this.dom,
-      children as (string | Node)[],
-    );
+    this.dom.append(...children.map(function(child) {
+      return child instanceof Noliter ? child.dom : child;
+    }));
     return this;
   }
 

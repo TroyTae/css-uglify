@@ -5,3 +5,7 @@ export declare const PROP_VALUE = "value";
 export declare const PROP_CHECKED = "checked";
 export declare const PROP_DISABLED = "disabled";
 export declare const PROP_HREF = "href";
+export declare const PROP_TEXT_CONTENT = "textContent";
+export declare const PROP_INNER_TEXT = "innerText";
+export declare const PROP_INNER_HTML = "innerHTML";
+export declare const PROP_OUTER_HTML = "outerHTML";
