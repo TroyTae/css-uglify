@@ -8,7 +8,7 @@ test('string', () => {
   const text = 'Something Text';
   expect(
     $(TAG_NAME_PARAGRAPH)
-      .append(text)
+      .add(text)
       .dom
       .textContent
   ).toBe(text);
@@ -16,7 +16,7 @@ test('string', () => {
 
 test('element', () => {
   const children = $(TAG_NAME_DIV)
-    .append(
+    .add(
       document.createElement('input'),
       document.createElement('button'),
     )
@@ -29,7 +29,7 @@ test('element', () => {
 
 test('noliter instance', () => {
   const children = $(TAG_NAME_DIV)
-    .append(
+    .add(
       $(TAG_NAME_DIV),
       $(TAG_NAME_PARAGRAPH),
     )
