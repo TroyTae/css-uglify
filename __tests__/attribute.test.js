@@ -13,42 +13,35 @@ const {
 test('id/class', () => {
   const id = 'some-id';
   const className = 'some-class';
-  const dom = $(TAG_NAME_INPUT)
-    .attrs(
+  const input = $(TAG_NAME_INPUT)
+    .attr(
       ATTR_ID, id,
       ATTR_CLASS, className,
-    )
-    .dom;
-  expect(dom.getAttribute(ATTR_ID)).toBe(id);
-  expect(dom.getAttribute(ATTR_CLASS)).toBe(className);
+    );
+  expect(input.attr(ATTR_ID)).toBe(id);
+  expect(input.attr(ATTR_CLASS)).toBe(className);
 });
 
 test('value', () => {
   const value = 'some-value';
-  const dom = $(TAG_NAME_INPUT)
-    .attrs(ATTR_VALUE, value)
-    .dom;
-  expect(dom.getAttribute(ATTR_VALUE)).toBe(value);
+  const input = $(TAG_NAME_INPUT).attr(ATTR_VALUE, value);
+  expect(input.attr(ATTR_VALUE)).toBe(value);
 });
 
 test('type', () => {
-  const dom = $(TAG_NAME_INPUT)
-    .attrs(ATTR_TYPE, 'button')
-    .dom;
-  expect(dom.type).toBe('button');
+  const type = 'button';
+  const input = $(TAG_NAME_INPUT).attr(ATTR_TYPE, type);
+  expect(input.attr(ATTR_TYPE)).toBe(type);
 });
 
 test('style', () => {
-  const dom = $(TAG_NAME_INPUT)
-    .attrs(ATTR_STYLE, 'display: none;')
-    .dom;
-  expect(dom.style.display).toBe('none');
+  const style = 'display: none;';
+  const input = $(TAG_NAME_INPUT).attr(ATTR_STYLE, style);
+  expect(input.attr(ATTR_STYLE)).toBe(style);
 });
 
 test('href', () => {
   const href = 'https://domain.com/link';
-  const dom = $(TAG_NAME_ANCHOR)
-    .attrs(ATTR_HREF, href)
-    .dom;
-  expect(dom.href).toBe(href);
+  const a = $(TAG_NAME_ANCHOR).attr(ATTR_HREF, href);
+  expect(a.attr(ATTR_HREF)).toBe(href);
 });
