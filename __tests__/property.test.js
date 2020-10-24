@@ -22,7 +22,7 @@ test('id/class', () => {
   const id = 'some-id';
   const className = 'some-class';
   const dom = $(TAG_NAME_INPUT)
-    .props(
+    .prop(
       PROP_ID, id,
       PROP_CLASS, className,
     )
@@ -34,7 +34,7 @@ test('id/class', () => {
 test('value', () => {
   const value = 'some-value';
   const dom = $(TAG_NAME_INPUT)
-    .props(
+    .prop(
       PROP_TYPE, INPUT_TYPE_TEXT,
       PROP_VALUE, value,
     )
@@ -44,7 +44,7 @@ test('value', () => {
 
 test('checked/disabled', () => {
   const dom = $(TAG_NAME_INPUT)
-    .props(
+    .prop(
       PROP_TYPE, INPUT_TYPE_CHECKBOX,
       PROP_DISABLED, true,
       PROP_CHECKED, true,
@@ -57,7 +57,7 @@ test('checked/disabled', () => {
 test('href', () => {
   const href = 'https://domain.com/link';
   const dom = $(TAG_NAME_ANCHOR)
-    .props(PROP_HREF, href)
+    .prop(PROP_HREF, href)
     .dom;
   expect(dom.href).toBe(href);
 });
@@ -65,15 +65,15 @@ test('href', () => {
 test('textContent/innerText', () => {
   const text = 'text';
   const span = $(TAG_NAME_SPAN);
-  span.props(PROP_TEXT_CONTENT, text);
+  span.prop(PROP_TEXT_CONTENT, text);
   expect(span.dom.textContent).toBe(text);
-  span.props(PROP_INNER_TEXT, text);
+  span.prop(PROP_INNER_TEXT, text);
   expect(span.dom.innerText).toBe(text);
 });
 
 test('innerHTML/outerHTML', () => {
   const dom = $(TAG_NAME_SPAN)
-    .props(PROP_INNER_HTML, '<span></span>')
+    .prop(PROP_INNER_HTML, '<span></span>')
     .dom;
   expect(dom[PROP_INNER_HTML]).toBe('<span></span>');
   expect(dom[PROP_OUTER_HTML]).toBe('<span><span></span></span>');

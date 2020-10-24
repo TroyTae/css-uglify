@@ -9,18 +9,18 @@ const {
 
 test('text', () => {
   const input = $(TAG_NAME_INPUT)
-    .props(PROP_TYPE, INPUT_TYPE_TEXT);
+    .prop(PROP_TYPE, INPUT_TYPE_TEXT);
   expect(input.dom.type).toBe(INPUT_TYPE_TEXT);
 });
 
 test('radio', () => {
   const input = $(TAG_NAME_INPUT)
-    .props(PROP_TYPE, INPUT_TYPE_RADIO);
+    .prop(PROP_TYPE, INPUT_TYPE_RADIO);
   expect(input.dom.type).toBe(INPUT_TYPE_RADIO);
 });
 
 test('disabled', () => {
   const input = $(TAG_NAME_INPUT)
-    .props(PROP_TYPE, INPUT_TYPE_CHECKBOX);
+    .prop(PROP_TYPE, INPUT_TYPE_CHECKBOX);
   expect(input.dom.type).toBe(INPUT_TYPE_CHECKBOX);
 });
