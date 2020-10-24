@@ -26,10 +26,10 @@ class Noliter<
 
   attrs(...attributes: Primitive[]) {
     let index = 0;
-    for (; index < attributes.length; ++index) {
+    while (index < attributes.length) {
       this.dom.setAttribute(
-        attributes[index] as string,
-        attributes[++index] as string,
+        attributes[index++] as string,
+        attributes[index++] as string,
       );
     }
     return this;
@@ -37,10 +37,10 @@ class Noliter<
 
   props(...properties: Primitive[]) {
     let index = 0;
-    for (; index < properties.length; ++index) {
+    while (index < properties.length) {
       (this.dom as any)
-        [properties[index] as string]
-          = properties[++index];
+        [properties[index++] as string]
+          = properties[index++];
     }
     return this;
   }
