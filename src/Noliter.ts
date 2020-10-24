@@ -17,9 +17,11 @@ class Noliter<
     return this;
   }
 
-  attrs(...attributes: Primitive[]) {
-    let index = 0;
-    while (index < attributes.length) {
+  attr(...attributes: Primitive[]) {
+    if (attributes.length === 1) {
+      return this.dom.getAttribute(attributes[0] as string);
+    }
+    for (let index = 0; index < attributes.length;) {
       this.dom.setAttribute(
         attributes[index++] as string,
         attributes[index++] as string,
