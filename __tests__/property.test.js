@@ -1,6 +1,7 @@
 const {
   $,
   TAG_NAME_ANCHOR,
+  TAG_NAME_SPAN,
   TAG_NAME_INPUT,
   PROP_ID,
   PROP_TYPE,
@@ -9,6 +10,8 @@ const {
   PROP_CHECKED,
   PROP_HREF,
   PROP_DISABLED,
+  PROP_TEXT_CONTENT,
+  PROP_INNER_TEXT,
   INPUT_TYPE_TEXT,
   INPUT_TYPE_CHECKBOX,
 } = require('../dist/index');
@@ -55,4 +58,13 @@ test('href', () => {
     .props(PROP_HREF, href)
     .dom;
   expect(dom.href).toBe(href);
+});
+
+test('textContent/innerText', () => {
+  const text = 'text';
+  const span = $(TAG_NAME_SPAN);
+  span.props(PROP_TEXT_CONTENT, text);
+  expect(span.dom.textContent).toBe(text);
+  span.props(PROP_INNER_TEXT, text);
+  expect(span.dom.innerText).toBe(text);
 });
