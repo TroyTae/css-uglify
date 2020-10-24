@@ -10,7 +10,7 @@ class Noliter<
     this.dom = <H>document.createElement(tagName);
   }
 
-  append(...children: (string | Node | Noliter<T, H>)[]) {
+  add(...children: (string | Node | Noliter<T, H>)[]) {
     this.dom.append(...children.map(function(child) {
       return child instanceof Noliter ? child.dom : child;
     }));
