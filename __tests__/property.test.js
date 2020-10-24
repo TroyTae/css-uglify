@@ -11,6 +11,8 @@ const {
   PROP_HREF,
   PROP_DISABLED,
   PROP_TEXT_CONTENT,
+  PROP_INNER_HTML,
+  PROP_OUTER_HTML,
   PROP_INNER_TEXT,
   INPUT_TYPE_TEXT,
   INPUT_TYPE_CHECKBOX,
@@ -67,4 +69,12 @@ test('textContent/innerText', () => {
   expect(span.dom.textContent).toBe(text);
   span.props(PROP_INNER_TEXT, text);
   expect(span.dom.innerText).toBe(text);
+});
+
+test('innerHTML/outerHTML', () => {
+  const dom = $(TAG_NAME_SPAN)
+    .props(PROP_INNER_HTML, '<span></span>')
+    .dom;
+  expect(dom[PROP_INNER_HTML]).toBe('<span></span>');
+  expect(dom[PROP_OUTER_HTML]).toBe('<span><span></span></span>');
 });
