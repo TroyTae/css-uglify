@@ -5,3 +5,7 @@ export const PROP_VALUE = 'value';
 export const PROP_CHECKED = 'checked';
 export const PROP_DISABLED = 'disabled';
 export const PROP_HREF = 'href';
+export const PROP_TEXT_CONTENT = 'textContent';
+export const PROP_INNER_TEXT = 'innerText';
+export const PROP_INNER_HTML = 'innerHTML';
+export const PROP_OUTER_HTML = 'outerHTML';
