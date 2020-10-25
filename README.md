@@ -24,10 +24,10 @@ npm install noliter
 
 ### DOM manipulation
 
-#### sa/ga
+#### ga/sa
 
-`sa` is abbreviation of `set attributes`.  
 `ga` is abbreviation of `get attribute`.  
+`sa` is abbreviation of `set attributes`.  
 
 ```javascript
 import {
@@ -47,7 +47,10 @@ div.ga(ATTR_ID) === 'my-id';
 div.ga(ATTR_CLASS) === 'class-name';
 ```
 
-#### props
+#### gp/sp
+
+`gp` is abbreviation of `get property`.  
+`sp` is abbreviation of `set properties`.  
 
 ```javascript
 import {
@@ -57,11 +60,14 @@ import {
   PROP_DISABLED
 } from 'noliter';
 
-$(TAG_NAME_INPUT)
-  .props(
+const input = $(TAG_NAME_INPUT)
+  .sp(
     PROP_CHECKED, true,
     PROP_DISABLED, true
   );
+
+div.gp(PROP_CHECKED) === true;
+div.gp(PROP_DISABLED) === true;
 ```
 
 #### append
