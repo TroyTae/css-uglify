@@ -70,7 +70,10 @@ div.gp(PROP_CHECKED) === true;
 div.gp(PROP_DISABLED) === true;
 ```
 
-#### append
+#### add
+
+This method appends multiple parameters as children.  
+You can pass `string` or `element` or `instance`.  
 
 ```javascript
 import {
@@ -79,14 +82,16 @@ import {
 } from 'noliter';
 
 $(TAG_NAME_DIV)
-  .append(
+  .add(
     'text',
     document.createElement('div'),
     createDiv()
   );
 ```
 
-#### events
+#### on
+
+It's same with `addEventListener` method.
 
 ```javascript
 import {
@@ -97,9 +102,14 @@ import {
 } from 'noliter';
 
 $(TAG_NAME_BUTTON)
-  .append('click me')
-  .events(
-    EVENT_TYPE_BLUR, () => console.log('blur'),
-    EVENT_TYPE_FOCUS, () => console.log('focus')
+  .add('click me')
+  .on(
+    EVENT_TYPE_BLUR,
+    () => console.log('blur')
+  )
+  .on(
+    EVENT_TYPE_FOCUS,
+    () => console.log('focus'),
+    { passive: true }
   );
 ```
