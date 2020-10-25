@@ -85,7 +85,7 @@ $(TAG_NAME_DIV)
   .add(
     'text',
     document.createElement('div'),
-    createDiv()
+    $(TAG_NAME_DIV)
   );
 ```
 
