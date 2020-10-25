@@ -14,9 +14,20 @@ npm install noliter
 
 ## API
 
-### Core
+### Constants
 
-#### attrs
+ - [Attribute](./src/constants/Attribute.ts)
+ - [EventType](./src/constants/EventType.ts)
+ - [InputType](./src/constants/InputType.ts)
+ - [Property](./src/constants/Property.ts)
+ - [TagName](./src/constants/TagName.ts)
+
+### DOM manipulation
+
+#### sa/ga
+
+`sa` is abbreviation of `set attributes`.  
+`ga` is abbreviation of `get attribute`.  
 
 ```javascript
 import {
@@ -26,11 +37,14 @@ import {
   ATTR_CLASS
 } from 'noliter';
 
-$(TAG_NAME_DIV)
-  .attrs(
+const div = $(TAG_NAME_DIV)
+  .sa(
     ATTR_ID, 'my-id',
     ATTR_CLASS, 'class-name'
   );
+
+div.ga(ATTR_ID) === 'my-id';
+div.ga(ATTR_CLASS) === 'class-name';
 ```
 
 #### props
@@ -83,11 +97,3 @@ $(TAG_NAME_BUTTON)
     EVENT_TYPE_FOCUS, () => console.log('focus')
   );
 ```
-
-### Constants
-
- - [TagName](./src/constants/TagName.ts)
- - [Attribute](./src/constants/Attribute.ts)
- - [Property](./src/constants/Property.ts)
- - [InputType](./src/constants/InputType.ts)
- - [EventType](./src/constants/EventType.ts)
