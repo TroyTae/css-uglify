@@ -31,14 +31,15 @@ class Noliter<
     return this;
   }
 
-  prop(...properties: Primitive[]) {
-    const dom: any = this.dom;
-    if (properties.length === 1) {
-      return dom[properties[0] as string];
-    }
+  gp<P extends keyof H>(propertyName: P) {
+    return this.dom[propertyName];
+  }
+
+  sp(...properties: Primitive[]) {
     for (let index = 0; index < properties.length;) {
-      dom[properties[index++] as string]
-        = properties[index++];
+      (this.dom as any)
+        [properties[index++] as string]
+          = properties[index++];
     }
     return this;
   }
