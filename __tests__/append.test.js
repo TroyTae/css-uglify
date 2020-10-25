@@ -2,6 +2,7 @@ const {
   $,
   TAG_NAME_DIV,
   TAG_NAME_PARAGRAPH,
+  PROP_TEXT_CONTENT,
 } = require('../dist/index');
 
 test('string', () => {
@@ -9,8 +10,7 @@ test('string', () => {
   expect(
     $(TAG_NAME_PARAGRAPH)
       .add(text)
-      .dom
-      .textContent
+      .prop(PROP_TEXT_CONTENT)
   ).toBe(text);
 });
 

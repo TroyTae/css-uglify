@@ -21,60 +21,57 @@ const {
 test('id/class', () => {
   const id = 'some-id';
   const className = 'some-class';
-  const dom = $(TAG_NAME_INPUT)
+  const input = $(TAG_NAME_INPUT)
     .prop(
       PROP_ID, id,
       PROP_CLASS, className,
-    )
-    .dom;
-  expect(dom.id).toBe(id);
-  expect(dom.className).toBe(className);
+    );
+  expect(input.prop(PROP_ID)).toBe(id);
+  expect(input.prop(PROP_CLASS)).toBe(className);
 });
 
 test('value', () => {
   const value = 'some-value';
-  const dom = $(TAG_NAME_INPUT)
+  const input = $(TAG_NAME_INPUT)
     .prop(
       PROP_TYPE, INPUT_TYPE_TEXT,
       PROP_VALUE, value,
-    )
-    .dom;
-  expect(dom.value).toBe(value);
+    );
+  expect(input.prop(PROP_VALUE)).toBe(value);
 });
 
 test('checked/disabled', () => {
-  const dom = $(TAG_NAME_INPUT)
+  const input = $(TAG_NAME_INPUT)
     .prop(
       PROP_TYPE, INPUT_TYPE_CHECKBOX,
       PROP_DISABLED, true,
       PROP_CHECKED, true,
-    )
-    .dom;
-  expect(dom.checked).toBe(true);
-  expect(dom.disabled).toBe(true);
+    );
+  expect(input.prop(PROP_DISABLED)).toBe(true);
+  expect(input.prop(PROP_CHECKED)).toBe(true);
 });
 
 test('href', () => {
   const href = 'https://domain.com/link';
-  const dom = $(TAG_NAME_ANCHOR)
-    .prop(PROP_HREF, href)
-    .dom;
-  expect(dom.href).toBe(href);
+  const a = $(TAG_NAME_ANCHOR).prop(PROP_HREF, href);
+  expect(a.prop(PROP_HREF)).toBe(href);
 });
 
 test('textContent/innerText', () => {
   const text = 'text';
   const span = $(TAG_NAME_SPAN);
   span.prop(PROP_TEXT_CONTENT, text);
-  expect(span.dom.textContent).toBe(text);
+  expect(span.prop(PROP_TEXT_CONTENT)).toBe(text);
   span.prop(PROP_INNER_TEXT, text);
-  expect(span.dom.innerText).toBe(text);
+  expect(span.prop(PROP_INNER_TEXT)).toBe(text);
 });
 
 test('innerHTML/outerHTML', () => {
-  const dom = $(TAG_NAME_SPAN)
-    .prop(PROP_INNER_HTML, '<span></span>')
-    .dom;
-  expect(dom[PROP_INNER_HTML]).toBe('<span></span>');
-  expect(dom[PROP_OUTER_HTML]).toBe('<span><span></span></span>');
+  const a = $(TAG_NAME_ANCHOR)
+    .prop(
+      PROP_INNER_HTML,
+      '<span></span>',
+    );
+  expect(a.prop(PROP_INNER_HTML)).toBe('<span></span>');
+  expect(a.prop(PROP_OUTER_HTML)).toBe('<a><span></span></a>');
 });
