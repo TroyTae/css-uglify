@@ -3,7 +3,8 @@ declare class Noliter<T extends keyof HTMLElementTagNameMap, H extends HTMLEleme
     dom: H;
     constructor(tagName: T);
     add(...children: (string | Node | Noliter<T, H>)[]): this;
-    attr(...attributes: Primitive[]): string | this | null;
+    ga(attributeName: string): string | null;
+    sa(...attributes: Primitive[]): this;
     prop(...properties: Primitive[]): any;
     on<E extends keyof HTMLElementEventMap>(type: E, listener: (this: H, e: HTMLElementEventMap[E]) => void, options?: boolean | AddEventListenerOptions): this;
 }
