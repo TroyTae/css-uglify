@@ -17,13 +17,13 @@ class Noliter<
     return this;
   }
 
-  attr(...attributes: Primitive[]) {
-    const dom = this.dom;
-    if (attributes.length === 1) {
-      return dom.getAttribute(attributes[0] as string);
-    }
+  ga(attributeName: string) {
+    return this.dom.getAttribute(attributeName);
+  }
+
+  sa(...attributes: Primitive[]) {
     for (let index = 0; index < attributes.length;) {
-      dom.setAttribute(
+      this.dom.setAttribute(
         attributes[index++] as string,
         attributes[index++] as string,
       );
