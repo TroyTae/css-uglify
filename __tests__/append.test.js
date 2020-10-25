@@ -10,7 +10,7 @@ test('string', () => {
   expect(
     $(TAG_NAME_PARAGRAPH)
       .add(text)
-      .prop(PROP_TEXT_CONTENT)
+      .gp(PROP_TEXT_CONTENT)
   ).toBe(text);
 });
 
