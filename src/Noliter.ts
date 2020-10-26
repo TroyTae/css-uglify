@@ -1,8 +1,9 @@
 type Primitive = boolean | number | string;
+type TagNameKeys = keyof HTMLElementTagNameMap;
 
 class Noliter<
-  T extends keyof HTMLElementTagNameMap,
-  H extends HTMLElementTagNameMap[T],
+  T extends TagNameKeys,
+  H extends HTMLElementTagNameMap[T]
 > {
   dom: H;
 
@@ -10,7 +11,10 @@ class Noliter<
     this.dom = <H>document.createElement(tagName);
   }
 
-  add(...children: (string | Node | Noliter<T, H>)[]) {
+  add(...children: (string | Node | Noliter<
+    TagNameKeys,
+    HTMLElementTagNameMap[TagNameKeys]
+  >)[]) {
     this.dom.append(...children.map(function(child) {
       return child instanceof Noliter ? child.dom : child;
     }));
