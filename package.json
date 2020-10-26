@@ -1,6 +1,6 @@
 {
   "name": "noliter",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "Write code with no literal and get tiny bundle",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",

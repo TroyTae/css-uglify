@@ -1,8 +1,9 @@
 declare type Primitive = boolean | number | string;
-declare class Noliter<T extends keyof HTMLElementTagNameMap, H extends HTMLElementTagNameMap[T]> {
+declare type TagNameKeys = keyof HTMLElementTagNameMap;
+declare class Noliter<T extends TagNameKeys, H extends HTMLElementTagNameMap[T]> {
     dom: H;
     constructor(tagName: T);
-    add(...children: (string | Node | Noliter<T, H>)[]): this;
+    add(...children: (string | Node | Noliter<TagNameKeys, HTMLElementTagNameMap[TagNameKeys]>)[]): this;
     ga(attributeName: string): string | null;
     sa(...attributes: Primitive[]): this;
     gp<P extends keyof H>(propertyName: P): H[P];
