@@ -21,25 +21,11 @@ class Noliter<
     return this;
   }
 
-  ga(attributeName: string) {
-    return this.dom.getAttribute(attributeName);
-  }
-
-  sa(...attributes: Primitive[]) {
-    for (let index = 0; index < attributes.length;) {
-      this.dom.setAttribute(
-        attributes[index++] as string,
-        attributes[index++] as string,
-      );
-    }
-    return this;
-  }
-
-  gp<P extends keyof H>(propertyName: P) {
+  get<P extends keyof H>(propertyName: P) {
     return this.dom[propertyName];
   }
 
-  sp(...properties: Primitive[]) {
+  set(...properties: Primitive[]) {
     for (let index = 0; index < properties.length;) {
       (this.dom as any)
         [properties[index++] as string]
