@@ -16,7 +16,6 @@ npm install noliter
 
 ### Constants
 
- - [Attribute](./src/constants/Attribute.ts)
  - [EventType](./src/constants/EventType.ts)
  - [InputType](./src/constants/InputType.ts)
  - [Property](./src/constants/Property.ts)
@@ -24,33 +23,9 @@ npm install noliter
 
 ### DOM manipulation
 
-#### ga/sa
+#### get/set
 
-`ga` is abbreviation of `get attribute`.  
-`sa` is abbreviation of `set attributes`.  
-
-```javascript
-import {
-  $,
-  TAG_NAME_DIV,
-  ATTR_ID,
-  ATTR_CLASS
-} from 'noliter';
-
-const div = $(TAG_NAME_DIV)
-  .sa(
-    ATTR_ID, 'my-id',
-    ATTR_CLASS, 'class-name'
-  );
-
-div.ga(ATTR_ID) === 'my-id';
-div.ga(ATTR_CLASS) === 'class-name';
-```
-
-#### gp/sp
-
-`gp` is abbreviation of `get property`.  
-`sp` is abbreviation of `set properties`.  
+You can get/set property of DOM with `get`/`set` method.
 
 ```javascript
 import {
@@ -61,13 +36,13 @@ import {
 } from 'noliter';
 
 const input = $(TAG_NAME_INPUT)
-  .sp(
+  .set(
     PROP_CHECKED, true,
     PROP_DISABLED, true
   );
 
-div.gp(PROP_CHECKED) === true;
-div.gp(PROP_DISABLED) === true;
+div.get(PROP_CHECKED) === true;
+div.get(PROP_DISABLED) === true;
 ```
 
 #### add
