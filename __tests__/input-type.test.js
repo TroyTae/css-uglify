@@ -8,19 +8,16 @@ const {
 } = require('../dist/index');
 
 test('text', () => {
-  const input = $(TAG_NAME_INPUT)
-    .sp(PROP_TYPE, INPUT_TYPE_TEXT);
-  expect(input.gp(PROP_TYPE)).toBe(INPUT_TYPE_TEXT);
+  const input = $(TAG_NAME_INPUT).set(PROP_TYPE, INPUT_TYPE_TEXT);
+  expect(input.get(PROP_TYPE)).toBe(INPUT_TYPE_TEXT);
 });
 
 test('radio', () => {
-  const input = $(TAG_NAME_INPUT)
-    .sp(PROP_TYPE, INPUT_TYPE_RADIO);
-  expect(input.gp(PROP_TYPE)).toBe(INPUT_TYPE_RADIO);
+  const input = $(TAG_NAME_INPUT).set(PROP_TYPE, INPUT_TYPE_RADIO);
+  expect(input.get(PROP_TYPE)).toBe(INPUT_TYPE_RADIO);
 });
 
 test('disabled', () => {
-  const input = $(TAG_NAME_INPUT)
-    .sp(PROP_TYPE, INPUT_TYPE_CHECKBOX);
-  expect(input.gp(PROP_TYPE)).toBe(INPUT_TYPE_CHECKBOX);
+  const input = $(TAG_NAME_INPUT).set(PROP_TYPE, INPUT_TYPE_CHECKBOX);
+  expect(input.get(PROP_TYPE)).toBe(INPUT_TYPE_CHECKBOX);
 });
