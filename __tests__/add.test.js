@@ -1,21 +1,21 @@
 const {
   $,
-  TAG_NAME_DIV,
-  TAG_NAME_PARAGRAPH,
-  PROP_TEXT_CONTENT,
+  DIV,
+  PARAGRAPH,
+  TEXT_CONTENT,
 } = require('../dist/index');
 
 test('string', () => {
   const text = 'Something Text';
   expect(
-    $(TAG_NAME_PARAGRAPH)
+    $(PARAGRAPH)
       .add(text)
-      .get(PROP_TEXT_CONTENT)
+      .get(TEXT_CONTENT)
   ).toBe(text);
 });
 
 test('element', () => {
-  const children = $(TAG_NAME_DIV)
+  const children = $(DIV)
     .add(
       document.createElement('input'),
       document.createElement('button'),
@@ -28,10 +28,10 @@ test('element', () => {
 });
 
 test('noliter instance', () => {
-  const children = $(TAG_NAME_DIV)
+  const children = $(DIV)
     .add(
-      $(TAG_NAME_DIV),
-      $(TAG_NAME_PARAGRAPH),
+      $(DIV),
+      $(PARAGRAPH),
     )
     .dom
     .children;

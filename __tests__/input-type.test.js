@@ -1,23 +1,23 @@
 const {
   $,
-  TAG_NAME_INPUT,
-  PROP_TYPE,
-  INPUT_TYPE_TEXT,
-  INPUT_TYPE_RADIO,
-  INPUT_TYPE_CHECKBOX,
+  INPUT,
+  TYPE,
+  TEXT,
+  RADIO,
+  CHECKBOX,
 } = require('../dist/index');
 
 test('text', () => {
-  const input = $(TAG_NAME_INPUT).set(PROP_TYPE, INPUT_TYPE_TEXT);
-  expect(input.get(PROP_TYPE)).toBe(INPUT_TYPE_TEXT);
+  const input = $(INPUT).set(TYPE, TEXT);
+  expect(input.get(TYPE)).toBe(TEXT);
 });
 
 test('radio', () => {
-  const input = $(TAG_NAME_INPUT).set(PROP_TYPE, INPUT_TYPE_RADIO);
-  expect(input.get(PROP_TYPE)).toBe(INPUT_TYPE_RADIO);
+  const input = $(INPUT).set(TYPE, RADIO);
+  expect(input.get(TYPE)).toBe(RADIO);
 });
 
 test('disabled', () => {
-  const input = $(TAG_NAME_INPUT).set(PROP_TYPE, INPUT_TYPE_CHECKBOX);
-  expect(input.get(PROP_TYPE)).toBe(INPUT_TYPE_CHECKBOX);
+  const input = $(INPUT).set(TYPE, CHECKBOX);
+  expect(input.get(TYPE)).toBe(CHECKBOX);
 });
