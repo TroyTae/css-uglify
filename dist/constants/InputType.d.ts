@@ -1,3 +1,3 @@
-export declare const INPUT_TYPE_TEXT = "text";
-export declare const INPUT_TYPE_RADIO = "radio";
-export declare const INPUT_TYPE_CHECKBOX = "checkbox";
+export declare const TEXT = "text";
+export declare const RADIO = "radio";
+export declare const CHECKBOX = "checkbox";

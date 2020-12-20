@@ -49,7 +49,7 @@ class Noliter<
 }
 
 export default function $<
-  T extends keyof HTMLElementTagNameMap,
+  T extends TagNameKeys,
   H extends HTMLElementTagNameMap[T],
 >(tagName: T) {
   return new Noliter<T, H>(tagName);

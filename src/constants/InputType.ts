@@ -1,3 +1,3 @@
-export const INPUT_TYPE_TEXT = 'text';
-export const INPUT_TYPE_RADIO = 'radio';
-export const INPUT_TYPE_CHECKBOX = 'checkbox';
+export const TEXT = 'text';
+export const RADIO = 'radio';
+export const CHECKBOX = 'checkbox';

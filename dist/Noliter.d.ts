@@ -8,5 +8,5 @@ declare class Noliter<T extends TagNameKeys, H extends HTMLElementTagNameMap[T]>
     set(...properties: Primitive[]): this;
     on<E extends keyof HTMLElementEventMap>(type: E, listener: (this: H, e: HTMLElementEventMap[E]) => void, options?: boolean | AddEventListenerOptions): this;
 }
-export default function $<T extends keyof HTMLElementTagNameMap, H extends HTMLElementTagNameMap[T]>(tagName: T): Noliter<T, H>;
+export default function $<T extends TagNameKeys, H extends HTMLElementTagNameMap[T]>(tagName: T): Noliter<T, H>;
 export {};
