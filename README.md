@@ -20,6 +20,20 @@ Instead of literal, if you use constant, you can reduce your file size.
 Please setting about uglify, then your constants will change to single alphabet.  
 Here's the [supported constants](./src/Constant.ts).
 
+### Notifier
+
+```javascript
+import { $, notifier, INPUT } from 'noliter';
+
+const [setValue, addValueListener] = notifier();
+const input1 = $(INPUT);
+const input2 = $(INPUT);
+addValueListener((value) => input1.value = value);
+addValueListener((value) => input2.value = value);
+setValue('');
+setValue('some value');
+```
+
 ### DOM manipulation
 
 #### get/set
@@ -27,21 +41,15 @@ Here's the [supported constants](./src/Constant.ts).
 You can get/set property of DOM with `get`/`set` method.
 
 ```javascript
-import {
-  $,
-  TAG_NAME_INPUT,
-  PROP_CHECKED,
-  PROP_DISABLED
-} from 'noliter';
+import { $, INPUT, CHECKED, DISABLED } from 'noliter';
 
-const input = $(TAG_NAME_INPUT)
-  .set(
-    PROP_CHECKED, true,
-    PROP_DISABLED, true
-  );
+const input = $(INPUT).set(
+  CHECKED, true,
+  DISABLED, true
+);
 
-div.get(PROP_CHECKED) === true;
-div.get(PROP_DISABLED) === true;
+input.get(CHECKED) === true;
+input.get(DISABLED) === true;
 ```
 
 #### add
@@ -50,16 +58,13 @@ This method appends multiple parameters as children.
 You can pass `string` or `element` or `instance`.  
 
 ```javascript
-import {
-  $,
-  TAG_NAME_DIV
-} from 'noliter';
+import { $, DIV } from 'noliter';
 
-$(TAG_NAME_DIV)
+$(DIV)
   .add(
     'text',
     document.createElement('div'),
-    $(TAG_NAME_DIV)
+    $(DIV)
   );
 ```
 
@@ -68,21 +73,13 @@ $(TAG_NAME_DIV)
 It's same with `addEventListener` method.
 
 ```javascript
-import {
-  $,
-  TAG_NAME_BUTTON,
-  EVENT_TYPE_BLUR,
-  EVENT_TYPE_FOCUS
-} from 'noliter';
+import { $, BUTTON, BLUR, FOCUS } from 'noliter';
 
-$(TAG_NAME_BUTTON)
+$(BUTTON)
   .add('click me')
+  .on(BLUR, () => console.log('blur'))
   .on(
-    EVENT_TYPE_BLUR,
-    () => console.log('blur')
-  )
-  .on(
-    EVENT_TYPE_FOCUS,
+    FOCUS,
     () => console.log('focus'),
     { passive: true }
   );
