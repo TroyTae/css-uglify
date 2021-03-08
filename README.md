@@ -16,10 +16,9 @@ npm install noliter
 
 ### Constants
 
- - [EventType](./src/constants/EventType.ts)
- - [InputType](./src/constants/InputType.ts)
- - [Property](./src/constants/Property.ts)
- - [TagName](./src/constants/TagName.ts)
+Instead of literal, if you use constant, you can reduce your file size.  
+Please setting about uglify, then your constants will change to single alphabet.  
+Here's the [supported constants](./src/Constant.ts).
 
 ### DOM manipulation
 

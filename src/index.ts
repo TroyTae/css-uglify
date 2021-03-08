@@ -1,4 +1,5 @@
 import $ from './Noliter';
+import notifier from './Notifier';
 import {
   TEXT,
   RADIO,
@@ -146,6 +147,7 @@ import {
 
 export {
   $,
+  notifier,
   TEXT,
   RADIO,
   CHECKBOX,
