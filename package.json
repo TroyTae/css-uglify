@@ -26,7 +26,6 @@
     "url": "https://github.com/TroyTae/noliter/issues"
   },
   "devDependencies": {
-    "commander": "7.1.0",
     "fs-extra": "9.1.0",
     "jest": "26.6.3",
     "naming-convention-transfer": "1.0.2",

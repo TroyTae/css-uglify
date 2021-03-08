@@ -20,7 +20,6 @@ function createConfig({ pkg, input, format, file }) {
 }
 
 fs.emptyDirSync('./dist');
-fs.copyFileSync('./src/command.js', './dist/command.js');
 
 module.exports = [
   createConfig({ pkg, input, format: 'cjs', file: pkg.main }),
