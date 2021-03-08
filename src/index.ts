@@ -3,8 +3,6 @@ import {
   TEXT,
   RADIO,
   CHECKBOX,
-} from './constants/InputType';
-import {
   ID,
   TYPE,
   CLASS_NAME,
@@ -16,8 +14,6 @@ import {
   INNER_TEXT,
   INNER_HTML,
   OUTER_HTML,
-} from './constants/Property';
-import {
   BLUR,
   CHANGE,
   CLICK,
@@ -54,8 +50,6 @@ import {
   TRANSITIONRUN,
   TRANSITIONSTART,
   WHEEL,
-} from './constants/EventType';
-import {
   ANCHOR,
   ABBR,
   ADDRESS,
@@ -148,7 +142,7 @@ import {
   UL,
   VAR,
   VIDEO,
-} from './constants/TagName';
+} from './Constant';
 
 export {
   $,
