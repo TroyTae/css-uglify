@@ -1,7 +1,10 @@
 const {
   $,
   DIV,
+  INPUT,
   PARAGRAPH,
+  TYPE,
+  TEXT,
   TEXT_CONTENT,
 } = require('../dist/index');
 
@@ -38,4 +41,9 @@ test('noliter instance', () => {
 
   expect(children.length).toBe(2);
   expect(children[0].tagName + children[1].tagName).toBe('DIVP');
+});
+
+test('set property', () => {
+  const input = $(INPUT).set(TYPE, TEXT);
+  expect(input.get(TYPE)).toBe(TEXT);
 });
