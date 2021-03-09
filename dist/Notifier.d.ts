@@ -1,1 +1,1 @@
-export default function Notifier<T>(): (((value: T) => void) | ((callback: (value: T) => void) => number) | ((listenerKey: number) => void))[];
+export default function Notifier<T>(initialState: T): (((newState: T) => void) | ((callback: () => void) => number) | ((listenerKey: number) => void))[];
