@@ -4,10 +4,9 @@ export default function Notifier<T>(initialState: T) {
   const listeners: {
     [key: number]: () => void;
   } = {};
+
   return [
-    function getState() {
-      return state;
-    },
+    function getState() { return state; },
     function setState(newState: T) {
       state = newState;
       for (const k in listeners) {
@@ -21,5 +20,5 @@ export default function Notifier<T>(initialState: T) {
     function deleteStateListener(listenerKey: number) {
       delete listeners[listenerKey];
     },
-  ];
+  ] as const;
 }
