@@ -1,13 +1,10 @@
 {
   "name": "noliter",
-  "version": "0.8.3",
+  "version": "0.8.4",
   "description": "Write code with no literal and get tiny bundle",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
-  "bin": {
-    "noliter": "command.js"
-  },
   "scripts": {
     "build": "rollup --c rollup.config.js",
     "test": "jest"
