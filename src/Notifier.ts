@@ -1,19 +1,24 @@
-export default function Notifier<T>() {
+export default function Notifier<T>(initialState: T) {
   let key = 0;
+  let state = initialState;
   const listeners: {
-    [key: number]: (value: T) => void;
+    [key: number]: () => void;
   } = {};
   return [
-    function setValue(value: T) {
+    function getState() {
+      return state;
+    },
+    function setState(newState: T) {
+      state = newState;
       for (const k in listeners) {
-        listeners[k](value);
+        listeners[k]();
       }
     },
-    function addValueListener(callback: (value: T) => void) {
+    function addStateListener(callback: () => void) {
       listeners[key] = callback;
       return key++;
     },
-    function deleteValueListener(listenerKey: number) {
+    function deleteStateListener(listenerKey: number) {
       delete listeners[listenerKey];
     },
   ];
