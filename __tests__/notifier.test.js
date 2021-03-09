@@ -1,36 +1,46 @@
 const {notifier} = require('../dist/index');
 
 test('add listener', () => {
-  const [setValue, addValueListener] = notifier();
+  const [
+    getValue,
+    setValue,
+    addValueListener,
+  ] = notifier(0);
 
-  let result = 0;
-  addValueListener(function(value) {
-    result += value;
+  addValueListener(function() {
+    expect(getValue()).toBe(10);
   });
-  addValueListener(function(value) {
-    result += value * 2;
+  addValueListener(function() {
+    expect(getValue()).toBe(10);
   });
 
+  expect(getValue()).toBe(0);
   setValue(10);
-  expect(result).toBe(30);
 });
 
 test('delete listener', () => {
-  const [setValue, addValueListener, deleteValueListener] = notifier();
+  const [
+    getValue,
+    setValue,
+    addValueListener,
+    deleteValueListener,
+  ] = notifier(0);
 
-  let result = 0;
-  const key1 = addValueListener(function(value) {
-    result += value;
+  let count = 0;
+  const key1 = addValueListener(function() {
+    ++count;
   });
-  const key2 = addValueListener(function(value) {
-    result += value * 2;
+  const key2 = addValueListener(function() {
+    ++count;
   });
 
   deleteValueListener(key1);
   setValue(10);
-  expect(result).toBe(20);
+  expect(count).toBe(1);
+  expect(getValue()).toBe(10);
 
   deleteValueListener(key2);
   setValue(100);
-  expect(result).toBe(20);
+  expect(count).toBe(1);
+  expect(getValue()).toBe(100);
 });
