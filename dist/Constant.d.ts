@@ -1,3 +1,4 @@
+export declare const ALLOW = "allow";
 export declare const BLUR = "blur";
 export declare const CHANGE = "change";
 export declare const CLICK = "click";

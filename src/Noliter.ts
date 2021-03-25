@@ -23,14 +23,31 @@ class Noliter<T extends TagNameKeys, H extends HTMLElementTagNameMap[T]> {
     return this;
   }
 
-  get<P extends keyof H>(propertyName: P) {
-    return this.dom[propertyName];
+  remove(
+    ...children: (
+      | Node
+      | Noliter<TagNameKeys, HTMLElementTagNameMap[TagNameKeys]>
+    )[]
+  ) {
+    children.forEach((child) =>
+      this.dom.removeChild(child instanceof Noliter ? child.dom : child)
+    );
+    return this;
   }
 
-  set(...properties: Primitive[]) {
-    for (let index = 0; index < properties.length; ) {
-      (this.dom as any)[properties[index++] as string] = properties[index++];
+  clear() {
+    while (this.dom.lastChild) {
+      this.dom.removeChild(this.dom.lastChild);
     }
+    return this;
+  }
+
+  get<P extends keyof H>(name: P) {
+    return this.dom[name];
+  }
+
+  set<P extends keyof H>(key: P, value: Primitive[]) {
+    this.dom[key] = value as any;
     return this;
   }
 
