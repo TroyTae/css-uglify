@@ -1,5 +1,5 @@
-import $ from './Noliter';
-import notifier from './Notifier';
+import $ from "./Noliter";
+import notifier from "./Notifier";
 import {
   TEXT,
   RADIO,
@@ -143,7 +143,7 @@ import {
   UL,
   VAR,
   VIDEO,
-} from './Constant';
+} from "./Constant";
 
 export {
   $,
