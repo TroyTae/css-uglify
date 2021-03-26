@@ -1,5 +1,10 @@
-import $ from "./Noliter";
-import notifier from "./Notifier";
+import {
+  createElement,
+  append,
+  removeChild,
+  removeChildren,
+  addEventListener,
+} from "./Element";
 import {
   TEXT,
   RADIO,
@@ -146,8 +151,11 @@ import {
 } from "./Constant";
 
 export {
-  $,
-  notifier,
+  createElement,
+  append,
+  removeChild,
+  removeChildren,
+  addEventListener,
   TEXT,
   RADIO,
   CHECKBOX,

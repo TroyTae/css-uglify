@@ -1,1 +1,177 @@
-var t=function(){function t(t){this.dom=document.createElement(t)}return t.prototype.add=function(){for(var e,o=[],r=0;r<arguments.length;r++)o[r]=arguments[r];return(e=this.dom).append.apply(e,o.map((function(e){return e instanceof t?e.dom:e}))),this},t.prototype.remove=function(){for(var e=this,o=[],r=0;r<arguments.length;r++)o[r]=arguments[r];return o.forEach((function(o){return e.dom.removeChild(o instanceof t?o.dom:o)})),this},t.prototype.clear=function(){for(;this.dom.lastChild;)this.dom.removeChild(this.dom.lastChild);return this},t.prototype.get=function(t){return this.dom[t]},t.prototype.set=function(t,e){return this.dom[t]=e,this},t.prototype.on=function(t,e,o){return this.dom.addEventListener(t,e,o),this},t}();function e(e){return new t(e)}function o(t){var e=0,o=t,r={};return[function(){return o},function(t){for(var e in o=t,r)r[e]()},function(t){return r[e]=t,e++},function(t){delete r[t]}]}var r="blur",n="change",i="click",a="dblclick",d="drag",s="dragend",u="dragenter",c="dragexit",l="dragleave",p="dragover",h="dragstart",m="drop",f="focus",v="input",g="keydown",b="keypress",y="keyup",k="load",x="mousedown",C="mouseenter",w="mouseleave",E="mousemove",L="mouseover",T="mouseup",q="pause",H="play",M="resize",j="scroll",z="touchcancel",N="touchend",A="touchmove",B="touchstart",D="transitioncancel",F="transitionend",G="transitionrun",I="transitionstart",J="wheel",K="text",O="radio",P="checkbox",Q="id",R="type",S="className",U="value",V="checked",W="disabled",X="href",Y="textContent",Z="innerText",$="innerHTML",_="outerHTML",tt="a",et="abbr",ot="address",rt="area",nt="article",it="aside",at="audio",dt="b",st="bdi",ut="bdo",ct="blockquote",lt="br",pt="button",ht="canvas",mt="caption",ft="cite",vt="code",gt="col",bt="colgroup",yt="data",kt="datalist",xt="dd",Ct="del",wt="details",Et="dfn",Lt="dialog",Tt="div",qt="dl",Ht="dt",Mt="em",jt="embed",zt="fieldset",Nt="figcaption",At="figure",Bt="footer",Dt="form",Ft="h1",Gt="h2",It="h3",Jt="h4",Kt="h5",Ot="h6",Pt="header",Qt="hr",Rt="i",St="iframe",Ut="img",Vt="ins",Wt="kbd",Xt="label",Yt="legend",Zt="li",$t="link",_t="main",te="map",ee="mark",oe="meter",re="nav",ne="noscript",ie="object",ae="ol",de="optgroup",se="option",ue="output",ce="p",le="param",pe="picture",he="pre",me="progress",fe="q",ve="samp",ge="section",be="select",ye="small",ke="source",xe="span",Ce="strong",we="sub",Ee="textarea",Le="table",Te="thead",qe="tbody",He="tfoot",Me="th",je="tr",ze="td",Ne="time",Ae="track",Be="ul",De="var",Fe="video";export{e as $,et as ABBR,ot as ADDRESS,tt as ANCHOR,rt as AREA,nt as ARTICLE,it as ASIDE,at as AUDIO,st as BDI,ut as BDO,ct as BLOCKQUOTE,r as BLUR,dt as BOLD,lt as BR,pt as BUTTON,ht as CANVAS,mt as CAPTION,n as CHANGE,P as CHECKBOX,V as CHECKED,ft as CITE,S as CLASS_NAME,i as CLICK,vt as CODE,gt as COL,bt as COLGROUP,yt as DATA,kt as DATALIST,a as DBLCLICK,xt as DD,Ct as DEL,wt as DETAILS,Et as DFN,Lt as DIALOG,W as DISABLED,Tt as DIV,qt as DL,d as DRAG,s as DRAGEND,u as DRAGENTER,c as DRAGEXIT,l as DRAGLEAVE,p as DRAGOVER,h as DRAGSTART,m as DROP,Ht as DT,Mt as EM,jt as EMBED,zt as FIELDSET,Nt as FIGCAPTION,At as FIGURE,f as FOCUS,Bt as FOOTER,Dt as FORM,Ft as H1,Gt as H2,It as H3,Jt as H4,Kt as H5,Ot as H6,Pt as HEADER,Qt as HR,X as HREF,Q as ID,St as IFRAME,Ut as IMG,$ as INNER_HTML,Z as INNER_TEXT,v as INPUT,Vt as INS,Rt as ITALIC,Wt as KBD,g as KEYDOWN,b as KEYPRESS,y as KEYUP,Xt as LABEL,Yt as LEGEND,Zt as LI,$t as LINK,k as LOAD,_t as MAIN,te as MAP,ee as MARK,oe as METER,x as MOUSEDOWN,C as MOUSEENTER,w as MOUSELEAVE,E as MOUSEMOVE,L as MOUSEOVER,T as MOUSEUP,re as NAV,ne as NOSCRIPT,ie as OBJECT,ae as OL,de as OPTGROUP,se as OPTION,_ as OUTER_HTML,ue as OUTPUT,ce as PARAGRAPH,le as PARAM,q as PAUSE,pe as PICTURE,H as PLAY,he as PRE,me as PROGRESS,fe as QUOTE,O as RADIO,M as RESIZE,ve as SAMP,j as SCROLL,ge as SECTION,be as SELECT,ye as SMALL,ke as SOURCE,xe as SPAN,Ce as STRONG,we as SUB,Le as TABLE,qe as TBODY,ze as TD,K as TEXT,Ee as TEXTAREA,Y as TEXT_CONTENT,He as TFOOT,Me as TH,Te as THEAD,Ne as TIME,z as TOUCHCANCEL,N as TOUCHEND,A as TOUCHMOVE,B as TOUCHSTART,je as TR,Ae as TRACK,D as TRANSITIONCANCEL,F as TRANSITIONEND,G as TRANSITIONRUN,I as TRANSITIONSTART,R as TYPE,Be as UL,U as VALUE,De as VAR,Fe as VIDEO,J as WHEEL,o as notifier};
+function createElement(tagName) {
+    return document.createElement(tagName);
+}
+function append(element) {
+    var nodes = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        nodes[_i - 1] = arguments[_i];
+    }
+    element.append.apply(element, nodes);
+    return element;
+}
+function removeChild(parent, child) {
+    return parent.removeChild(child);
+}
+function removeChildren(parent) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
+    if (children.length) {
+        children.forEach(function (child) { return parent.removeChild(child); });
+    }
+    else {
+        while (parent.lastChild) {
+            parent.removeChild(parent.lastChild);
+        }
+    }
+    return parent;
+}
+function addEventListener(el, type, listener, options) {
+    el.addEventListener(type, listener, options);
+}
+
+var BLUR = "blur";
+var CHANGE = "change";
+var CLICK = "click";
+var DBLCLICK = "dblclick";
+var DRAG = "drag";
+var DRAGEND = "dragend";
+var DRAGENTER = "dragenter";
+var DRAGEXIT = "dragexit";
+var DRAGLEAVE = "dragleave";
+var DRAGOVER = "dragover";
+var DRAGSTART = "dragstart";
+var DROP = "drop";
+var FOCUS = "focus";
+var INPUT = "input";
+var KEYDOWN = "keydown";
+var KEYPRESS = "keypress";
+var KEYUP = "keyup";
+var LOAD = "load";
+var MOUSEDOWN = "mousedown";
+var MOUSEENTER = "mouseenter";
+var MOUSELEAVE = "mouseleave";
+var MOUSEMOVE = "mousemove";
+var MOUSEOVER = "mouseover";
+var MOUSEUP = "mouseup";
+var PAUSE = "pause";
+var PLAY = "play";
+var RESIZE = "resize";
+var SCROLL = "scroll";
+var TOUCHCANCEL = "touchcancel";
+var TOUCHEND = "touchend";
+var TOUCHMOVE = "touchmove";
+var TOUCHSTART = "touchstart";
+var TRANSITIONCANCEL = "transitioncancel";
+var TRANSITIONEND = "transitionend";
+var TRANSITIONRUN = "transitionrun";
+var TRANSITIONSTART = "transitionstart";
+var WHEEL = "wheel";
+var TEXT = "text";
+var RADIO = "radio";
+var CHECKBOX = "checkbox";
+var ID = "id";
+var TYPE = "type";
+var CLASS_NAME = "className";
+var VALUE = "value";
+var CHECKED = "checked";
+var DISABLED = "disabled";
+var HREF = "href";
+var TEXT_CONTENT = "textContent";
+var INNER_TEXT = "innerText";
+var INNER_HTML = "innerHTML";
+var OUTER_HTML = "outerHTML";
+var ANCHOR = "a";
+var ABBR = "abbr";
+var ADDRESS = "address";
+var AREA = "area";
+var ARTICLE = "article";
+var ASIDE = "aside";
+var AUDIO = "audio";
+var BOLD = "b";
+var BDI = "bdi";
+var BDO = "bdo";
+var BLOCKQUOTE = "blockquote";
+var BR = "br";
+var BUTTON = "button";
+var CANVAS = "canvas";
+var CAPTION = "caption";
+var CITE = "cite";
+var CODE = "code";
+var COL = "col";
+var COLGROUP = "colgroup";
+var DATA = "data";
+var DATALIST = "datalist";
+var DD = "dd";
+var DEL = "del";
+var DETAILS = "details";
+var DFN = "dfn";
+var DIALOG = "dialog";
+var DIV = "div";
+var DL = "dl";
+var DT = "dt";
+var EM = "em";
+var EMBED = "embed";
+var FIELDSET = "fieldset";
+var FIGCAPTION = "figcaption";
+var FIGURE = "figure";
+var FOOTER = "footer";
+var FORM = "form";
+var H1 = "h1";
+var H2 = "h2";
+var H3 = "h3";
+var H4 = "h4";
+var H5 = "h5";
+var H6 = "h6";
+var HEADER = "header";
+var HR = "hr";
+var ITALIC = "i";
+var IFRAME = "iframe";
+var IMG = "img";
+var INS = "ins";
+var KBD = "kbd";
+var LABEL = "label";
+var LEGEND = "legend";
+var LI = "li";
+var LINK = "link";
+var MAIN = "main";
+var MAP = "map";
+var MARK = "mark";
+var METER = "meter";
+var NAV = "nav";
+var NOSCRIPT = "noscript";
+var OBJECT = "object";
+var OL = "ol";
+var OPTGROUP = "optgroup";
+var OPTION = "option";
+var OUTPUT = "output";
+var PARAGRAPH = "p";
+var PARAM = "param";
+var PICTURE = "picture";
+var PRE = "pre";
+var PROGRESS = "progress";
+var QUOTE = "q";
+var SAMP = "samp";
+var SECTION = "section";
+var SELECT = "select";
+var SMALL = "small";
+var SOURCE = "source";
+var SPAN = "span";
+var STRONG = "strong";
+var SUB = "sub";
+var TEXTAREA = "textarea";
+var TABLE = "table";
+var THEAD = "thead";
+var TBODY = "tbody";
+var TFOOT = "tfoot";
+var TH = "th";
+var TR = "tr";
+var TD = "td";
+var TIME = "time";
+var TRACK = "track";
+var UL = "ul";
+var VAR = "var";
+var VIDEO = "video";
+
+export { ABBR, ADDRESS, ANCHOR, AREA, ARTICLE, ASIDE, AUDIO, BDI, BDO, BLOCKQUOTE, BLUR, BOLD, BR, BUTTON, CANVAS, CAPTION, CHANGE, CHECKBOX, CHECKED, CITE, CLASS_NAME, CLICK, CODE, COL, COLGROUP, DATA, DATALIST, DBLCLICK, DD, DEL, DETAILS, DFN, DIALOG, DISABLED, DIV, DL, DRAG, DRAGEND, DRAGENTER, DRAGEXIT, DRAGLEAVE, DRAGOVER, DRAGSTART, DROP, DT, EM, EMBED, FIELDSET, FIGCAPTION, FIGURE, FOCUS, FOOTER, FORM, H1, H2, H3, H4, H5, H6, HEADER, HR, HREF, ID, IFRAME, IMG, INNER_HTML, INNER_TEXT, INPUT, INS, ITALIC, KBD, KEYDOWN, KEYPRESS, KEYUP, LABEL, LEGEND, LI, LINK, LOAD, MAIN, MAP, MARK, METER, MOUSEDOWN, MOUSEENTER, MOUSELEAVE, MOUSEMOVE, MOUSEOVER, MOUSEUP, NAV, NOSCRIPT, OBJECT, OL, OPTGROUP, OPTION, OUTER_HTML, OUTPUT, PARAGRAPH, PARAM, PAUSE, PICTURE, PLAY, PRE, PROGRESS, QUOTE, RADIO, RESIZE, SAMP, SCROLL, SECTION, SELECT, SMALL, SOURCE, SPAN, STRONG, SUB, TABLE, TBODY, TD, TEXT, TEXTAREA, TEXT_CONTENT, TFOOT, TH, THEAD, TIME, TOUCHCANCEL, TOUCHEND, TOUCHMOVE, TOUCHSTART, TR, TRACK, TRANSITIONCANCEL, TRANSITIONEND, TRANSITIONRUN, TRANSITIONSTART, TYPE, UL, VALUE, VAR, VIDEO, WHEEL, addEventListener, append, createElement, removeChild, removeChildren };
