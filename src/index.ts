@@ -149,9 +149,23 @@ import {
   UL,
   VAR,
   VIDEO,
+  WIDTH,
+  HEIGHT,
+  PARENT_ELEMENT,
+  CLIENT_WIDTH,
+  CLIENT_HEIGHT,
+  OFFSET_X,
+  OFFSET_Y,
 } from "./Constant";
 
 export {
+  WIDTH,
+  HEIGHT,
+  PARENT_ELEMENT,
+  CLIENT_WIDTH,
+  CLIENT_HEIGHT,
+  OFFSET_X,
+  OFFSET_Y,
   createElement,
   append,
   removeChild,

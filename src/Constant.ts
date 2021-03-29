@@ -50,6 +50,13 @@ export const TEXT_CONTENT = "textContent";
 export const INNER_TEXT = "innerText";
 export const INNER_HTML = "innerHTML";
 export const OUTER_HTML = "outerHTML";
+export const WIDTH = "width";
+export const HEIGHT = "height";
+export const PARENT_ELEMENT = "parentElement";
+export const CLIENT_WIDTH = "clientWidth";
+export const CLIENT_HEIGHT = "clientHeight";
+export const OFFSET_X = "offsetX";
+export const OFFSET_Y = "offsetY";
 // Property Value
 export const TEXT = "text";
 export const RADIO = "radio";
