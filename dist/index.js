@@ -2,8 +2,12 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-function createElement(tagName) {
-    return document.createElement(tagName);
+function createElement(tagName, builder) {
+    var element = document.createElement(tagName);
+    if (builder) {
+        builder(element);
+    }
+    return element;
 }
 function append(element) {
     var nodes = [];
@@ -11,25 +15,26 @@ function append(element) {
         nodes[_i - 1] = arguments[_i];
     }
     element.append.apply(element, nodes);
-    return element;
 }
 function removeChild(parent, child) {
-    return parent.removeChild(child);
+    parent.removeChild(child);
 }
 function removeChildren(parent) {
     var children = [];
     for (var _i = 1; _i < arguments.length; _i++) {
         children[_i - 1] = arguments[_i];
     }
-    if (children.length) {
-        children.forEach(function (child) { return parent.removeChild(child); });
+    var index = children.length;
+    if (index) {
+        while (index) {
+            parent.removeChild(children[--index]);
+        }
     }
     else {
         while (parent.lastChild) {
             parent.removeChild(parent.lastChild);
         }
     }
-    return parent;
 }
 function addEventListener(el, type, listener, options) {
     el.addEventListener(type, listener, options);
