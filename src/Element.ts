@@ -1,8 +1,15 @@
 type TagNames = keyof HTMLElementTagNameMap;
 type EventNames = keyof HTMLElementEventMap;
 
-export function createElement<T extends TagNames>(tagName: T) {
-  return document.createElement(tagName);
+export function createElement<T extends TagNames>(
+  tagName: T,
+  builder?: (element: HTMLElementTagNameMap[T]) => void
+) {
+  const element = document.createElement(tagName);
+  if (builder) {
+    builder(element);
+  }
+  return element;
 }
 
 export function append<E extends Element>(
@@ -10,22 +17,23 @@ export function append<E extends Element>(
   ...nodes: (string | Node)[]
 ) {
   element.append(...nodes);
-  return element;
 }
 
 export function removeChild<N extends Node>(parent: N, child: N) {
-  return parent.removeChild(child);
+  parent.removeChild(child);
 }
 
 export function removeChildren<N extends Node>(parent: N, ...children: N[]) {
-  if (children.length) {
-    children.forEach((child) => parent.removeChild(child));
+  let index = children.length;
+  if (index) {
+    while (index) {
+      parent.removeChild(children[--index]);
+    }
   } else {
     while (parent.lastChild) {
       parent.removeChild(parent.lastChild);
     }
   }
-  return parent;
 }
 
 export function addEventListener<
