@@ -1,5 +1,4 @@
 type TagNames = keyof HTMLElementTagNameMap;
-type EventNames = keyof HTMLElementEventMap;
 
 export function createElement<T extends TagNames>(
   tagName: T,
@@ -10,17 +9,6 @@ export function createElement<T extends TagNames>(
     builder(element);
   }
   return element;
-}
-
-export function append<E extends Element>(
-  element: E,
-  ...nodes: (string | Node)[]
-) {
-  element.append(...nodes);
-}
-
-export function removeChild<N extends Node>(parent: N, child: N) {
-  parent.removeChild(child);
 }
 
 export function removeChildren<N extends Node>(parent: N, ...children: N[]) {
@@ -34,22 +22,4 @@ export function removeChildren<N extends Node>(parent: N, ...children: N[]) {
       parent.removeChild(parent.lastChild);
     }
   }
-}
-
-export function addEventListener<
-  T extends TagNames,
-  E extends EventNames,
-  H extends HTMLElementTagNameMap[T],
-  O extends HTMLElementEventMap[E]
->(
-  el: H,
-  type: E,
-  listener: (this: H, evt: O) => void,
-  options?: boolean | AddEventListenerOptions
-) {
-  el.addEventListener(
-    type,
-    listener as EventListenerOrEventListenerObject,
-    options
-  );
 }

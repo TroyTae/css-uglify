@@ -1,4 +1,4 @@
-// Event
+// Event Name
 export const ALLOW = "allow";
 export const BLUR = "blur";
 export const CHANGE = "change";
@@ -57,10 +57,17 @@ export const CLIENT_WIDTH = "clientWidth";
 export const CLIENT_HEIGHT = "clientHeight";
 export const OFFSET_X = "offsetX";
 export const OFFSET_Y = "offsetY";
+export const TOUCHES = "touches";
+export const PAGE_X = "pageX";
+export const PAGE_Y = "pageY";
 // Property Value
 export const TEXT = "text";
 export const RADIO = "radio";
 export const CHECKBOX = "checkbox";
+// Method Name
+export const APPEND = "append";
+export const REMOVE_CHILD = "removeChild";
+export const ADD_EVENT_LISTENER = "addEventListener";
 // Tag Name
 export const ANCHOR = "a";
 export const ABBR = "abbr";

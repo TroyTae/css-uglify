@@ -2,44 +2,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-function createElement(tagName, builder) {
-    var element = document.createElement(tagName);
-    if (builder) {
-        builder(element);
-    }
-    return element;
-}
-function append(element) {
-    var nodes = [];
-    for (var _i = 1; _i < arguments.length; _i++) {
-        nodes[_i - 1] = arguments[_i];
-    }
-    element.append.apply(element, nodes);
-}
-function removeChild(parent, child) {
-    parent.removeChild(child);
-}
-function removeChildren(parent) {
-    var children = [];
-    for (var _i = 1; _i < arguments.length; _i++) {
-        children[_i - 1] = arguments[_i];
-    }
-    var index = children.length;
-    if (index) {
-        while (index) {
-            parent.removeChild(children[--index]);
-        }
-    }
-    else {
-        while (parent.lastChild) {
-            parent.removeChild(parent.lastChild);
-        }
-    }
-}
-function addEventListener(el, type, listener, options) {
-    el.addEventListener(type, listener, options);
-}
-
+var ALLOW = "allow";
 var BLUR = "blur";
 var CHANGE = "change";
 var CLICK = "click";
@@ -96,9 +59,15 @@ var CLIENT_WIDTH = "clientWidth";
 var CLIENT_HEIGHT = "clientHeight";
 var OFFSET_X = "offsetX";
 var OFFSET_Y = "offsetY";
+var TOUCHES = "touches";
+var PAGE_X = "pageX";
+var PAGE_Y = "pageY";
 var TEXT = "text";
 var RADIO = "radio";
 var CHECKBOX = "checkbox";
+var APPEND = "append";
+var REMOVE_CHILD = "removeChild";
+var ADD_EVENT_LISTENER = "addEventListener";
 var ANCHOR = "a";
 var ABBR = "abbr";
 var ADDRESS = "address";
@@ -191,9 +160,37 @@ var UL = "ul";
 var VAR = "var";
 var VIDEO = "video";
 
+function createElement(tagName, builder) {
+    var element = document.createElement(tagName);
+    if (builder) {
+        builder(element);
+    }
+    return element;
+}
+function removeChildren(parent) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
+    var index = children.length;
+    if (index) {
+        while (index) {
+            parent.removeChild(children[--index]);
+        }
+    }
+    else {
+        while (parent.lastChild) {
+            parent.removeChild(parent.lastChild);
+        }
+    }
+}
+
 exports.ABBR = ABBR;
 exports.ADDRESS = ADDRESS;
+exports.ADD_EVENT_LISTENER = ADD_EVENT_LISTENER;
+exports.ALLOW = ALLOW;
 exports.ANCHOR = ANCHOR;
+exports.APPEND = APPEND;
 exports.AREA = AREA;
 exports.ARTICLE = ARTICLE;
 exports.ASIDE = ASIDE;
@@ -293,6 +290,8 @@ exports.OPTGROUP = OPTGROUP;
 exports.OPTION = OPTION;
 exports.OUTER_HTML = OUTER_HTML;
 exports.OUTPUT = OUTPUT;
+exports.PAGE_X = PAGE_X;
+exports.PAGE_Y = PAGE_Y;
 exports.PARAGRAPH = PARAGRAPH;
 exports.PARAM = PARAM;
 exports.PARENT_ELEMENT = PARENT_ELEMENT;
@@ -304,6 +303,7 @@ exports.PROGRESS = PROGRESS;
 exports.QUOTE = QUOTE;
 exports.RADIO = RADIO;
 exports.REL = REL;
+exports.REMOVE_CHILD = REMOVE_CHILD;
 exports.RESIZE = RESIZE;
 exports.SAMP = SAMP;
 exports.SCROLL = SCROLL;
@@ -326,6 +326,7 @@ exports.THEAD = THEAD;
 exports.TIME = TIME;
 exports.TOUCHCANCEL = TOUCHCANCEL;
 exports.TOUCHEND = TOUCHEND;
+exports.TOUCHES = TOUCHES;
 exports.TOUCHMOVE = TOUCHMOVE;
 exports.TOUCHSTART = TOUCHSTART;
 exports.TR = TR;
@@ -341,8 +342,5 @@ exports.VAR = VAR;
 exports.VIDEO = VIDEO;
 exports.WHEEL = WHEEL;
 exports.WIDTH = WIDTH;
-exports.addEventListener = addEventListener;
-exports.append = append;
 exports.createElement = createElement;
-exports.removeChild = removeChild;
 exports.removeChildren = removeChildren;

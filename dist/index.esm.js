@@ -1,41 +1,4 @@
-function createElement(tagName, builder) {
-    var element = document.createElement(tagName);
-    if (builder) {
-        builder(element);
-    }
-    return element;
-}
-function append(element) {
-    var nodes = [];
-    for (var _i = 1; _i < arguments.length; _i++) {
-        nodes[_i - 1] = arguments[_i];
-    }
-    element.append.apply(element, nodes);
-}
-function removeChild(parent, child) {
-    parent.removeChild(child);
-}
-function removeChildren(parent) {
-    var children = [];
-    for (var _i = 1; _i < arguments.length; _i++) {
-        children[_i - 1] = arguments[_i];
-    }
-    var index = children.length;
-    if (index) {
-        while (index) {
-            parent.removeChild(children[--index]);
-        }
-    }
-    else {
-        while (parent.lastChild) {
-            parent.removeChild(parent.lastChild);
-        }
-    }
-}
-function addEventListener(el, type, listener, options) {
-    el.addEventListener(type, listener, options);
-}
-
+var ALLOW = "allow";
 var BLUR = "blur";
 var CHANGE = "change";
 var CLICK = "click";
@@ -92,9 +55,15 @@ var CLIENT_WIDTH = "clientWidth";
 var CLIENT_HEIGHT = "clientHeight";
 var OFFSET_X = "offsetX";
 var OFFSET_Y = "offsetY";
+var TOUCHES = "touches";
+var PAGE_X = "pageX";
+var PAGE_Y = "pageY";
 var TEXT = "text";
 var RADIO = "radio";
 var CHECKBOX = "checkbox";
+var APPEND = "append";
+var REMOVE_CHILD = "removeChild";
+var ADD_EVENT_LISTENER = "addEventListener";
 var ANCHOR = "a";
 var ABBR = "abbr";
 var ADDRESS = "address";
@@ -187,4 +156,29 @@ var UL = "ul";
 var VAR = "var";
 var VIDEO = "video";
 
-export { ABBR, ADDRESS, ANCHOR, AREA, ARTICLE, ASIDE, AUDIO, BDI, BDO, BLOCKQUOTE, BLUR, BOLD, BR, BUTTON, CANVAS, CAPTION, CHANGE, CHECKBOX, CHECKED, CITE, CLASS_NAME, CLICK, CLIENT_HEIGHT, CLIENT_WIDTH, CODE, COL, COLGROUP, DATA, DATALIST, DBLCLICK, DD, DEL, DETAILS, DFN, DIALOG, DISABLED, DIV, DL, DRAG, DRAGEND, DRAGENTER, DRAGEXIT, DRAGLEAVE, DRAGOVER, DRAGSTART, DROP, DT, EM, EMBED, FIELDSET, FIGCAPTION, FIGURE, FOCUS, FOOTER, FORM, H1, H2, H3, H4, H5, H6, HEADER, HEIGHT, HR, HREF, ID, IFRAME, IMG, INNER_HTML, INNER_TEXT, INPUT, INS, ITALIC, KBD, KEYDOWN, KEYPRESS, KEYUP, LABEL, LEGEND, LI, LINK, LOAD, MAIN, MAP, MARK, METER, MOUSEDOWN, MOUSEENTER, MOUSELEAVE, MOUSEMOVE, MOUSEOVER, MOUSEUP, NAV, NOSCRIPT, OBJECT, OFFSET_X, OFFSET_Y, OL, OPTGROUP, OPTION, OUTER_HTML, OUTPUT, PARAGRAPH, PARAM, PARENT_ELEMENT, PAUSE, PICTURE, PLAY, PRE, PROGRESS, QUOTE, RADIO, REL, RESIZE, SAMP, SCROLL, SECTION, SELECT, SMALL, SOURCE, SPAN, STRONG, SUB, TABLE, TBODY, TD, TEXT, TEXTAREA, TEXT_CONTENT, TFOOT, TH, THEAD, TIME, TOUCHCANCEL, TOUCHEND, TOUCHMOVE, TOUCHSTART, TR, TRACK, TRANSITIONCANCEL, TRANSITIONEND, TRANSITIONRUN, TRANSITIONSTART, TYPE, UL, VALUE, VAR, VIDEO, WHEEL, WIDTH, addEventListener, append, createElement, removeChild, removeChildren };
+function createElement(tagName, builder) {
+    var element = document.createElement(tagName);
+    if (builder) {
+        builder(element);
+    }
+    return element;
+}
+function removeChildren(parent) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
+    var index = children.length;
+    if (index) {
+        while (index) {
+            parent.removeChild(children[--index]);
+        }
+    }
+    else {
+        while (parent.lastChild) {
+            parent.removeChild(parent.lastChild);
+        }
+    }
+}
+
+export { ABBR, ADDRESS, ADD_EVENT_LISTENER, ALLOW, ANCHOR, APPEND, AREA, ARTICLE, ASIDE, AUDIO, BDI, BDO, BLOCKQUOTE, BLUR, BOLD, BR, BUTTON, CANVAS, CAPTION, CHANGE, CHECKBOX, CHECKED, CITE, CLASS_NAME, CLICK, CLIENT_HEIGHT, CLIENT_WIDTH, CODE, COL, COLGROUP, DATA, DATALIST, DBLCLICK, DD, DEL, DETAILS, DFN, DIALOG, DISABLED, DIV, DL, DRAG, DRAGEND, DRAGENTER, DRAGEXIT, DRAGLEAVE, DRAGOVER, DRAGSTART, DROP, DT, EM, EMBED, FIELDSET, FIGCAPTION, FIGURE, FOCUS, FOOTER, FORM, H1, H2, H3, H4, H5, H6, HEADER, HEIGHT, HR, HREF, ID, IFRAME, IMG, INNER_HTML, INNER_TEXT, INPUT, INS, ITALIC, KBD, KEYDOWN, KEYPRESS, KEYUP, LABEL, LEGEND, LI, LINK, LOAD, MAIN, MAP, MARK, METER, MOUSEDOWN, MOUSEENTER, MOUSELEAVE, MOUSEMOVE, MOUSEOVER, MOUSEUP, NAV, NOSCRIPT, OBJECT, OFFSET_X, OFFSET_Y, OL, OPTGROUP, OPTION, OUTER_HTML, OUTPUT, PAGE_X, PAGE_Y, PARAGRAPH, PARAM, PARENT_ELEMENT, PAUSE, PICTURE, PLAY, PRE, PROGRESS, QUOTE, RADIO, REL, REMOVE_CHILD, RESIZE, SAMP, SCROLL, SECTION, SELECT, SMALL, SOURCE, SPAN, STRONG, SUB, TABLE, TBODY, TD, TEXT, TEXTAREA, TEXT_CONTENT, TFOOT, TH, THEAD, TIME, TOUCHCANCEL, TOUCHEND, TOUCHES, TOUCHMOVE, TOUCHSTART, TR, TRACK, TRANSITIONCANCEL, TRANSITIONEND, TRANSITIONRUN, TRANSITIONSTART, TYPE, UL, VALUE, VAR, VIDEO, WHEEL, WIDTH, createElement, removeChildren };
