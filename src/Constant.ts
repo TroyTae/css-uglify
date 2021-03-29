@@ -1,3 +1,4 @@
+// Event
 export const ALLOW = "allow";
 export const BLUR = "blur";
 export const CHANGE = "change";
@@ -36,10 +37,9 @@ export const TRANSITIONEND = "transitionend";
 export const TRANSITIONRUN = "transitionrun";
 export const TRANSITIONSTART = "transitionstart";
 export const WHEEL = "wheel";
-export const TEXT = "text";
-export const RADIO = "radio";
-export const CHECKBOX = "checkbox";
+// Property Key
 export const ID = "id";
+export const REL = "rel";
 export const TYPE = "type";
 export const CLASS_NAME = "className";
 export const VALUE = "value";
@@ -50,6 +50,11 @@ export const TEXT_CONTENT = "textContent";
 export const INNER_TEXT = "innerText";
 export const INNER_HTML = "innerHTML";
 export const OUTER_HTML = "outerHTML";
+// Property Value
+export const TEXT = "text";
+export const RADIO = "radio";
+export const CHECKBOX = "checkbox";
+// Tag Name
 export const ANCHOR = "a";
 export const ABBR = "abbr";
 export const ADDRESS = "address";
