@@ -1,4 +1,3 @@
-// Event Name
 export const ALLOW = "allow";
 export const BLUR = "blur";
 export const CHANGE = "change";
@@ -37,7 +36,6 @@ export const TRANSITIONEND = "transitionend";
 export const TRANSITIONRUN = "transitionrun";
 export const TRANSITIONSTART = "transitionstart";
 export const WHEEL = "wheel";
-// Property Key
 export const ID = "id";
 export const REL = "rel";
 export const TYPE = "type";
@@ -60,15 +58,21 @@ export const OFFSET_Y = "offsetY";
 export const TOUCHES = "touches";
 export const PAGE_X = "pageX";
 export const PAGE_Y = "pageY";
-// Property Value
+export const FILL_STYLE = "fillStyle";
 export const TEXT = "text";
 export const RADIO = "radio";
 export const CHECKBOX = "checkbox";
-// Method Name
 export const APPEND = "append";
 export const REMOVE_CHILD = "removeChild";
 export const ADD_EVENT_LISTENER = "addEventListener";
-// Tag Name
+export const SET_INTERVAL = "setInterval";
+export const CLEAR_INTERVAL = "clearInterval";
+export const GET_CONTEXT = "getContext";
+export const FILL_RECT = "fillRect";
+export const FOR_EACH = "forEach";
+export const FILTER = "filter";
+export const REDUCE = "reduce";
+export const SET_ATTRIBUTE = "setAttribute";
 export const ANCHOR = "a";
 export const ABBR = "abbr";
 export const ADDRESS = "address";
@@ -160,3 +164,5 @@ export const TRACK = "track";
 export const UL = "ul";
 export const VAR = "var";
 export const VIDEO = "video";
+export const SPELLCHECK = "spellcheck";
+export const TITLE = "title";
