@@ -2,19 +2,10 @@
 
 # Noliter
 
-Write code with no literal and get tiny bundle.  
-This is very experimental project for maximizing mangle.
-
-Instead of literal, if you use constant, you can reduce your file size.  
-Please setting about mangle, then your constants will change to single alphabet.
+WIP
 
 ## Install
 
 ```
 npm i -D noliter
 ```
-
-## API
-
-- [Supported constants](./dist/Constant.d.ts)
-- [DOM manipulation functions](./dist/Element.d.ts)
