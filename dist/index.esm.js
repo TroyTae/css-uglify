@@ -1,172 +1,3 @@
-var ALLOW = "allow";
-var BLUR = "blur";
-var CHANGE = "change";
-var CLICK = "click";
-var DBLCLICK = "dblclick";
-var DRAG = "drag";
-var DRAGEND = "dragend";
-var DRAGENTER = "dragenter";
-var DRAGEXIT = "dragexit";
-var DRAGLEAVE = "dragleave";
-var DRAGOVER = "dragover";
-var DRAGSTART = "dragstart";
-var DROP = "drop";
-var FOCUS = "focus";
-var INPUT = "input";
-var KEYDOWN = "keydown";
-var KEYPRESS = "keypress";
-var KEYUP = "keyup";
-var LOAD = "load";
-var MOUSEDOWN = "mousedown";
-var MOUSEENTER = "mouseenter";
-var MOUSELEAVE = "mouseleave";
-var MOUSEMOVE = "mousemove";
-var MOUSEOVER = "mouseover";
-var MOUSEUP = "mouseup";
-var PAUSE = "pause";
-var PLAY = "play";
-var RESIZE = "resize";
-var SCROLL = "scroll";
-var TOUCHCANCEL = "touchcancel";
-var TOUCHEND = "touchend";
-var TOUCHMOVE = "touchmove";
-var TOUCHSTART = "touchstart";
-var TRANSITIONCANCEL = "transitioncancel";
-var TRANSITIONEND = "transitionend";
-var TRANSITIONRUN = "transitionrun";
-var TRANSITIONSTART = "transitionstart";
-var WHEEL = "wheel";
-var ID = "id";
-var REL = "rel";
-var TYPE = "type";
-var CLASS_NAME = "className";
-var VALUE = "value";
-var CHECKED = "checked";
-var DISABLED = "disabled";
-var HREF = "href";
-var TEXT_CONTENT = "textContent";
-var INNER_TEXT = "innerText";
-var INNER_HTML = "innerHTML";
-var OUTER_HTML = "outerHTML";
-var WIDTH = "width";
-var HEIGHT = "height";
-var PARENT_ELEMENT = "parentElement";
-var CLIENT_WIDTH = "clientWidth";
-var CLIENT_HEIGHT = "clientHeight";
-var OFFSET_X = "offsetX";
-var OFFSET_Y = "offsetY";
-var TOUCHES = "touches";
-var PAGE_X = "pageX";
-var PAGE_Y = "pageY";
-var FILL_STYLE = "fillStyle";
-var TEXT = "text";
-var RADIO = "radio";
-var CHECKBOX = "checkbox";
-var APPEND = "append";
-var REMOVE_CHILD = "removeChild";
-var ADD_EVENT_LISTENER = "addEventListener";
-var SET_INTERVAL = "setInterval";
-var CLEAR_INTERVAL = "clearInterval";
-var GET_CONTEXT = "getContext";
-var FILL_RECT = "fillRect";
-var FOR_EACH = "forEach";
-var FILTER = "filter";
-var REDUCE = "reduce";
-var SET_ATTRIBUTE = "setAttribute";
-var ANCHOR = "a";
-var ABBR = "abbr";
-var ADDRESS = "address";
-var AREA = "area";
-var ARTICLE = "article";
-var ASIDE = "aside";
-var AUDIO = "audio";
-var BOLD = "b";
-var BDI = "bdi";
-var BDO = "bdo";
-var BLOCKQUOTE = "blockquote";
-var BR = "br";
-var BUTTON = "button";
-var CANVAS = "canvas";
-var CAPTION = "caption";
-var CITE = "cite";
-var CODE = "code";
-var COL = "col";
-var COLGROUP = "colgroup";
-var DATA = "data";
-var DATALIST = "datalist";
-var DD = "dd";
-var DEL = "del";
-var DETAILS = "details";
-var DFN = "dfn";
-var DIALOG = "dialog";
-var DIV = "div";
-var DL = "dl";
-var DT = "dt";
-var EM = "em";
-var EMBED = "embed";
-var FIELDSET = "fieldset";
-var FIGCAPTION = "figcaption";
-var FIGURE = "figure";
-var FOOTER = "footer";
-var FORM = "form";
-var H1 = "h1";
-var H2 = "h2";
-var H3 = "h3";
-var H4 = "h4";
-var H5 = "h5";
-var H6 = "h6";
-var HEADER = "header";
-var HR = "hr";
-var ITALIC = "i";
-var IFRAME = "iframe";
-var IMG = "img";
-var INS = "ins";
-var KBD = "kbd";
-var LABEL = "label";
-var LEGEND = "legend";
-var LI = "li";
-var LINK = "link";
-var MAIN = "main";
-var MAP = "map";
-var MARK = "mark";
-var METER = "meter";
-var NAV = "nav";
-var NOSCRIPT = "noscript";
-var OBJECT = "object";
-var OL = "ol";
-var OPTGROUP = "optgroup";
-var OPTION = "option";
-var OUTPUT = "output";
-var PARAGRAPH = "p";
-var PARAM = "param";
-var PICTURE = "picture";
-var PRE = "pre";
-var PROGRESS = "progress";
-var QUOTE = "q";
-var SAMP = "samp";
-var SECTION = "section";
-var SELECT = "select";
-var SMALL = "small";
-var SOURCE = "source";
-var SPAN = "span";
-var STRONG = "strong";
-var SUB = "sub";
-var TEXTAREA = "textarea";
-var TABLE = "table";
-var THEAD = "thead";
-var TBODY = "tbody";
-var TFOOT = "tfoot";
-var TH = "th";
-var TR = "tr";
-var TD = "td";
-var TIME = "time";
-var TRACK = "track";
-var UL = "ul";
-var VAR = "var";
-var VIDEO = "video";
-var SPELLCHECK = "spellcheck";
-var TITLE = "title";
-
 function createElement(tagName, builder) {
     var element = document.createElement(tagName);
     if (builder) {
@@ -175,21 +6,33 @@ function createElement(tagName, builder) {
     return element;
 }
 function removeChildren(parent) {
-    var children = [];
-    for (var _i = 1; _i < arguments.length; _i++) {
-        children[_i - 1] = arguments[_i];
-    }
-    var index = children.length;
-    if (index) {
-        while (index) {
-            parent.removeChild(children[--index]);
-        }
-    }
-    else {
-        while (parent.lastChild) {
-            parent.removeChild(parent.lastChild);
-        }
+    while (parent.lastChild) {
+        parent.removeChild(parent.lastChild);
     }
 }
 
-export { ABBR, ADDRESS, ADD_EVENT_LISTENER, ALLOW, ANCHOR, APPEND, AREA, ARTICLE, ASIDE, AUDIO, BDI, BDO, BLOCKQUOTE, BLUR, BOLD, BR, BUTTON, CANVAS, CAPTION, CHANGE, CHECKBOX, CHECKED, CITE, CLASS_NAME, CLEAR_INTERVAL, CLICK, CLIENT_HEIGHT, CLIENT_WIDTH, CODE, COL, COLGROUP, DATA, DATALIST, DBLCLICK, DD, DEL, DETAILS, DFN, DIALOG, DISABLED, DIV, DL, DRAG, DRAGEND, DRAGENTER, DRAGEXIT, DRAGLEAVE, DRAGOVER, DRAGSTART, DROP, DT, EM, EMBED, FIELDSET, FIGCAPTION, FIGURE, FILL_RECT, FILL_STYLE, FILTER, FOCUS, FOOTER, FORM, FOR_EACH, GET_CONTEXT, H1, H2, H3, H4, H5, H6, HEADER, HEIGHT, HR, HREF, ID, IFRAME, IMG, INNER_HTML, INNER_TEXT, INPUT, INS, ITALIC, KBD, KEYDOWN, KEYPRESS, KEYUP, LABEL, LEGEND, LI, LINK, LOAD, MAIN, MAP, MARK, METER, MOUSEDOWN, MOUSEENTER, MOUSELEAVE, MOUSEMOVE, MOUSEOVER, MOUSEUP, NAV, NOSCRIPT, OBJECT, OFFSET_X, OFFSET_Y, OL, OPTGROUP, OPTION, OUTER_HTML, OUTPUT, PAGE_X, PAGE_Y, PARAGRAPH, PARAM, PARENT_ELEMENT, PAUSE, PICTURE, PLAY, PRE, PROGRESS, QUOTE, RADIO, REDUCE, REL, REMOVE_CHILD, RESIZE, SAMP, SCROLL, SECTION, SELECT, SET_ATTRIBUTE, SET_INTERVAL, SMALL, SOURCE, SPAN, SPELLCHECK, STRONG, SUB, TABLE, TBODY, TD, TEXT, TEXTAREA, TEXT_CONTENT, TFOOT, TH, THEAD, TIME, TITLE, TOUCHCANCEL, TOUCHEND, TOUCHES, TOUCHMOVE, TOUCHSTART, TR, TRACK, TRANSITIONCANCEL, TRANSITIONEND, TRANSITIONRUN, TRANSITIONSTART, TYPE, UL, VALUE, VAR, VIDEO, WHEEL, WIDTH, createElement, removeChildren };
+function createObserver(initialValue) {
+    var key = 0;
+    var value = initialValue;
+    var subscribers = {};
+    return [
+        function getValue() {
+            return value;
+        },
+        function setValue(newValue) {
+            value = newValue;
+            for (var k in subscribers) {
+                subscribers[k](value);
+            }
+        },
+        function subscribeValue(callback) {
+            subscribers[key] = callback;
+            return key++;
+        },
+        function unsubscribeValue(listenerKey) {
+            delete subscribers[listenerKey];
+        },
+    ];
+}
+
+export { createElement, createObserver, removeChildren };
