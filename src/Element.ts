@@ -1,6 +1,4 @@
-type TagNames = keyof HTMLElementTagNameMap;
-
-export function createElement<T extends TagNames>(
+export function createElement<T extends keyof HTMLElementTagNameMap>(
   tagName: T,
   builder?: (element: HTMLElementTagNameMap[T]) => void
 ) {
@@ -11,15 +9,8 @@ export function createElement<T extends TagNames>(
   return element;
 }
 
-export function removeChildren<N extends Node>(parent: N, ...children: N[]) {
-  let index = children.length;
-  if (index) {
-    while (index) {
-      parent.removeChild(children[--index]);
-    }
-  } else {
-    while (parent.lastChild) {
-      parent.removeChild(parent.lastChild);
-    }
+export function removeChildren<N extends Node>(parent: N) {
+  while (parent.lastChild) {
+    parent.removeChild(parent.lastChild);
   }
 }
