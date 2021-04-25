@@ -1,12 +1,22 @@
-export function createElement<T extends keyof HTMLElementTagNameMap>(
-  tagName: T,
-  builder?: (element: HTMLElementTagNameMap[T]) => void
+export function createHTML<H extends keyof HTMLElementTagNameMap>(
+  tagName: H,
+  builder: (element: HTMLElementTagNameMap[H]) => void
 ) {
-  const element = document.createElement(tagName);
-  if (builder) {
-    builder(element);
-  }
-  return element;
+  const html = document.createElement(tagName);
+  builder(html);
+  return html;
+}
+
+export function createSVG<S extends keyof SVGElementTagNameMap>(
+  qualifiedName: S,
+  builder: (element: SVGElementTagNameMap[S]) => void
+) {
+  const svg = document.createElementNS(
+    "http://www.w3.org/2000/svg",
+    qualifiedName
+  );
+  builder(svg);
+  return svg;
 }
 
 export function removeChildren<N extends Node>(parent: N) {

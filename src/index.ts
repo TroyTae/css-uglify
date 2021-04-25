@@ -1,4 +1,4 @@
-import { createElement, removeChildren } from "./Element";
+import { createHTML, createSVG, removeChildren } from "./Element";
 import { createObserver } from "./Observer";
 
-export { createElement, removeChildren, createObserver };
+export { createHTML, createSVG, removeChildren, createObserver };
