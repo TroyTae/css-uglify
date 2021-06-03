@@ -17,6 +17,10 @@ export function createAnchor(builder: Builder<"a">) {
   return createElement("a", builder);
 }
 
+export function createAbbr(builder: Builder<"abbr">) {
+  return createElement("abbr", builder);
+}
+
 export function removeChildren<N extends Node>(parent: N) {
   while (parent.lastChild) {
     parent.removeChild(parent.lastChild);
