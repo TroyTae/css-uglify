@@ -18,3 +18,6 @@ export function createArea(builder: Builder<"area">) {
 export function createArticle(builder: Builder<"article">) {
   return createElement("article", builder);
 }
+export function createAside(builder: Builder<"aside">) {
+  return createElement("aside", builder);
+}
