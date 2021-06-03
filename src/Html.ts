@@ -15,3 +15,6 @@ export function createApplet(builder: Builder<"applet">) {
 export function createArea(builder: Builder<"area">) {
   return createElement("area", builder);
 }
+export function createArticle(builder: Builder<"article">) {
+  return createElement("article", builder);
+}
