@@ -1,6 +1,12 @@
-export function createElement<H extends keyof HTMLElementTagNameMap>(
+type HTMLElementTagNames = keyof HTMLElementTagNameMap;
+
+type Builder<H extends HTMLElementTagNames> = (
+  element: HTMLElementTagNameMap[H]
+) => void;
+
+export function createElement<H extends HTMLElementTagNames>(
   tagName: H,
-  builder: (element: HTMLElementTagNameMap[H]) => void
+  builder: Builder<H>
 ) {
   const html = document.createElement(tagName);
   builder(html);
