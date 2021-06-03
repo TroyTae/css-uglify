@@ -13,6 +13,10 @@ export function createElement<H extends HTMLElementTagNames>(
   return html;
 }
 
+export function createAnchor(builder: Builder<"a">) {
+  return createElement("a", builder);
+}
+
 export function removeChildren<N extends Node>(parent: N) {
   while (parent.lastChild) {
     parent.removeChild(parent.lastChild);
