@@ -21,3 +21,6 @@ export function createArticle(builder: Builder<"article">) {
 export function createAside(builder: Builder<"aside">) {
   return createElement("aside", builder);
 }
+export function createAudio(builder: Builder<"audio">) {
+  return createElement("audio", builder);
+}
