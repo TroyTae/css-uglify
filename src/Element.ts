@@ -25,6 +25,10 @@ export function createAddress(builder: Builder<"address">) {
   return createElement("address", builder);
 }
 
+export function createApplet(builder: Builder<"applet">) {
+  return createElement("applet", builder);
+}
+
 export function removeChildren<N extends Node>(parent: N) {
   while (parent.lastChild) {
     parent.removeChild(parent.lastChild);
