@@ -27,3 +27,6 @@ export function createAudio(builder: Builder<"audio">) {
 export function createBold(builder: Builder<"b">) {
   return createElement("b", builder);
 }
+export function createBase(builder: Builder<"base">) {
+  return createElement("base", builder);
+}
