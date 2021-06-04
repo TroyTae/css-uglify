@@ -36,3 +36,6 @@ export function createBaseFont(builder: Builder<"basefont">) {
 export function createBdi(builder: Builder<"bdi">) {
   return createElement("bdi", builder);
 }
+export function createBdo(builder: Builder<"bdo">) {
+  return createElement("bdo", builder);
+}
