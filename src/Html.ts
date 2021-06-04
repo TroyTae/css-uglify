@@ -39,3 +39,6 @@ export function createBdi(builder: Builder<"bdi">) {
 export function createBdo(builder: Builder<"bdo">) {
   return createElement("bdo", builder);
 }
+export function createBlockQuote(builder: Builder<"blockquote">) {
+  return createElement("blockquote", builder);
+}
