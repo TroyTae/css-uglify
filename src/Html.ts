@@ -30,3 +30,6 @@ export function createBold(builder: Builder<"b">) {
 export function createBase(builder: Builder<"base">) {
   return createElement("base", builder);
 }
+export function createBaseFont(builder: Builder<"basefont">) {
+  return createElement("basefont", builder);
+}
