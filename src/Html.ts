@@ -45,3 +45,6 @@ export function createBlockQuote(builder: Builder<"blockquote">) {
 export function createBody(builder: Builder<"body">) {
   return createElement("body", builder);
 }
+export function createBr(builder: Builder<"br">) {
+  return createElement("br", builder);
+}
