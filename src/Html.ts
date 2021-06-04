@@ -33,3 +33,6 @@ export function createBase(builder: Builder<"base">) {
 export function createBaseFont(builder: Builder<"basefont">) {
   return createElement("basefont", builder);
 }
+export function createBdi(builder: Builder<"bdi">) {
+  return createElement("bdi", builder);
+}
