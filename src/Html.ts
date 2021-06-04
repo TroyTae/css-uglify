@@ -24,3 +24,6 @@ export function createAside(builder: Builder<"aside">) {
 export function createAudio(builder: Builder<"audio">) {
   return createElement("audio", builder);
 }
+export function createBold(builder: Builder<"b">) {
+  return createElement("b", builder);
+}
