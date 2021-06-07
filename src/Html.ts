@@ -62,3 +62,7 @@ export function createHeader(builder: Builder<"header">) {
 export function createMain(builder: Builder<"main">) {
   return createElement("main", builder);
 }
+
+export function createSection(builder: Builder<"section">) {
+  return createElement("section", builder);
+}
