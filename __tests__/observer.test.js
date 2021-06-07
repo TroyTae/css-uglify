@@ -12,12 +12,8 @@ test("subscribe value", () => {
 
 test("unsubscribe value", () => {
   const span = createElement("span");
-  const [
-    getValue,
-    setValue,
-    subscribeValue,
-    unsubscribeValue,
-  ] = createObserver();
+  const [getValue, setValue, subscribeValue, unsubscribeValue] =
+    createObserver();
 
   subscribeValue(() => {
     span.textContent = "first";

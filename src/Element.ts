@@ -1,9 +1,9 @@
 export function createElement<H extends HTMLElementTagNames>(
   tagName: H,
-  builder: Builder<H>
+  builder?: Builder<H>
 ) {
   const html = document.createElement(tagName);
-  builder(html);
+  builder && builder(html);
   return html;
 }
 
