@@ -55,6 +55,10 @@ export function createCanvas(builder: Builder<"canvas">) {
   return createElement("canvas", builder);
 }
 
+export function createHeader(builder: Builder<"header">) {
+  return createElement("header", builder);
+}
+
 export function createMain(builder: Builder<"main">) {
   return createElement("main", builder);
 }
