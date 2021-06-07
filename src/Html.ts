@@ -59,6 +59,9 @@ export function createHeader(builder: Builder<"header">) {
   return createElement("header", builder);
 }
 
+export function createLink(builder: Builder<"link">) {
+  return createElement("link", builder);
+}
 export function createMain(builder: Builder<"main">) {
   return createElement("main", builder);
 }
