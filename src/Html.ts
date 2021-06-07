@@ -48,3 +48,6 @@ export function createBody(builder: Builder<"body">) {
 export function createBr(builder: Builder<"br">) {
   return createElement("br", builder);
 }
+export function createButton(builder: Builder<"button">) {
+  return createElement("button", builder);
+}
