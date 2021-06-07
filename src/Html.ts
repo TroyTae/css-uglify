@@ -54,3 +54,7 @@ export function createButton(builder: Builder<"button">) {
 export function createCanvas(builder: Builder<"canvas">) {
   return createElement("canvas", builder);
 }
+
+export function createMain(builder: Builder<"main">) {
+  return createElement("main", builder);
+}
