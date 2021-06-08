@@ -60,6 +60,9 @@ export function createCaption(builder?: Builder<"caption">) {
 export function createCite(builder?: Builder<"cite">) {
   return createElement("cite", builder);
 }
+export function createCode(builder?: Builder<"code">) {
+  return createElement("code", builder);
+}
 
 export function createHeader(builder?: Builder<"header">) {
   return createElement("header", builder);
