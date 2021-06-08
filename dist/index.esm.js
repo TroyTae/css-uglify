@@ -87,6 +87,21 @@ function createButton(builder) {
 function createCanvas(builder) {
     return createElement("canvas", builder);
 }
+function createCaption(builder) {
+    return createElement("caption", builder);
+}
+function createCite(builder) {
+    return createElement("cite", builder);
+}
+function createCode(builder) {
+    return createElement("code", builder);
+}
+function createCol(builder) {
+    return createElement("col", builder);
+}
+function createColGroup(builder) {
+    return createElement("colgroup", builder);
+}
 function createHeader(builder) {
     return createElement("header", builder);
 }
@@ -103,4 +118,4 @@ function createSpan(builder) {
     return createElement("span", builder);
 }
 
-export { createAbbr, createAddress, createAnchor, createApplet, createArea, createArticle, createAside, createAudio, createBase, createBaseFont, createBdi, createBdo, createBlockQuote, createBody, createBold, createBr, createButton, createCanvas, createElement, createHeader, createLink, createMain, createObserver, createSection, createSpan, removeChildren };
+export { createAbbr, createAddress, createAnchor, createApplet, createArea, createArticle, createAside, createAudio, createBase, createBaseFont, createBdi, createBdo, createBlockQuote, createBody, createBold, createBr, createButton, createCanvas, createCaption, createCite, createCode, createCol, createColGroup, createElement, createHeader, createLink, createMain, createObserver, createSection, createSpan, removeChildren };

@@ -91,6 +91,21 @@ function createButton(builder) {
 function createCanvas(builder) {
     return createElement("canvas", builder);
 }
+function createCaption(builder) {
+    return createElement("caption", builder);
+}
+function createCite(builder) {
+    return createElement("cite", builder);
+}
+function createCode(builder) {
+    return createElement("code", builder);
+}
+function createCol(builder) {
+    return createElement("col", builder);
+}
+function createColGroup(builder) {
+    return createElement("colgroup", builder);
+}
 function createHeader(builder) {
     return createElement("header", builder);
 }
@@ -125,6 +140,11 @@ exports.createBold = createBold;
 exports.createBr = createBr;
 exports.createButton = createButton;
 exports.createCanvas = createCanvas;
+exports.createCaption = createCaption;
+exports.createCite = createCite;
+exports.createCode = createCode;
+exports.createCol = createCol;
+exports.createColGroup = createColGroup;
 exports.createElement = createElement;
 exports.createHeader = createHeader;
 exports.createLink = createLink;

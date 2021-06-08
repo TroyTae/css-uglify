@@ -1,3 +1,4 @@
+import { Builder } from "./Type";
 export declare function createAnchor(builder?: Builder<"a">): HTMLAnchorElement;
 export declare function createAbbr(builder?: Builder<"abbr">): HTMLElement;
 export declare function createAddress(builder?: Builder<"address">): HTMLElement;
@@ -16,6 +17,11 @@ export declare function createBody(builder?: Builder<"body">): HTMLBodyElement;
 export declare function createBr(builder?: Builder<"br">): HTMLBRElement;
 export declare function createButton(builder?: Builder<"button">): HTMLButtonElement;
 export declare function createCanvas(builder?: Builder<"canvas">): HTMLCanvasElement;
+export declare function createCaption(builder?: Builder<"caption">): HTMLTableCaptionElement;
+export declare function createCite(builder?: Builder<"cite">): HTMLElement;
+export declare function createCode(builder?: Builder<"code">): HTMLElement;
+export declare function createCol(builder?: Builder<"col">): HTMLTableColElement;
+export declare function createColGroup(builder?: Builder<"colgroup">): HTMLTableColElement;
 export declare function createHeader(builder?: Builder<"header">): HTMLElement;
 export declare function createLink(builder?: Builder<"link">): HTMLLinkElement;
 export declare function createMain(builder?: Builder<"main">): HTMLElement;

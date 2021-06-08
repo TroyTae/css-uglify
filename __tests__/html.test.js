@@ -17,6 +17,11 @@ const {
   createBr,
   createButton,
   createCanvas,
+  createCaption,
+  createCite,
+  createCode,
+  createCol,
+  createColGroup,
   createHeader,
   createLink,
   createMain,
@@ -43,4 +48,9 @@ test("create html", () => {
   expect(createBr().tagName).toBe("BR");
   expect(createButton().tagName).toBe("BUTTON");
   expect(createCanvas().tagName).toBe("CANVAS");
+  expect(createCaption().tagName).toBe("CAPTION");
+  expect(createCite().tagName).toBe("CITE");
+  expect(createCode().tagName).toBe("CODE");
+  expect(createCol().tagName).toBe("COL");
+  expect(createColGroup().tagName).toBe("COLGROUP");
 });

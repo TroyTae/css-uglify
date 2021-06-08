@@ -1,3 +1,5 @@
+import { Builder, HTMLElementTagNames } from "./Type";
+
 export function createElement<H extends HTMLElementTagNames>(
   tagName: H,
   builder?: Builder<H>

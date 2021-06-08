@@ -1,3 +1,4 @@
+import { Builder } from "./Type";
 import { createElement } from "./Element";
 
 export function createAnchor(builder?: Builder<"a">) {
