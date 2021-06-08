@@ -63,6 +63,9 @@ export function createCite(builder?: Builder<"cite">) {
 export function createCode(builder?: Builder<"code">) {
   return createElement("code", builder);
 }
+export function createCol(builder?: Builder<"col">) {
+  return createElement("col", builder);
+}
 
 export function createHeader(builder?: Builder<"header">) {
   return createElement("header", builder);
