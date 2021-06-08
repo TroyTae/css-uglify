@@ -66,6 +66,9 @@ export function createCode(builder?: Builder<"code">) {
 export function createCol(builder?: Builder<"col">) {
   return createElement("col", builder);
 }
+export function createColGroup(builder?: Builder<"colgroup">) {
+  return createElement("colgroup", builder);
+}
 
 export function createHeader(builder?: Builder<"header">) {
   return createElement("header", builder);
