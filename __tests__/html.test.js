@@ -27,6 +27,7 @@ const {
   createDd,
   createDel,
   createDetails,
+  createDfn,
   createHeader,
   createLink,
   createMain,
@@ -63,4 +64,5 @@ test("create html", () => {
   expect(createDd().tagName).toBe("DD");
   expect(createDel().tagName).toBe("DEL");
   expect(createDetails().tagName).toBe("DETAILS");
+  expect(createDfn().tagName).toBe("DFN");
 });

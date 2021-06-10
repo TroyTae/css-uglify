@@ -86,6 +86,9 @@ function createDel(builder?: Builder<"del">) {
 function createDetails(builder?: Builder<"details">) {
   return createElement("details", builder);
 }
+function createDfn(builder?: Builder<"dfn">) {
+  return createElement("dfn", builder);
+}
 
 function createHeader(builder?: Builder<"header">) {
   return createElement("header", builder);
@@ -138,6 +141,7 @@ export {
   createDd,
   createDel,
   createDetails,
+  createDfn,
   createHeader,
   createLink,
   createMain,
