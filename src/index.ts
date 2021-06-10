@@ -80,6 +80,9 @@ function createDataList(builder?: Builder<"datalist">) {
 function createDd(builder?: Builder<"dd">) {
   return createElement("dd", builder);
 }
+function createDel(builder?: Builder<"del">) {
+  return createElement("del", builder);
+}
 
 function createHeader(builder?: Builder<"header">) {
   return createElement("header", builder);
@@ -130,6 +133,7 @@ export {
   createData,
   createDataList,
   createDd,
+  createDel,
   createHeader,
   createLink,
   createMain,
