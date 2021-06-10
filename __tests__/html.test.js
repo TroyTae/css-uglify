@@ -24,6 +24,7 @@ const {
   createColGroup,
   createData,
   createDataList,
+  createDd,
   createHeader,
   createLink,
   createMain,
@@ -57,4 +58,5 @@ test("create html", () => {
   expect(createColGroup().tagName).toBe("COLGROUP");
   expect(createData().tagName).toBe("DATA");
   expect(createDataList().tagName).toBe("DATALIST");
+  expect(createDd().tagName).toBe("DD");
 });

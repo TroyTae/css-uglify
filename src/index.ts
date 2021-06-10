@@ -77,6 +77,9 @@ function createData(builder?: Builder<"data">) {
 function createDataList(builder?: Builder<"datalist">) {
   return createElement("datalist", builder);
 }
+function createDd(builder?: Builder<"dd">) {
+  return createElement("dd", builder);
+}
 
 function createHeader(builder?: Builder<"header">) {
   return createElement("header", builder);
@@ -126,6 +129,7 @@ export {
   createColGroup,
   createData,
   createDataList,
+  createDd,
   createHeader,
   createLink,
   createMain,
