@@ -28,6 +28,7 @@ const {
   createDel,
   createDetails,
   createDfn,
+  createDialog,
   createHeader,
   createLink,
   createMain,
@@ -65,4 +66,5 @@ test("create html", () => {
   expect(createDel().tagName).toBe("DEL");
   expect(createDetails().tagName).toBe("DETAILS");
   expect(createDfn().tagName).toBe("DFN");
+  expect(createDialog().tagName).toBe("DIALOG");
 });

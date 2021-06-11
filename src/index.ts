@@ -89,6 +89,9 @@ function createDetails(builder?: Builder<"details">) {
 function createDfn(builder?: Builder<"dfn">) {
   return createElement("dfn", builder);
 }
+function createDialog(builder?: Builder<"dialog">) {
+  return createElement("dialog", builder);
+}
 
 function createHeader(builder?: Builder<"header">) {
   return createElement("header", builder);
@@ -142,6 +145,7 @@ export {
   createDel,
   createDetails,
   createDfn,
+  createDialog,
   createHeader,
   createLink,
   createMain,
