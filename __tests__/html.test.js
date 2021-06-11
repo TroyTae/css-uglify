@@ -29,6 +29,7 @@ const {
   createDetails,
   createDfn,
   createDialog,
+  createDir,
   createHeader,
   createLink,
   createMain,
@@ -67,4 +68,5 @@ test("create html", () => {
   expect(createDetails().tagName).toBe("DETAILS");
   expect(createDfn().tagName).toBe("DFN");
   expect(createDialog().tagName).toBe("DIALOG");
+  expect(createDir().tagName).toBe("DIR");
 });
