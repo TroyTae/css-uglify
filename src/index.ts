@@ -95,6 +95,9 @@ function createDialog(builder?: Builder<"dialog">) {
 function createDir(builder?: Builder<"dir">) {
   return createElement("dir", builder);
 }
+function createDiv(builder?: Builder<"div">) {
+  return createElement("div", builder);
+}
 
 function createHeader(builder?: Builder<"header">) {
   return createElement("header", builder);
@@ -150,6 +153,7 @@ export {
   createDfn,
   createDialog,
   createDir,
+  createDiv,
   createHeader,
   createLink,
   createMain,
