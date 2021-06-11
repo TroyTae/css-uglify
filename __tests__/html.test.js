@@ -32,6 +32,7 @@ const {
   createDir,
   createDiv,
   createDl,
+  createDt,
   createHeader,
   createLink,
   createMain,
@@ -73,4 +74,5 @@ test("create html", () => {
   expect(createDir().tagName).toBe("DIR");
   expect(createDiv().tagName).toBe("DIV");
   expect(createDl().tagName).toBe("DL");
+  expect(createDt().tagName).toBe("DT");
 });

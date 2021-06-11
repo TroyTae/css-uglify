@@ -101,6 +101,9 @@ function createDiv(builder?: Builder<"div">) {
 function createDl(builder?: Builder<"dl">) {
   return createElement("dl", builder);
 }
+function createDt(builder?: Builder<"dt">) {
+  return createElement("dt", builder);
+}
 
 function createHeader(builder?: Builder<"header">) {
   return createElement("header", builder);
@@ -158,6 +161,7 @@ export {
   createDir,
   createDiv,
   createDl,
+  createDt,
   createHeader,
   createLink,
   createMain,
