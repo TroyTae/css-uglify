@@ -38,6 +38,7 @@ const {
   createDt,
   createEm,
   createEmbed,
+  createFieldSet,
   createHeader,
   createLink,
   createMain,
@@ -81,4 +82,5 @@ test("create html", () => {
   expect(createDt().tagName).toBe("DT");
   expect(createEm().tagName).toBe("EM");
   expect(createEmbed().tagName).toBe("EMBED");
+  expect(createFieldSet().tagName).toBe("FIELDSET");
 });

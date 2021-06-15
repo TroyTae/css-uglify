@@ -107,6 +107,9 @@ function createEm(builder?: Builder<"em">) {
 function createEmbed(builder?: Builder<"embed">) {
   return createElement("embed", builder);
 }
+function createFieldSet(builder?: Builder<"fieldset">) {
+  return createElement("fieldset", builder);
+}
 
 function createHeader(builder?: Builder<"header">) {
   return createElement("header", builder);
@@ -166,6 +169,7 @@ export {
   createDt,
   createEm,
   createEmbed,
+  createFieldSet,
   createHeader,
   createLink,
   createMain,
