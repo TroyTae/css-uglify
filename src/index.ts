@@ -104,6 +104,9 @@ function createDt(builder?: Builder<"dt">) {
 function createEm(builder?: Builder<"em">) {
   return createElement("em", builder);
 }
+function createEmbed(builder?: Builder<"embed">) {
+  return createElement("embed", builder);
+}
 
 function createHeader(builder?: Builder<"header">) {
   return createElement("header", builder);
@@ -162,6 +165,7 @@ export {
   createDl,
   createDt,
   createEm,
+  createEmbed,
   createHeader,
   createLink,
   createMain,
