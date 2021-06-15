@@ -63,9 +63,6 @@ function createBold(builder) {
 function createBase(builder) {
     return createElement("base", builder);
 }
-function createBaseFont(builder) {
-    return createElement("basefont", builder);
-}
 function createBdi(builder) {
     return createElement("bdi", builder);
 }
@@ -102,6 +99,39 @@ function createCol(builder) {
 function createColGroup(builder) {
     return createElement("colgroup", builder);
 }
+function createData(builder) {
+    return createElement("data", builder);
+}
+function createDataList(builder) {
+    return createElement("datalist", builder);
+}
+function createDd(builder) {
+    return createElement("dd", builder);
+}
+function createDel(builder) {
+    return createElement("del", builder);
+}
+function createDetails(builder) {
+    return createElement("details", builder);
+}
+function createDfn(builder) {
+    return createElement("dfn", builder);
+}
+function createDialog(builder) {
+    return createElement("dialog", builder);
+}
+function createDir(builder) {
+    return createElement("dir", builder);
+}
+function createDiv(builder) {
+    return createElement("div", builder);
+}
+function createDl(builder) {
+    return createElement("dl", builder);
+}
+function createDt(builder) {
+    return createElement("dt", builder);
+}
 function createHeader(builder) {
     return createElement("header", builder);
 }
@@ -118,4 +148,4 @@ function createSpan(builder) {
     return createElement("span", builder);
 }
 
-export { createAbbr, createAddress, createAnchor, createApplet, createArea, createArticle, createAside, createAudio, createBase, createBaseFont, createBdi, createBdo, createBlockQuote, createBody, createBold, createBr, createButton, createCanvas, createCaption, createCite, createCode, createCol, createColGroup, createElement, createHeader, createLink, createMain, createObserver, createSection, createSpan, removeChildren };
+export { createAbbr, createAddress, createAnchor, createApplet, createArea, createArticle, createAside, createAudio, createBase, createBdi, createBdo, createBlockQuote, createBody, createBold, createBr, createButton, createCanvas, createCaption, createCite, createCode, createCol, createColGroup, createData, createDataList, createDd, createDel, createDetails, createDfn, createDialog, createDir, createDiv, createDl, createDt, createElement, createHeader, createLink, createMain, createObserver, createSection, createSpan, removeChildren };

@@ -67,9 +67,6 @@ function createBold(builder) {
 function createBase(builder) {
     return createElement("base", builder);
 }
-function createBaseFont(builder) {
-    return createElement("basefont", builder);
-}
 function createBdi(builder) {
     return createElement("bdi", builder);
 }
@@ -106,6 +103,39 @@ function createCol(builder) {
 function createColGroup(builder) {
     return createElement("colgroup", builder);
 }
+function createData(builder) {
+    return createElement("data", builder);
+}
+function createDataList(builder) {
+    return createElement("datalist", builder);
+}
+function createDd(builder) {
+    return createElement("dd", builder);
+}
+function createDel(builder) {
+    return createElement("del", builder);
+}
+function createDetails(builder) {
+    return createElement("details", builder);
+}
+function createDfn(builder) {
+    return createElement("dfn", builder);
+}
+function createDialog(builder) {
+    return createElement("dialog", builder);
+}
+function createDir(builder) {
+    return createElement("dir", builder);
+}
+function createDiv(builder) {
+    return createElement("div", builder);
+}
+function createDl(builder) {
+    return createElement("dl", builder);
+}
+function createDt(builder) {
+    return createElement("dt", builder);
+}
 function createHeader(builder) {
     return createElement("header", builder);
 }
@@ -131,7 +161,6 @@ exports.createArticle = createArticle;
 exports.createAside = createAside;
 exports.createAudio = createAudio;
 exports.createBase = createBase;
-exports.createBaseFont = createBaseFont;
 exports.createBdi = createBdi;
 exports.createBdo = createBdo;
 exports.createBlockQuote = createBlockQuote;
@@ -145,6 +174,17 @@ exports.createCite = createCite;
 exports.createCode = createCode;
 exports.createCol = createCol;
 exports.createColGroup = createColGroup;
+exports.createData = createData;
+exports.createDataList = createDataList;
+exports.createDd = createDd;
+exports.createDel = createDel;
+exports.createDetails = createDetails;
+exports.createDfn = createDfn;
+exports.createDialog = createDialog;
+exports.createDir = createDir;
+exports.createDiv = createDiv;
+exports.createDl = createDl;
+exports.createDt = createDt;
 exports.createElement = createElement;
 exports.createHeader = createHeader;
 exports.createLink = createLink;

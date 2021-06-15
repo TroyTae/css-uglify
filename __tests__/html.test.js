@@ -1,3 +1,7 @@
+/**
+ * @jest-environment jsdom
+ */
+
 const {
   createAnchor,
   createAbbr,
@@ -9,7 +13,6 @@ const {
   createAudio,
   createBold,
   createBase,
-  createBaseFont,
   createBdi,
   createBdo,
   createBlockQuote,
@@ -51,7 +54,6 @@ test("create html", () => {
   expect(createAudio().tagName).toBe("AUDIO");
   expect(createBold().tagName).toBe("B");
   expect(createBase().tagName).toBe("BASE");
-  expect(createBaseFont().tagName).toBe("BASEFONT");
   expect(createBdi().tagName).toBe("BDI");
   expect(createBdo().tagName).toBe("BDO");
   expect(createBlockQuote().tagName).toBe("BLOCKQUOTE");

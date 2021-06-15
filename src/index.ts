@@ -32,9 +32,6 @@ function createBold(builder?: Builder<"b">) {
 function createBase(builder?: Builder<"base">) {
   return createElement("base", builder);
 }
-function createBaseFont(builder?: Builder<"basefont">) {
-  return createElement("basefont", builder);
-}
 function createBdi(builder?: Builder<"bdi">) {
   return createElement("bdi", builder);
 }
@@ -138,7 +135,6 @@ export {
   createAudio,
   createBold,
   createBase,
-  createBaseFont,
   createBdi,
   createBdo,
   createBlockQuote,

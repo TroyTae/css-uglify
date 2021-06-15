@@ -1,3 +1,7 @@
+/**
+ * @jest-environment jsdom
+ */
+
 const { createElement, removeChildren } = require("../dist/index");
 
 test("create element", () => {

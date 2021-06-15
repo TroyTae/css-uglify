@@ -1,3 +1,7 @@
+/**
+ * @jest-environment jsdom
+ */
+
 const { createElement, createObserver } = require("../dist/index");
 
 test("subscribe value", () => {
