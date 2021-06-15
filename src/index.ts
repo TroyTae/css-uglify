@@ -110,6 +110,9 @@ function createEmbed(builder?: Builder<"embed">) {
 function createFieldSet(builder?: Builder<"fieldset">) {
   return createElement("fieldset", builder);
 }
+function createFigcaption(builder?: Builder<"figcaption">) {
+  return createElement("figcaption", builder);
+}
 
 function createHeader(builder?: Builder<"header">) {
   return createElement("header", builder);
@@ -170,6 +173,7 @@ export {
   createEm,
   createEmbed,
   createFieldSet,
+  createFigcaption,
   createHeader,
   createLink,
   createMain,
